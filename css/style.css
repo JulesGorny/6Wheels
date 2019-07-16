@@ -13,3 +13,19 @@ html {
 	color: green;
 	font-weight: bold;
 }
+
+.mossytitle {
+	color: green;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 1.75rem;
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  margin-top: 64px;
+}
