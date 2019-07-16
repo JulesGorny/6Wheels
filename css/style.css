@@ -9,6 +9,11 @@ html {
     font-size: 20px;
 } 
 
+body { 
+    padding-top: 65px; 
+}
+
+
 .mossyfied {
 	color: green;
 	font-weight: bold;
