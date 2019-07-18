@@ -41,12 +41,10 @@ function onMarker3Click(e) {
 
 var tentIcon = L.icon({
     iconUrl: 'img/tent.png',
-
     iconSize:     [26.4, 23.2], // size of the icon
 });
 
 var treeIcon = L.icon({
     iconUrl: 'img/tree.png',
-
     iconSize:     [26.4, 23.2], // size of the icon
 });
