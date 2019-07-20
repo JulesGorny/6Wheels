@@ -6,15 +6,15 @@ $( document ).ready(function() {
 		id: 'mapbox.streets',
 		accessToken: 'token.to.enter'
 	}).addTo(mymap);
-	var marker1 = L.marker([46.566250, 3.335290], {icon:tentIcon}).addTo(mymap).bindPopup('Moulins').openPopup();
+	var marker1 = L.marker([46.566250, 3.335290], {icon:tentIcon}).addTo(mymap);
 	marker1.on('click', onMarker1Click);
-	var marker2 = L.marker([46.987179, 3.161600], {icon:treeIcon}).addTo(mymap).bindPopup('Nevers');
-	marker2.on('click', onMarker2Click);
-	var marker3 = L.marker([47.559601, 7.588576], {icon:tentIcon}).addTo(mymap).bindPopup('Bâle');
-	marker3.on('click', onMarker3Click);
-	var marker4 = L.marker([45.464203, 9.189982], {icon:tentIcon}).addTo(mymap).bindPopup('Milan');
-	var marker5 = L.marker([42.650661, 18.094423], {icon:tentIcon}).addTo(mymap).bindPopup('Dubrovnik');
-	var marker6 = L.marker([41.008240, 28.978359], {icon:tentIcon}).addTo(mymap).bindPopup('Istanbul');
+	var marker2 = L.marker([46.987179, 3.161600], {icon:treeIcon}).addTo(mymap);
+	marker2.on('click', onMarker1Click);
+	var marker3 = L.marker([47.559601, 7.588576], {icon:tentIcon}).addTo(mymap);
+	marker3.on('click', onMarker1Click);
+	var marker4 = L.marker([45.464203, 9.189982], {icon:tentIcon}).addTo(mymap);
+	var marker5 = L.marker([42.650661, 18.094423], {icon:tentIcon}).addTo(mymap);
+	var marker6 = L.marker([41.008240, 28.978359], {icon:tentIcon}).addTo(mymap);
 	
 	var pointA = new L.LatLng(46.566250, 3.335290);
 	var pointB = new L.LatLng(47.559601, 7.588576);
@@ -30,13 +30,7 @@ $( document ).ready(function() {
 });
 
 function onMarker1Click(e) {
-	$('#spantextid').text('Nous sommes à Moulins');
-}
-function onMarker2Click(e) {
-	$('#spantextid').text('Nous sommes à Nevers');
-}
-function onMarker3Click(e) {
-	$('#spantextid').text('Nous sommes à Bâle');
+	open("https://imgur.com/gallery/JzDOBP3","_blank")
 }
 
 var tentIcon = L.icon({
