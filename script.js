@@ -1,7 +1,6 @@
 $( document ).ready(function() {
     
 	/* Index - MAP part */
-	console.log($("#mapid"));
 	if ($("#mapid").length) {
 		var mymap = L.map('mapid').setView([45.815010, 15.981919], 5);
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -67,17 +66,20 @@ function translateTo (lang) {
 
 function loadContentText (lang) {
 	// Get json file which contains all texts and translations
+	
 	$.ajax({
-    type: 'GET',
-    url: 'https://raw.githubusercontent.com/JulesGorny/JulesGorny.github.io/master/content-text.json',
-    dataType: 'json',
-    success: function(json) {
-      console.log(json.mossy_title_1);
-	  
-	  // Set the text where it belongs
-	  $("#mossy_title_1").html(json.mossy_title_1.lang);
-	  $("#mossy_text_1").html(json.mossy_text_1.lang);
-    }
+		type: 'GET',
+		url: 'https://raw.githubusercontent.com/JulesGorny/JulesGorny.github.io/master/content-text.json',
+		dataType: 'json',
+		success: function(json) {
+		  console.log('ok', json);
+		  // Set the text where it belongs
+		  //$("#mossy_title_1").html(json.mossy_title_1.lang);
+		  //$("#mossy_text_1").html(json.mossy_text_1.lang);
+		},
+		error: function(err) {
+			console.log('error', err);
+		}
   });
  
 }
