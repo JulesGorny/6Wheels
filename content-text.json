@@ -1,10 +1,10 @@
 {
-  "text1" : {
-	"fr" : "text1_fr",
-	"en" : "text1_en"
+  "mossy_title_1" : {
+	"fr" : "Pourquoi nous aimons Mossy Earth ?",
+	"en" : "Why do we like Mossy Earth ?"
   },
-  "text2" : {
-	"fr" : "text2_fr",
-	"en" : "text2_en"
+  "mossy_text_1" : {
+	"fr" : "Il est de notoriété publique que planter des milliards d'arbres pour réduire la quantité de dioxyde de carbone contenue dans l'atmosphère est une des meilleures solutions actuelles pour endiguer le changement climatique. Cependant, planter d'immenses forêts stériles ferait plus de mal que de bien. Partout dans le monde, les habitats naturels sont détruits, entrainant dans leur chute les animaux qui les peuplent. Mossy Earth ne plante pas simplement des arbres, ils recréent des espaces naturels tels qu'ils étaient par le passé, permettant ainsi à la nature de reprendre ses droits. Rendre à la nature ce qui lui a été pris est selon nous la meilleure façon de réduire l'emprunte carbone humaine.",
+	"en" : "It is now commonly accepted that planting billions of trees to reduce the carbon dioxide contained in the atmosphere is one of the best solutions we have to tackle climate change. But planting huge barren forests would do more harm than good. Everywhere in the world, natural habitats are being destroyed, taking along all the animals that inhabits them. Mossy Earth is not only planting trees, they recreate natural areas as they were before, <span class="mossyfied">allowing nature to regain its rights.</span> And to us, giving back to the natural world what we’ve taken away from it is the best way to reduce humanity’s carbon footprint."
   }
 }
