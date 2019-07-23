@@ -72,10 +72,12 @@ function loadContentText (lang) {
 		url: 'https://raw.githubusercontent.com/JulesGorny/JulesGorny.github.io/master/content-text.json',
 		dataType: 'json',
 		success: function(json) {
-		  console.log('ok', json);
 		  // Set the text where it belongs
-		  //$("#mossy_title_1").html(json.mossy_title_1.lang);
-		  //$("#mossy_text_1").html(json.mossy_text_1.lang);
+		  $("#mossy_title_1").html(json.mossy_title_1[lang]);
+		  $("#mossy_text_1").html(json.mossy_text_1[lang]);
+		  
+		  
+		  
 		},
 		error: function(err) {
 			console.log('error', err);
