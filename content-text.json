@@ -1,0 +1,10 @@
+{
+  "text1" : {
+	"fr" : "text1_fr",
+	"en" : "text1_en"
+  },
+  "text2" : {
+	"fr" : "text2_fr",
+	"en" : "text2_en"
+  }
+}

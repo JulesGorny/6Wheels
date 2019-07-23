@@ -1,5 +1,7 @@
 $( document ).ready(function() {
-    var mymap = L.map('mapid').setView([45.815010, 15.981919], 5);
+    
+	/* MAP */
+	var mymap = L.map('mapid').setView([45.815010, 15.981919], 5);
 	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
 		maxZoom: 18,
@@ -27,6 +29,17 @@ $( document ).ready(function() {
 		smoothFactor: 1
 	});
 	firstpolyline.addTo(mymap);
+	
+	/* TEXT AND TRANSLATION PART */
+	// Get langage in url
+	var url = new URL(window.location.href);
+	var l = url.searchParams.get("l");
+	if (!l) {
+		// If no lang in url, take the browser default
+		l = navigator.language.toLowerCase().includes("fr") ? "fr" : "en";
+	}
+	loadContentText(l);
+	
 });
 
 function onMarker1Click(e) {
@@ -42,3 +55,22 @@ var treeIcon = L.icon({
     iconUrl: 'img/tree.png',
     iconSize:     [26.4, 23.2], // size of the icon
 });
+
+function translateTo (lang) {
+	location.href =  window.location.href.split('?')[0] + "?l=" + lang;
+}
+
+function loadContentText (lang) {
+	/*$.getJSON("content-text.json", function(json) {
+		console.log(json);
+	});*/
+	
+	$.ajax({
+    type: 'GET',
+    url: 'content-text.json', // js is lowercase!
+    dataType: 'json',
+    success: function(data) {
+      console.log('success',data);
+    }
+  });
+}
