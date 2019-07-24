@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-	/* Index - MAP part */
+	/* For Map page */
 	if ($("#mapid").length) {
 		var mymap = L.map('mapid').setView([45.815010, 15.981919], 5);
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -33,17 +33,21 @@ $( document ).ready(function() {
 	}
 	
 	
-	/* Common */
+	/* COMMON FOR ALL PAGES */
 	/* TEXT AND TRANSLATION PART */
 	// Get langage in url
 	var url = new URL(window.location.href);
 	var l = url.searchParams.get("l");
-	if (!l) {
-		// If no lang in url, take the browser default
+	if (l) {
+		// If lang in URL, append lang parameter to all links in the page
+		$("a").each(function (index, value) {
+			value.href = value.href.split('?')[0] + "?l=" + l;
+		});
+	} else {
+		// If no lang in URL, take the browser default
 		l = navigator.language.toLowerCase().includes("fr") ? "fr" : "en";
 	}
 	loadContentText(l);
-	
 });
 
 function onMarker1Click(e) {
