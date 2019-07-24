@@ -11,86 +11,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
+		<script src="script.js"></script>
 		<title>TreepOnWheels</title>
-		
-		<!-- Custom css only for fullscreen map display -->
-		<style type="text/css">
-			html, body {
-			  width: 100%;
-			  height: 100%;
-			}
-
-			#main-header {
-				width: 100%;
-				margin:0;
-				position: relative;
-				text-align: justify;
-				color: white;
-			}
-			#main-header > img {
-				width: 100%;
-			}
-
-			#main-header > div {
-				
-				width: 80%;
-				position: absolute;
-				/* top: 0; left: 0; right: 0; bottom: 0; */
-
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				text-align: justify;
-			}
-
-			#links {
-				margin-top: 20px;
-				text-align: center;
-			}
-			#links > span {
-				margin-right: 15px;
-			}
-			#links > span > i {
-				margin-right:10px;
-			}
-
-			.seperator {
-				width:30%;
-				height: 6px;
-				background-color: black;
-				margin: 30px auto 30px auto;
-				
-			}
-
-			#picture-map {
-				display: flex;
-				margin:0;
-			}
-			#picture-map > div {
-				display: inline-block;
-				margin:0;
-				height: inherit;
-			}
-
-			#picture-map,
-			#picture-map > div > img {
-				/* fixed height, width doesn't matter, let the map take more space if possible */
-				height: 800px;
-			}
-			#picture-map > div > img {
-				width : auto;
-				
-			}
-			
-			#mapid {
-				width: 100%;
-			}
-		</style>
 	</head>
 	
 	<body>	
@@ -103,9 +25,12 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul style="padding-right: 5rem;" class="navbar-nav ml-auto">
+				<ul style="padding-right: 2rem;" class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Map</a>
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="map.html">Map</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="mossyearth.html">Mossy Earth</a>
@@ -115,6 +40,8 @@
 					</li>
 				</ul>
 			</div>
+			<input type="image" src="img/flag_fr.svg" onclick="translateTo('fr');" width="35px;" style="margin-right: 0.5rem; outline:none;"/>
+			<input type="image" src="img/flag_uk.svg" onclick="translateTo('en');" width="35px;" style="margin-left: 0.5rem; margin-right: 0.85rem; outline:none;"/>
 		</nav>	
 		
 		<!-- PAGE CONTENT -->
@@ -131,19 +58,16 @@
 			</div>
 		</div>
 		<div id="links">
-			<span><i class="fab fa-instagram"></i>Instragram</span> 
-			<span><i class="fab fa-facebook-square"></i>Facebook</span>
+			<span>
+				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
+					<i class="fab fa-facebook-square"style="padding-right: 0.35rem;"></i>Facebook
+				</a>
+			</span> 
+			<span>
+				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
+					<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>Instagram</span>
+				</a>
 		</div>
-		<div class="seperator"></div>
-
-		<div id="picture-map">
-			<div><img src="img/index-sidemap.jpg"/></div>
-			
-			<div id="mapid"></div>
-
-		</div> 
-		<script src="script.js"></script>
-		<span id="spantextid"></span>
 		<div class="seperator"></div>
 	</body>
 </html>

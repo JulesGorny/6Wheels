@@ -1,0 +1,46 @@
+{
+  "mossy_title_1" : {
+	"fr" : "Pourquoi nous aimons Mossy Earth ?",
+	"en" : "Why do we like Mossy Earth ?"
+  },
+  "mossy_text_1" : {
+	"fr" : "Il est de notoriété publique que planter des milliards d'arbres pour réduire la quantité de dioxyde de carbone contenue dans l'atmosphère est une des meilleures solutions actuelles pour endiguer le changement climatique. Cependant, planter d'immenses forêts stériles ferait plus de mal que de bien. Partout dans le monde, les habitats naturels sont détruits, entrainant dans leur chute les animaux qui les peuplent. Mossy Earth ne plante pas simplement des arbres, ils recréent des espaces naturels tels qu'ils étaient par le passé, <span class='mossyfied'>permettant ainsi à la nature de reprendre ses droits</span>. Rendre à la nature ce qui lui a été pris est selon nous la meilleure façon de réduire l'emprunte carbone humaine.",
+	"en" : "It is now commonly accepted that planting billions of trees to reduce the carbon dioxide contained in the atmosphere is one of the best solutions we have to tackle climate change. But planting huge barren forests would do more harm than good. Everywhere in the world, natural habitats are being destroyed, taking along all the animals that inhabits them. Mossy Earth is not only planting trees, they recreate natural areas as they were before, <span class='mossyfied'>allowing nature to regain its rights.</span> And to us, giving back to the natural world what we’ve taken away from it is the best way to reduce humanity’s carbon footprint."
+  },
+   "mossy_title_2" : {
+	"fr" : "A propos de Mossy Earth",
+	"en" : "About Mossy Earth"
+  },
+  "mossy_text_2" : {
+	"fr" : "<span class='mossyfied'>Mossy Earth</span> est une entreprise sociale qui a pour mission de restaurer de véritables régions sauvages en Europe. À travers ce cadre de <span class='mossyfied'>réensauvagement</span> et de <span class='mossyfied'>reboisement</span>, nous offrons aux particuliers, aux écoles et aux entreprises la possibilité de planter des forêts et de restaurer des écosystèmes clés tout en réduisant leur empreinte carbone.",
+	"en" : "<span class='mossyfied'>Mossy Earth</span> is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of <span class='mossyfied'>rewilding</span> and <span class='mossyfied'>reforestation</span>, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint."
+  },
+   "mossy_title_3" : {
+	"fr" : "Un résumé de nos projets",
+	"en" : "A summary of our projects"
+  },
+  "mossy_text_3" : {
+	"fr" : "Le projet <span class='mossyfied'>Wildfire Restoration</span> dans la vallée du Douro, au Portugal, vise à reboiser les zones dévastées par les incendies de forêt de 2017 qui ont frappé cette belle région.",
+	"en" : "The <span class='mossyfied'>Wildfire Restoration project</span> in the Douro Valley, Portugal seeks to reforest areas devastated by the 2017 wildfires that struck this beautiful region."
+  },
+    "mossy_text_4" : {
+	"fr" : "Le projet <span class='mossyfied'>Healing Clear Cuts</span> en Roumanie vise à replanter des zones illégalement exploitées tout en protégeant les forêts anciennes existantes de l’abattage et du braconnage.",
+	"en" : "The <span class='mossyfied'>Healing Clear Cuts project</span> in Romania aims to replant areas that have been illegally logged while also protecting existing old growth forests from further logging and poaching."
+  },
+  "mossy_text_5" : {
+	"fr" : "Le projet <span class='mossyfied'>Native Oak Woodland Restoration</span> cherche à mettre au point des pratiques de gestion durable des terres pour lutter contre la domination d'un arbuste dénommé Portuguese Broom et les incendies de forêt d’été au Portugal, en aidant la régénération des forêts de chênes indigènes.",
+	"en" : "The <span class='mossyfied'>Native Oak Woodland Restoration project</span> seeks to develop sustainable land management practices to deal with the dominant Portuguese Broom, the ravenous Portuguese summer wildfires and regenerate native oak woodlands."
+  },
+    "mossy_text_6" : {
+	"fr" : "<span class='mossyfied'>Foraois</span> - Inverser l’histoire de l’Irlande. Jadis la région la plus boisée d’Europe, où Gaël est synonyme de population forestière, nous sommes ici pour construire des forêts natives, saines et résilientes en Irlande.",
+	"en" : "<span class='mossyfied'>Foraois - Reversing Ireland’s History.</span> Once the most forested land in Europe, where Gael means forest people, we are here to build native, healthy and resilient forests in Ireland."
+  },
+  "mossy_title_4" : {
+	"fr" : "La promesse de Mossy Earth",
+	"en" : "Mossy Earth Promise"
+  },
+  "mossy_text_7" : {
+	"fr" : "<li>Nous ne plantons que des espèces d'arbres natifs. Pas de plantes envahissantes ni de monocultures. Nos arbres sont plantés dans un contexte de réensauvagement plus large, dans des zones protégées, pour que vos arbres restent sauvages pour toujours!</li><li>Nous nous engageons à remplacer les arbres perdus au cours des 3 premières années.</li><li>Nous plantons 30% d'arbres supplémentaires dans l'ensemble de nos projets pour nous assurer de notre impact en tant que groupe et pour s'assurer d'éventuels écarts dans le calcul d'impact carbone.</li>",
+	"en" : "<li>We only plant native species of trees. No invasives nor monocultures. Our trees are planted in a wider rewilding context, in protected areas, to ensure your trees stay wild forever!</li><li>We commit to replacing any trees lost within the first 3 years.</li><li>We plant an additional 30% across all our projects to ensure we meet our impact as a group and as an insurance against any carbon calculation discrepancies.</li>"
+  }
+}
