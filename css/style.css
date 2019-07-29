@@ -6,7 +6,8 @@ html {
 } 
 
 body { 
-    padding-top: 65px; 
+	padding-top: 65px; 
+	padding-bottom: 50px;
 }
 
 .mossyfied {
@@ -98,7 +99,27 @@ body {
 	margin-bottom: 30px;
 }
 
+#index-presentation > div > .img > img {
+	height:200px;
+}
+
 #index-presentation > div > .title {
 	text-align: center;
 	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+#index-presentation > div > .learn-more {
+	text-align: center;
+	width:auto;
+	margin:0;
+
+}
+
+#index-presentation > div > .learn-more img {
+	height: 100px;
+}
+
+#index-presentation > div > .learn-more a {
+	color:black;
 }
