@@ -1,6 +1,12 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 
+
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+}
+
 html {
     font-size: 20px;
 } 
@@ -86,7 +92,7 @@ a {
 	margin: 30px auto 30px auto;
 }
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 601px) {
 	#index-presentation {
 		display: flex;
 		width: 100%;
@@ -108,7 +114,7 @@ a {
 		padding-left:20px;
 	}
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 	#index-presentation {
 		display: block;
 		/* width: 100%; */
