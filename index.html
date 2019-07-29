@@ -11,19 +11,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
+		<script src="script.js"></script>
 		<title>TreepOnWheels</title>
-		
-		<!-- Custom css only for fullscreen map display -->
-		<style type="text/css">
-			html, body {
-			  width: 100%;
-			  height: 100%;
-			}
-			#mapid {
-			  width: auto;
-			  height: 100%;
-			}
-		</style>
 	</head>
 	
 	<body>	
@@ -38,7 +27,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul style="padding-right: 2rem;" class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Map</a>
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="map.html">Map</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="mossyearth.html">Mossy Earth</a>
@@ -49,12 +41,33 @@
 				</ul>
 			</div>
 			<input type="image" src="img/flag_fr.svg" onclick="translateTo('fr');" width="35px;" style="margin-right: 0.5rem; outline:none;"/>
-			<input type="image" src="img/flag_uk.svg" onclick="translateTo('en');" width="35px;" style="margin-left: 0.5rem; outline:none;"/>
+			<input type="image" src="img/flag_uk.svg" onclick="translateTo('en');" width="35px;" style="margin-left: 0.5rem; margin-right: 0.85rem; outline:none;"/>
 		</nav>	
 		
 		<!-- PAGE CONTENT -->
-		<div id="mapid"></div>
-		<script src="script.js"></script>
-		<span id="spantextid"></span>
+		<div id="main-header">
+			<img class="full-width" alt="Sunset Panorama" src="http://upload.wikimedia.org/wikipedia/commons/6/62/Berkeley-San_Francisco-Oakland--Sunset-Panorama.jpg" />
+			<div>
+				<p>
+						Travel with no impact. 
+				</p>
+				<p>
+						Act for the environment.
+				</p>
+				<img style="height: 70px;opacity: 0.7;" src="img/6Wheels_logo.png"/>
+			</div>
+		</div>
+		<div id="links">
+			<span>
+				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
+					<i class="fab fa-facebook-square"style="padding-right: 0.35rem;"></i>Facebook
+				</a>
+			</span> 
+			<span>
+				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
+					<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>Instagram</span>
+				</a>
+		</div>
+		<div class="seperator"></div>
 	</body>
 </html>

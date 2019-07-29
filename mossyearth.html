@@ -11,6 +11,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
+		<script src="script.js"></script>
 		<title>TreepOnWheels</title>
 	</head>
 	
@@ -25,9 +26,12 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul style="padding-right: 4.15rem;" class="navbar-nav ml-auto">
+				<ul style="padding-right: 2rem;" class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="index.html">Map</a>
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="map.html">Map</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link active" href="mossyearth.html">Mossy Earth</a>
@@ -37,45 +41,38 @@
 					</li>
 				</ul>
 			</div>
+			<input type="image" src="img/flag_fr.svg" onclick="translateTo('fr');" width="35px;" style="margin-right: 0.5rem; outline:none;"/>
+			<input type="image" src="img/flag_uk.svg" onclick="translateTo('en');" width="35px;" style="margin-left: 0.5rem; outline:none;"/>
 		</nav>
 	
 		<!-- PAGE CONTENT -->
 		<div class="container">
 		
-			<h4 class="mossytitle">Why do we like Mossy Earth ?</h4>
-			<p style="text-align: justify;">
-				It is now commonly accepted that planting billions of trees to reduce the carbon dioxide contained in the atmosphere is one of the best solutions we have to tackle climate change. But planting huge barren forests would do more harm than good. Everywhere in the world, natural habitats are being destroyed, taking along all the animals that inhabits them. 
-				Mossy Earth is not only planting trees, they recreate natural areas as they were before, <span class="mossyfied">allowing nature to regain its rights</span>. And to us, giving back to the natural world what we’ve taken away from it is the best way to reduce humanity’s carbon footprint.
-			</p>
+			<h4 id="mossy_title_1" class="mossytitle"></h4>
+			<p id="mossy_text_1" style="text-align: justify;"></p>
 		
-			<h4 class="mossytitle">About Mossy Earth</h4>
+			<h4 id="mossy_title_2" class="mossytitle"></h4>
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<img style="height:300px;" src="img/mossy1.jpg" class="rounded mx-auto d-block"/>
 				</div>
 				<div class="col-lg-6">
-					<p style="text-align: justify;">
-						<span class="mossyfied">Mossy Earth</span> is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of <span class="mossyfied">rewilding</span> and <span class="mossyfied">reforestation</span>, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint.
-					</p>
+					<p id="mossy_text_2" style="text-align: justify;"></p>
 				</div>
 			</div>
 			
-			<h4 class="mossytitle">A summary of our projects</h4>
+			<h4 id="mossy_title_3" class="mossytitle"></h4>
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<img style="height:300px;" src="img/mossy2.jpg" class="rounded mx-auto d-block"/>
 				</div>
 				<div class="col-lg-6">
-					<p style="text-align: justify;">
-						The <span class="mossyfied">Wildfire Restoration project</span> in the Douro Valley, Portugal seeks to reforest areas devastated by the 2017 wildfires that struck this beautiful region.
-					</p>
+					<p id="mossy_text_3" style="text-align: justify;"></p>
 				</div>
 			</div>
 			<div class="row align-items-center">
 				<div class="col-lg-6">
-					<p style="text-align: justify;">
-						The <span class="mossyfied">Healing Clear Cuts project</span> in Romania aims to replant areas that have been illegally logged while also protecting existing old growth forests from further logging and poaching.
-					</p>
+					<p id="mossy_text_4" style="text-align: justify;"></p>
 				</div>
 				<div class="col-lg-6">
 					<img style="height:300px;" src="img/mossy3.jpg" class="rounded mx-auto d-block"/>
@@ -86,34 +83,20 @@
 					<img style="height:300px;" src="img/mossy4.jpg" class="rounded mx-auto d-block"/>
 				</div>
 				<div class="col-lg-6">
-					<p style="text-align: justify;">
-						The <span class="mossyfied">Native Oak Woodland Restoration project</span> seeks to develop sustainable land management practices to deal with the dominant Portuguese Broom, the ravenous Portuguese summer wildfires and regenerate native oak woodlands.
-					</p>
+					<p id="mossy_text_5" style="text-align: justify;"></p>
 				</div>
 			</div>
 			<div class="row align-items-center">
 				<div class="col-lg-6">
-					<p style="text-align: justify;">
-						<span class="mossyfied">Foraois - Reversing Ireland’s History.</span> Once the most forested land in Europe, where Gael means forest people, we are here to build native, healthy and resilient forests in Ireland.
-					</p>
+					<p id="mossy_text_6" style="text-align: justify;"></p>
 				</div>
 				<div class="col-lg-6">
 					<img style="height:300px;" src="img/mossy5.jpg" class="rounded mx-auto d-block"/>
 				</div>
 			</div>
 			
-			<h4 class="mossytitle">Mossy Earth Promise</h4>
-			<ul>
-				<li>
-					We only plant native species of trees. No invasives nor monocultures. Our trees are planted in a wider rewilding context, in protected areas, to ensure your trees stay wild forever!
-				</li>
-				<li>
-					We commit to replacing any trees lost within the first 3 years.
-				</li>
-				<li>
-					We plant an additional 30% across all our projects to ensure we meet our impact as a group and as an insurance against any carbon calculation discrepancies.
-				</li>
-			</ul>
+			<h4 id="mossy_title_4" class="mossytitle"></h4>
+			<ul id="mossy_text_7"></ul>
 			
 			<div class="row" style="margin-bottom: 3rem;">
 				<div class="offset-lg-2 col-lg-4">
