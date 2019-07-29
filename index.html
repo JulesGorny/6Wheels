@@ -75,7 +75,7 @@
 		<div class="seperator"></div>
 		<div id="index-presentation">
 			<div class="left">
-				<div class="img"><img src="img/6Wheels_logo.png"/></div>
+				<div class="biglogo"><img src="img/6Wheels_logo.png"/></div>
 				<h5 class="title">6Wheels</h5>
 				<p>
 						6Wheels is a project mixing travel, adventure and respect for the environment. We want to discover new countries, by bike, participating in eco-volunteering on the way.
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 			<div class="right">
-				<div class="img"><img src="img/mossyearth_logo.png"/></div>
+				<div class="biglogo"><img src="img/mossyearth_logo.png"/></div>
 				<h5 class="title">Mossy Earth</h5>
 				<p>
 					Mossy Earth is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of rewilding and reforestation, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint.
@@ -97,5 +97,17 @@
 		</div>
 
 		<script src="footer.js"></script>
+		<script>
+			$(function() {
+				var $paragrams = $('#index-presentation > div p');
+				var max_h = 0;
+				$paragrams.each(function() {
+					if( $(this).height() > max_h )
+						max_h = $(this).height();
+				});
+
+				$paragrams.height(max_h);
+			});
+		</script>
 	</body>
 </html>
