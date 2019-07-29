@@ -71,6 +71,11 @@ body {
 #links > span {
 	margin-right: 15px;
 }
+
+a {
+	color:black !important;
+}
+
 #links > span > i {
 	margin-right:10px;
 }
@@ -81,17 +86,55 @@ body {
 	margin: 30px auto 30px auto;
 }
 
-#index-presentation {
-	display: flex;
-	width: 100%;
-	margin: 0;
+@media only screen and (min-width: 601px) {
+	#index-presentation {
+		display: flex;
+		width: 100%;
+		margin: 0;
+	}
+	#index-presentation > div {
+		flex:1;
+		padding-left : 40px;
+		padding-right : 40px;
+	}
+
+	#index-presentation > div > .learn-more a > img {
+		height: 100px;
+		display: flex;
+	}
+
+	#index-presentation > div > .learn-more a > span {
+		display: flex;
+		padding-left:20px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	#index-presentation {
+		display: block;
+		/* width: 100%; */
+		margin: 0;
+	}
+	#index-presentation > div {
+		padding-left : 20px;
+		padding-right : 20px;
+		margin-top : 60px;
+	}
+	
+	#index-presentation > div p {
+        height: auto !important;
+	} 
+	
+	#index-presentation > div > .learn-more a > img {
+		height: 70px;
+		display: flex;
+	}
+
+	#index-presentation > div > .learn-more a > span {
+		display: flex;
+		padding-left:10px;
+	}
 }
 
-#index-presentation > div {
-	flex:1;
-	padding-left : 40px;
-	padding-right : 40px;
-}
 
 #index-presentation > div .biglogo {
 	width:100%;
@@ -116,10 +159,7 @@ body {
 
 }
 
-#index-presentation > div > .learn-more img {
-	height: 100px;
-}
-
 #index-presentation > div > .learn-more a {
 	color:black;
+	display: flex;
 }
