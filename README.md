@@ -1,6 +1,7 @@
 # JulesGorny.github.io
+https://julesgorny.github.io/
 
-# my version atm
+# lugburz fork
 https://lugburz.github.io/JulesGorny.github.io
 
 # new index test
