@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
@@ -17,32 +18,7 @@
 	
 	<body>	
 		<!-- TOP MENU -->
-		<nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-			<a class="navbar-brand" href="index.html">
-				<img style="height: 55px;" src="img/6Wheels_logo.png"/>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul style="padding-right: 2rem;" class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link active" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="map.html">Map</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="mossyearth.html">Mossy Earth</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="aboutus.html">About Us</a>
-					</li>
-				</ul>
-			</div>
-			<input type="image" src="img/flag_fr.svg" onclick="translateTo('fr');" width="35px;" style="margin-right: 0.5rem; outline:none;"/>
-			<input type="image" src="img/flag_uk.svg" onclick="translateTo('en');" width="35px;" style="margin-left: 0.5rem; margin-right: 0.85rem; outline:none;"/>
-		</nav>	
+		<script src="nav.js"></script>
 		
 		<!-- PAGE CONTENT -->
 		<div id="main-header">
@@ -62,12 +38,12 @@
 				Follow our journey!
 			</p>
 			<span>
-				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
+				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
 					<i class="fab fa-facebook-square"style="padding-right: 0.35rem;"></i>Facebook
 				</a>
 			</span> 
 			<span>
-				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
+				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
 					<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>Instagram
 				</a>
 			</span>
@@ -75,32 +51,27 @@
 		<div class="seperator"></div>
 		<div id="index-presentation">
 			<div class="left">
-				<div class="img"><img style="height: 175px;" src="img/6Wheels_logo.png"/></div>
+				<div class="biglogo"><img src="img/6Wheels_logo.png"/></div>
 				<h5 class="title">6Wheels</h5>
 				<p>
 						6Wheels is a project mixing travel, adventure and respect for the environment. We want to discover new countries, by bike, participating in eco-volunteering on the way.
 				</p>
-				<div>
-					<a href="map.html">Learn more</a>
-				</div>
-				<div>
-					<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
-						<i class="fab fa-facebook-square"style="padding-right: 0.35rem;"></i>Facebook
-					</a>
-
-					<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="color: inherit; text-decoration: inherit;">
-						<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>Instagram
-					</a>
+				<div class="learn-more">
+					<a href="map.html"><img src="img/icon_map.png" /><span>Follow our journey through our blog map!</span></a>
 				</div>
 			</div>
 			<div class="right">
-				<div class="img"><img style="height: 200px;" src="img/mossyearth_logo.png"/></div>
+				<div class="biglogo"><img src="img/mossyearth_logo.png"/></div>
 				<h5 class="title">Mossy Earth</h5>
 				<p>
 					Mossy Earth is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of rewilding and reforestation, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint.
 				</p>
-				<a href="mossyearth.html">Learn more</a>
+				<div class="learn-more">
+					<a href="mossyearth.html"><img src="img/ActWithOutPartnerTree.png" /> <span>Learn more about Mossy Earth's actions</span></a>
+				</div>
 			</div>
 		</div>
+
+		<script src="footer.js"></script>
 	</body>
 </html>
