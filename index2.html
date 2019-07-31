@@ -7,12 +7,15 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
-		<script src="script.js"></script>
+        <script src="script.js"></script>
+        
+
         <title>6Wheels</title>
         <style>
             
@@ -101,7 +104,7 @@
             </div>
         </div>
         <div id="about-this-website2" class="full-height-section two-50-percent">
-            <div class="left" style="background-color: white;">
+            <div class="left">
                 <h4 class="title">About this website</h4>
                 <p>
                     Something along the lines "we traveled before, but this time it's even cooler
@@ -121,8 +124,17 @@
                 <p>Well we are peole also. Think like... the three musketeers. Los tres hermanos. Les trois branleurs.</p>
                 <a href="aboutus.html">Learn more about our faggot ways here!</a>
             </div>
-            <div class="right bgimg-4">
-
+            <div class="right">
+                <div class="personal-gallery" >
+                    <div class="gallery-portrait img-dave-01"></div>
+                    <div class="gallery-thumbnails">
+                        <div class="gallery-thumb img-dave-01"></div>
+                        <div class="gallery-thumb img-dave-02"></div>
+                        <div class="gallery-thumb img-dave-03"></div>
+                        <div class="gallery-thumb img-dave-04"></div>
+                        <div class="gallery-thumb img-dave-05"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="full-height-section bgimg-3">
@@ -168,6 +180,18 @@
                 }
                 prevScrollpos = currentScrollPos;
             }
-		</script>
+
+            $(document).ready(function() {
+                $('.gallery-thumb').click(function() {
+                    var str_classes = $(this).attr("class").replace('gallery-thumb', 'gallery-portrait');
+
+                    var $holder = $(this).closest('.personal-gallery').find('.gallery-portrait');
+
+                    $holder.attr('class', str_classes);
+
+                    // console.log(holder);
+                });
+            });
+        </script>
 	</body>
 </html>
