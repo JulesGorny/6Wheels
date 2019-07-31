@@ -7,15 +7,61 @@
 	zoom: 1.0 ;
 }
 
-html {
-    font-size: 20px;
-} 
-
-body { 
-	padding-top: 65px; 
-	padding-bottom: 50px;
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
 }
 
+.full-height-section {
+	min-height: 100%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.bgimg-1 p {
+	font-size:25pt;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+.bgimg-1 {
+	background-image: url("../img/banner.jpg");
+	
+}
+
+.bgimg-2 {
+	background-image: url("https://i.imgur.com/jFtaDGc.jpg");
+}
+
+.bgimg-3 {
+	background-image: url("https://i.imgur.com/WlUyzIU.jpg");
+}
+
+.bgimg-4 {
+	background-position-x: right;
+	background-size: contain;
+	background-image: url("https://i.imgur.com/lTEfzPh.jpg");
+}
+
+
+.caption {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	width: auto;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size:20pt;
+}
 
 .mossyfied {
 	color: green;
@@ -110,59 +156,67 @@ a {
 }
 .seperator {
 	width:30%;
-	height: 6px;
-	background-color: black;
+	height: 3px;
+	background-color: rgb(0, 200, 120);
 	margin: 30px auto 30px auto;
 }
 
 @media only screen and (min-width: 601px) {
-	#index-presentation {
+
+
+	.two-50-percent {
 		display: flex;
 		width: 100%;
 		margin: 0;
 	}
-	#index-presentation > div {
+	.two-50-percent > div {
 		flex:1;
 		padding-left : 40px;
 		padding-right : 40px;
 		position: relative;
-		padding-bottom: 100px;
+		padding-bottom: 130px;
+	}
+
+	#index-presentation {
+		margin-bottom: 30px;
 	}
 
 	#index-presentation > div > .learn-more {
         position: absolute;
 		bottom: 0;
-		
+		left:0;
+		width: 100%;
+		margin-top:50px;
+	}
+
+
+
+	#index-presentation > div > .learn-more img {
+		position: relative;
+		height: 100px;
+		margin: auto;
+		display: block;
+		margin-bottom: 30px;
 	}
 
 	#index-presentation > div > .learn-more a {
-		display: table;
-	}
-
-	#index-presentation > div > .learn-more a > img {
-		height: 100px;
-		display: table-cell;
-	}
-
-	#index-presentation > div > .learn-more a > span {
-		display: table-cell;
-		padding-left:20px;
+		position: relative;
+		display: block;
+		text-align: center;
 	}
 }
+
+
 @media only screen and (max-width: 600px) {
-	#index-presentation {
+	.two-50-percent {
 		display: block;
 		margin: 0;
 	}
-	#index-presentation > div {
+	.two-50-percent > div {
 		padding-left : 20px;
 		padding-right : 20px;
 		margin-top : 60px;
 	}
-	
-	#index-presentation > div p {
-        height: auto !important;
-	} 
 	
 	#index-presentation > div > .learn-more a {
 		display: flex;
@@ -185,12 +239,20 @@ a {
 }
 
 #index-presentation > div .biglogo img {
-	height:200px;
+	height:170px;
 }
 
-#index-presentation > div  .title {
+
+.title {
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
 	text-align: center;
-	margin-bottom: 30px;
+	color:rgb(0, 200, 120);
+}
+
+h4, h5 {
 	font-weight: bold;
+	text-align: center;
+	color:rgb(0, 200, 120);
 }
 

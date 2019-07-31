@@ -49,7 +49,7 @@
 			</span>
 		</div>
 		<div class="seperator"></div>
-		<div id="index-presentation">
+		<div id="index-presentation" class="two-50-percent">
 			<div class="left">
 				<div class="biglogo"><img src="img/6Wheels_logo.png"/></div>
 				<h5 class="title">6Wheels</h5>
@@ -67,11 +67,49 @@
 					Mossy Earth is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of rewilding and reforestation, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint.
 				</p>
 				<div class="learn-more">
-					<a href="mossyearth.html"><img src="img/ActWithOutPartnerTree.png" /> <span>Learn more about Mossy Earth's actions</span></a>
+					<a href="mossyearth.html"><img src="img/ActWithOutPartnerTree.png" /> 
+						<span >Learn more about Mossy Earth's actions</span>
+					</a>
 				</div>
+			</div>
+		</div>
+		<div class="seperator"></div>
+		<div id="about-this-website" class="two-50-percent">
+			<div class="left">
+				<img class="rounded d-block" style="width:100%;" src="https://i.imgur.com/ruX7Qcb.jpg" />
+			</div>
+			<div class="right">
+				<h4 class="title">About this website</h4>
+				<p>
+					Something along the lines "we traveled before, but this time it's even cooler
+					and we kinda we want to share our day to day adventure". 
+				</p>
+				<p>
+					Also we travel with bikes cos my friends keep saying I don't follow my convictions
+					by taking the plane so often, but fuck them, 
+					there is only so many days off I can take.
+				</p>
+				
+				<h5>A visual journey</h5>
+				<p>Although no photographs ourselves, we think this project might please both adventure and photograph enthusiasts</p>
+				<p>Think of it as a blog but cooler. It has a map and a real CSS for Christ's sake!</p>
 			</div>
 		</div>
 
 		<script src="footer.js"></script>
+		<script>
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+					var currentScrollPos = window.pageYOffset;
+					if (prevScrollpos > currentScrollPos) {
+						document.getElementById("navbar").style.top = "0";
+					} else {
+						console.log("prout");
+						console.log(document.getElementById("navbar"));
+						document.getElementById("navbar").style.top = "-100px";
+					}
+					prevScrollpos = currentScrollPos;
+				}
+		</script>
 	</body>
 </html>
