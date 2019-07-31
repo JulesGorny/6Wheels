@@ -1,12 +1,66 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 
-html {
-    font-size: 20px;
-} 
 
-body { 
-    padding-top: 65px; 
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
+}
+
+.full-height-section {
+	min-height: 100%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.bgimg-1 p {
+	font-size:25pt;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+.bgimg-1 {
+	background-image: url("../img/banner.jpg");
+	
+}
+
+.bgimg-2 {
+	background-image: url("https://i.imgur.com/jFtaDGc.jpg");
+}
+
+.bgimg-3 {
+	background-image: url("https://i.imgur.com/WlUyzIU.jpg");
+}
+
+.bgimg-4 {
+	background-position-x: right;
+	background-size: contain;
+	background-image: url("https://i.imgur.com/lTEfzPh.jpg");
+}
+
+
+.caption {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	width: auto;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size:20pt;
 }
 
 .mossyfied {
@@ -21,10 +75,7 @@ body {
 	padding-bottom: 1.75rem;
 }
 
-.navbar {
-	padding-top: 0px !important;
-	padding-bottom: 0px !important;
-}
+
 
 .footer {
 	position: fixed;
@@ -36,7 +87,40 @@ body {
 	background-color: #f5f5f5;
 }
 
-/* ALEX Part */
+/*******************
+		Menu
+********************/
+
+.navbar {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	transition: top 0.5s;
+}
+
+.navbar-brand img {
+	height: 70px;
+}
+
+.navbar .last-link {
+	margin-right:2em;
+}
+
+.navbar .nav-item {
+	font-weight: 600;
+}
+
+.navbar .nav-item.flags {
+	margin-top:0.45em;
+}
+
+.navbar .nav-item.flags > input {
+	width: 35px;
+	margin: 0 5px 0 5px;
+}
+
+/*******************
+		Index
+********************/
 #main-header {
 	width: 100%;
 	margin:0;
@@ -51,17 +135,9 @@ body {
 	
 	font-weight: bold;
 	font-size: 17pt;
-	/* width: 80%; */
 	position: absolute;
-	/* top: 0; left: 0; right: 0; bottom: 0; */
 	top: 20px;
 	left: 30px;
-	/* transform: translate(-50%, -50%); */
-	/* display: flex; */
-	/* flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: justify; */
 }
 #links {
 	margin-top: 20px;
@@ -70,35 +146,113 @@ body {
 #links > span {
 	margin-right: 15px;
 }
+
+a {
+	color:black !important;
+}
+
 #links > span > i {
 	margin-right:10px;
 }
 .seperator {
 	width:30%;
-	height: 6px;
-	background-color: black;
+	height: 3px;
+	background-color: rgb(0, 200, 120);
 	margin: 30px auto 30px auto;
 }
 
-#index-presentation {
-	display: flex;
-	width: 100%;
-	margin: 0;
+@media only screen and (min-width: 601px) {
+
+
+	.two-50-percent {
+		display: flex;
+		width: 100%;
+		margin: 0;
+	}
+	.two-50-percent > div {
+		flex:1;
+		padding-left : 40px;
+		padding-right : 40px;
+		position: relative;
+		padding-bottom: 130px;
+	}
+
+	#index-presentation {
+		margin-bottom: 30px;
+	}
+
+	#index-presentation > div > .learn-more {
+        position: absolute;
+		bottom: 0;
+		left:0;
+		width: 100%;
+		margin-top:50px;
+	}
+
+
+
+	#index-presentation > div > .learn-more img {
+		position: relative;
+		height: 100px;
+		margin: auto;
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	#index-presentation > div > .learn-more a {
+		position: relative;
+		display: block;
+		text-align: center;
+	}
 }
 
-#index-presentation > div {
-	width: 50%;
-	padding-left : 40px;
-	padding-right : 40px;
+
+@media only screen and (max-width: 600px) {
+	.two-50-percent {
+		display: block;
+		margin: 0;
+	}
+	.two-50-percent > div {
+		padding-left : 20px;
+		padding-right : 20px;
+		margin-top : 60px;
+	}
+	
+	#index-presentation > div > .learn-more a {
+		display: flex;
+	}
+
+	#index-presentation > div > .learn-more a > img {
+		height: 70px;
+	}
+
+	#index-presentation > div > .learn-more a > span {
+		padding-left:10px;
+	}
 }
 
-#index-presentation > div > .img {
+
+#index-presentation > div .biglogo {
 	width:100%;
 	text-align: center;
 	margin-bottom: 30px;
 }
 
-#index-presentation > div > .title {
-	text-align: center;
-	margin-bottom: 30px;
+#index-presentation > div .biglogo img {
+	height:170px;
 }
+
+
+.title {
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+	text-align: center;
+	color:rgb(0, 200, 120);
+}
+
+h4, h5 {
+	font-weight: bold;
+	text-align: center;
+	color:rgb(0, 200, 120);
+}
+
