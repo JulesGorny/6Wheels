@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="css/style.css" />
+		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -13,46 +14,70 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
 		<script src="script.js"></script>
+		
+		<script src="plugin/fullPage/fullpage.min.js"></script>
+		<link rel="stylesheet" href="plugin/fullPage/fullpage.min.css" />
+		
 		<title>6Wheels</title>
 	</head>
 	
-	<body id="about-us">
+	<body>
 		<!-- TOP MENU -->
 		<script src="nav.js"></script>
 		<!-- PAGE CONTENT -->
-		<h4 class="title" id="about-us-title"></h4>
-		<p id="about-us_header_01" class="big-padding header-text"></p>
 
-		<!-- JULES -->
-		<div class="about-us-section jules full-height-section two-50-percent" >
-			<div class="text">
-				<h4 class="title" style="color:white;">Jules</h4>
-				<p id="about-us_jules_01"></p>
-			</div>
-			<div class="portrait">
-			</div>
-		</div>
 
-		<!-- DAVID -->
-		<div class="about-us-section david full-height-section two-50-percent"  >
-			<div class="portrait">
+		<div id="fullpage">
+			<div class="section about-us-section header">
+				<div class="text">
+					<h4 class="title" id="about-us-title"></h4>
+					<p id="about-us_header_01" class="big-padding header-text"></p>
+				</div>
 			</div>
-			<div class="text">
-				<h4 class="title" style="color:white;">David</h4>
-				<p id="about-us_david_01"></p>
+			<!-- JULES -->
+			<div class="section about-us-section jules full-height-section two-50-percent" >
+				<div class="text">
+					<h4 class="title" style="color:white;">Jules</h4>
+					<p id="about-us_jules_01"></p>
+				</div>
 			</div>
-		</div>
 
-		<!-- ANATOLE -->
-		<div class="about-us-section anatole full-height-section two-50-percent"  >
-			<div class="text">
-				<h4 class="title">Anatole</h4>
-				<p id="about-us_anatole_01"></p>
+			<!-- DAVID -->
+			<div class="section about-us-section david full-height-section two-50-percent"  >
+				<div class="text">
+					<h4 class="title" style="color:white;">David</h4>
+					<p id="about-us_david_01"></p>
+				</div>
 			</div>
-			<div class="portrait">
+
+			<!-- ANATOLE -->
+			<div class="section about-us-section anatole full-height-section two-50-percent"  >
+				<div class="text">
+					<h4 class="title">Anatole</h4>
+					<p id="about-us_anatole_01"></p>
+				</div>
+				<div class="portrait">
+				</div>
 			</div>
-		</div>
-	
+		
 		<!-- <script src="footer.js"></script>		 -->
+		</div>
+		<script>
+			$(document).ready(function() {
+				new fullpage('#fullpage', {
+					navigation: true,
+					responsiveWidth: 700,
+					anchors: ['about-us', 'jules', 'david', 'anatole'],
+					parallax: true,
+
+					//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+					css3:false,
+					onLeave: function(origin, destination, direction){
+						console.log("Leaving section" + origin.index);
+					},
+				});
+			});
+
+		</script>
 	</body>	
 </html>
