@@ -1,0 +1,26 @@
+#about-us {
+	padding-top: 4em;
+}
+
+.big-padding {
+	padding: 0em 2em 0em 2em;
+}
+
+.about-us-section > .text {
+    text-align: justify;
+    padding: 0 2em 0 2em;
+    font-size: 10pt;
+}
+
+.about-us-section > .portrait{
+	width: 40%;
+}
+
+.about-us-section > .portrait > img {
+	max-width: 100%;
+}
+
+.header-text {
+	text-align: justify; 
+	padding-top: 2rem;
+}

@@ -70,31 +70,21 @@ function translateTo (lang) {
 
 function loadContentText (lang) {
 	// Get json file which contains all texts and translations
-	
+
 	$.ajax({
 		type: 'GET',
-		url: 'https://raw.githubusercontent.com/JulesGorny/JulesGorny.github.io/master/content-text.json',
+		url: 'content-text.json',
 		dataType: 'json',
 		success: function(json) {
-		  // Set the text where it belongs
-		  $("#mossy_title_1").html(json.mossy_title_1[lang]);
-		  $("#mossy_text_1").html(json.mossy_text_1[lang]);
-		  
-		  $("#mossy_title_2").html(json.mossy_title_2[lang]);
-		  $("#mossy_text_2").html(json.mossy_text_2[lang]);
-
-		  $("#mossy_title_3").html(json.mossy_title_3[lang]);
-		  $("#mossy_text_3").html(json.mossy_text_3[lang]);
-		  $("#mossy_text_4").html(json.mossy_text_4[lang]);
-		  $("#mossy_text_5").html(json.mossy_text_5[lang]);
-		  $("#mossy_text_6").html(json.mossy_text_6[lang]);
-		  
-		  $("#mossy_title_4").html(json.mossy_title_4[lang]);
-		  $("#mossy_text_7").html(json.mossy_text_7[lang]);
+			// Set the text where it belongs
+			// (any element with given ID)
+			Object.keys(json).forEach((key) => {
+				$("#" + key ).html(json[key][lang]);
+			});
 		},
 		error: function(err) {
 			console.log('error', err);
 		}
-  });
+	});
  
 }

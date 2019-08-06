@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url(style-about-us.css);
 
 
 @viewport {
@@ -171,8 +172,6 @@ a {
 	}
 	.two-50-percent > div {
 		flex:1;
-		padding-left : 40px;
-		padding-right : 40px;
 		position: relative;
 		padding-bottom: 130px;
 	}
@@ -307,4 +306,5 @@ h4, h5 {
 .img-dave-05 {
 	background-image: url(https://scontent-cdt1-1.cdninstagram.com/vp/a2fdb4238ec0f1a9292278677746fbe3/5DE26584/t51.2885-15/e35/10954849_439304932933297_355503853_n.jpg?_nc_ht=scontent-cdt1-1.cdninstagram.com);
 }
+
 
