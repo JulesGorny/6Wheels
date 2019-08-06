@@ -25,9 +25,8 @@
 	padding-top: 2rem;
 }
 
-
-.about-us-section.jules {
-	background-image:url(../img/Profiles/JulesProfile.jpg);
+.about-us-section.header {
+	background-image:url(../img/lake_mirror_effect_2.jpg);
 	color:white;
 	background-size: cover;
 	background-position: right;
@@ -35,6 +34,45 @@
 	position: relative;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+
+.about-us-section.header .text {
+	font-size:20pt;
+	width:auto;
+	margin:0;
+	padding-bottom: 100px;
+	font-style:normal;
+}
+
+.about-us-section.header .title {
+	margin-bottom: 0.5em;
+	color:black;
+}
+
+.about-us-section .title {
+	font-size:25pt;
+}
+
+.about-us-section .text {
+	width: 40%;
+	padding: 0 0 0 30px;
+	font-size:20pt;
+	font-style: italic;
+}
+
+.about-us-section.jules {
+	background-image:url(../img/Profiles/Jules.jpg);
+	color:white;
+	background-size: cover;
+	background-position: right;
+
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.about-us-section.jules .text {
+	float:left;
 }
 
 .about-us-section.anatole {
@@ -48,8 +86,13 @@
 	background-repeat: no-repeat;
 }
 
+.about-us-section.anatole .text {
+	float:left;
+}
+
+
 .about-us-section.david {
-	background-image:url(https://lh3.googleusercontent.com/hpUNNcD348SZBhuaHRssOcTZcCofSwh4mIr9omTih_tdrePf7AfIt16YN_gaTeGf-cRTA3ZY8ctfC5uUC5SjmOOLE5hXcdoxdCJIo9UX8_muBEXtcuN0gRhQNZYt3aVmaEkw8_h-FQv_nXDgTykqqVxKc9d6ZK2BYFv_BPsuatKQDlawyqAAQMHXx4BWV5wHKuKCO9nw4Z4McmBgAbtB4PtwtcKSGMAvu9JOneuHJabmcefvfItp8X_AKmQKyfSzVDxAile1G6sTjywPsfXKr0ZQeCq-JfYN9GeqAAj1gzFdMEzBc4TbJN4pxUKF7dxgznQZCVdKuZOmWnZTJvrBUwXlLgJPB619SW1YUmGbArIY-Nd1_TtfzmeO-zVEPBAIIQSZhpW46SQ-zyMyQoyLnU0J5_C_zhjAEAcoStPDO0D78aI-8YYP4OvgVVJVNzvfHLDwBhLdh0R2deovRfJ8mK_daHuLhzVdZ_6E1HO1b7rO2Qcs2DFZpjCTx3gpmWoHcELfYck6pjaHOEq7ATfn-idJ-fsC51nxzA768I71X7imADytEssj0wvdrgs2AFL-UBigwlOJPs5M1YO1YbTxMxe4UQwi0-2kBRt11gewUmB4ZAgioXuaPff8d7BD-Fed7Rd-hCg1PUAfQsBlplVzfxOYCG7-ElzWAaNCdE07oj8ViYyuEHZgHxo81rQXf9-lTv83Om46G3jSJvnr_DRD5tIssQ=w729-h486-no);
+	background-image:url(../img/Profiles/David.jpg);
 	background-size:cover;
 	color:white;
 	background-position: bottom;
@@ -57,4 +100,8 @@
 	position: relative;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+
+.about-us-section.david .text {
+	float:right;
 }
