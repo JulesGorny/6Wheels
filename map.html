@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="plugin/slide-in-panel-master/css/style.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -13,6 +14,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
 		<script src="script.js"></script>
+		<script src="map.js"></script>
+		<script src="plugin/slide-in-panel-master/js/main.js"></script>
 		<title>TreepOnWheels</title>
 		
 		<!-- Custom css only for fullscreen map display -->
@@ -34,7 +37,19 @@
 		
 		<!-- PAGE CONTENT -->
 		<div id="mapid"></div>
-		<span id="spantextid"></span>
+		 
+		<!-- Slide panel -->
+		<div class="cd-panel cd-panel--from-right js-cd-panel-main" style="z-index: 999">
+			<header class="cd-panel__header">
+				<h1>Title Goes Here</h1>
+				<a href="#0" class="cd-panel__close js-cd-close">Close</a>
+			</header>
+			<div class="cd-panel__container">
+				<div class="cd-panel__content">
+					Texte et photos associés à un post
+				</div>
+			</div>
+		</div>
 
 		<script src="footer.js"></script>
 	</body>
