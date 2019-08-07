@@ -8,10 +8,16 @@
 	zoom: 1.0 ;
 }
 
+@font-face {
+	font-family: AvenirLTStd;
+	src: url(font/AvenirLTStd-Light.otf);	
+}
+
+
 body, html {
 	height: 100%;
 	margin: 0;
-	font: 400 15px/1.8 "Lato", sans-serif;
+	font: 400 15px/1.8 "AvenirLTStd", sans-serif !important;
 	color: #777;
 }
 
