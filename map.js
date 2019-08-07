@@ -1,9 +1,9 @@
 $( document ).ready(function() {
     if ($("#mapid").length) {
         var mymap = L.map('mapid').setView([45.815010, 15.981919], 5);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-            maxZoom: 18,
+            maxZoom: 20,
             id: 'mapbox.streets',
             accessToken: 'token.to.enter'
         }).addTo(mymap);
