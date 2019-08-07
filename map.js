@@ -32,10 +32,11 @@ $( document ).ready(function() {
 });
 
 function onMarker1Click(e) {
-    // open("https://imgur.com/gallery/JzDOBP3","_blank")
-    if(!$(".cd-panel").hasClass("cd-panel--is-visible")) {
-        $(".cd-panel").addClass("cd-panel--is-visible")
-    }
+    $(".cd-panel").addClass("cd-panel--is-visible")
+}
+
+function closeSlidePanel(e) {
+    $(".cd-panel").removeClass("cd-panel--is-visible")
 }
 
 var tentIcon = L.icon({
