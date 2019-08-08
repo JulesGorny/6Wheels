@@ -151,7 +151,7 @@ Slide In Panel - by CodyHouse.co
 
 @media only screen and (min-width: 1170px) {
   .cd-panel__header {
-    width: 50%;
+    width: 75%;
   }
 }
 
@@ -312,7 +312,7 @@ Slide In Panel - by CodyHouse.co
 
 @media only screen and (min-width: 1170px) {
   .cd-panel__container {
-    width: 50%;
+    width: 75%;
   }
 }
 
