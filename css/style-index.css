@@ -2,9 +2,11 @@
 #index-presentation > div > .indexPresentation {
 	vertical-align:top;
 	height: 80%;
+	horizontal-align:center;
 }
 
 #index-presentation > div > .indexLearnMore {
 	vertical-align:bottom;
+	horizontal-align:center;
 	height: 20%;
 }
