@@ -21,7 +21,8 @@
 }
 
 .header-text {
-	text-align: justify; 
+	text-align: right; 
+	vertical-align:bottom;
 	padding-top: 2rem;
 }
 
