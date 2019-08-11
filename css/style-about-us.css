@@ -26,7 +26,7 @@
 }
 
 .about-us-section.header {
-	background-image:url(../img/lake_mirror_effect_2.jpg);
+	background-image:url(../img/AboutUs/Common.jpg);
 	color:white;
 	background-size: cover;
 	background-position: right;
@@ -61,7 +61,7 @@
 }
 
 .about-us-section.jules {
-	background-image:url(../img/Profiles/Jules.jpg);
+	background-image:url(../img/AboutUs/Jules.jpg);
 	color:white;
 	background-size: cover;
 	background-position: right;
@@ -76,7 +76,7 @@
 }
 
 .about-us-section.anatole {
-	background-image:url(../img/Profiles/Anatole.jpg);
+	background-image:url(../img/AboutUs/Anatole.jpg);
 	background-size:cover;
 	color:white;
 	background-position: right;
@@ -92,7 +92,7 @@
 
 
 .about-us-section.david {
-	background-image:url(../img/Profiles/David.jpg);
+	background-image:url(../img/AboutUs/David.jpg);
 	background-size:cover;
 	color:white;
 	background-position: bottom;
