@@ -192,34 +192,9 @@ a {
 	.two-50-percent > div {
 		flex:1;
 		position: relative;
-		padding-bottom: 130px;
 	}
 
-	#index-presentation {
-		margin-bottom: 30px;
-	}
-
-	#index-presentation > div > .learn-more {
-        position: absolute;
-		bottom: 0;
-		left:0;
-		width: 100%;
-		margin-top:50px;
-	}
-
-	#index-presentation > div > .learn-more img {
-		position: relative;
-		height: 100px;
-		margin: auto;
-		display: block;
-		margin-bottom: 30px;
-	}
-
-	#index-presentation > div > .learn-more a {
-		position: relative;
-		display: block;
-		text-align: center;
-	}
+	
 }
 
 
@@ -233,34 +208,13 @@ a {
 		padding-right : 20px;
 		margin-top : 60px;
 	}
-	
-	#index-presentation > div > .learn-more a {
-		display: flex;
-	}
 
-	#index-presentation > div > .learn-more a > img {
-		height: 70px;
-	}
-
-	#index-presentation > div > .learn-more a > span {
-		padding-left:10px;
-	}
 }
 
-
-#index-presentation > div .biglogo {
-	width:100%;
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-#index-presentation > div .biglogo img {
-	height:170px;
-}
 
 .title {
-	margin-bottom: 1.5em;
-	margin-top: 1.5em;
+	margin-bottom: 1em;
+	margin-top: 1em;
 	text-align: center;
 	color:rgb(0, 200, 120);
 }
