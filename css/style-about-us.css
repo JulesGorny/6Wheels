@@ -17,7 +17,6 @@
 .header-text {
 	text-align: justify; 
 	vertical-align:bottom;
-	padding-top: 2rem;
 }
 
 .about-us-section.header {
@@ -32,7 +31,7 @@
 }
 
 .about-us-section.header .text {
-	font-size:20pt;
+	font-size:16pt;
 	width:auto;
 	margin:0;
 	font-style:normal;
@@ -50,7 +49,7 @@
 .about-us-section .text {
 	width: 40%;
 	padding: 0 0 0 30px;
-	font-size:20pt;
+	font-size:16pt;
 	font-style: italic;
 }
 
@@ -67,6 +66,7 @@
 
 .about-us-section.jules .text {
 	float:left;
+	vertical-align:top;
 }
 
 .about-us-section.anatole {
