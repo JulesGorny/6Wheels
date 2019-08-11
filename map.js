@@ -25,7 +25,6 @@ function closeSlidePanel(i) {
     $(".js-cd-panel-" + i).removeClass("cd-panel--is-visible")
 }
 
-
 function createSlidePanel(index, title, photos_count, text) {
     var html = "";
 
@@ -37,6 +36,11 @@ function createSlidePanel(index, title, photos_count, text) {
     html += "<div class=\"cd-panel__container\">";
     html += "<div class=\"cd-panel__content\">";
     html += text;
+
+    // Images
+    var imgPath = "posts/" + title + "/0.png"; 
+    html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\"><img src=\"" + imgPath + "\"></a>"
+
     html += "</div>";
     html += "</div>";
     html += "</div>";
@@ -64,11 +68,15 @@ function readPosts(map) {
                         console.log(json.lat);
                         console.log(json.long);
                         // With the post content, we create a new slide panel
+                        // Check the title lenght
+                        if (post.length > 45) {
+                            post = post .substring(0, 45) + "..."
+                        }
                         var postElement = createSlidePanel(index, post, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
 
                         // and we associate it with a marker on the map
-                        var marker = L.marker([json.lat, json.lat]).addTo(map);
+                        var marker = L.marker([parseFloat(json.lat), parseFloat(json.long)]).addTo(map);
                         $(marker).bind('click', {id: index}, onMarkerClick);
                     },
                     error: function(err) {
