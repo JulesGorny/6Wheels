@@ -1,4 +1,7 @@
 {
+
+
+
   "mossy_title_1" : {
 	"fr" : "Pourquoi nous aimons Mossy Earth ?",
 	"en" : "Why do we like Mossy Earth ?"
@@ -11,7 +14,7 @@
 	"fr" : "A propos de Mossy Earth",
 	"en" : "About Mossy Earth"
   },
-  "mossy_text_2" : {
+  "mossy_generalDescription" : {
 	"fr" : "<span class='mossyfied'>Mossy Earth</span> est une entreprise sociale qui a pour mission de restaurer de véritables régions sauvages en Europe. À travers ce cadre de <span class='mossyfied'>réensauvagement</span> et de <span class='mossyfied'>reboisement</span>, nous offrons aux particuliers, aux écoles et aux entreprises la possibilité de planter des forêts et de restaurer des écosystèmes clés tout en réduisant leur empreinte carbone.",
 	"en" : "<span class='mossyfied'>Mossy Earth</span> is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of <span class='mossyfied'>rewilding</span> and <span class='mossyfied'>reforestation</span>, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint."
   },
@@ -43,33 +46,30 @@
 	"fr" : "<li>Nous ne plantons que des espèces d'arbres natifs. Pas de plantes envahissantes ni de monocultures. Nos arbres sont plantés dans un contexte de réensauvagement plus large, dans des zones protégées, pour que vos arbres restent sauvages pour toujours!</li><li>Nous nous engageons à remplacer les arbres perdus au cours des 3 premières années.</li><li>Nous plantons 30% d'arbres supplémentaires dans l'ensemble de nos projets pour nous assurer de notre impact en tant que groupe et pour s'assurer d'éventuels écarts dans le calcul d'impact carbone.</li>",
 	"en" : "<li>We only plant native species of trees. No invasives nor monocultures. Our trees are planted in a wider rewilding context, in protected areas, to ensure your trees stay wild forever!</li><li>We commit to replacing any trees lost within the first 3 years.</li><li>We plant an additional 30% across all our projects to ensure we meet our impact as a group and as an insurance against any carbon calculation discrepancies.</li>"
   },
+  
+  
+  
 
   "about-us-title" : {
     "fr" : "Mieux nous connaître",
     "en" : "About us"
   },
-
   "about-us_header_01" : {
 	"fr" : "TODO",
 	"en" : "We’ve always loved travelling, trekking on majestic mountains, diving in colorful coral reefs, biking through hot and empty countrysides, struggling through dense rainforests. But as we travelled, we quickly came to realise that no matter where you are, the human civilisation is never far. And with human civilisation comes the destruction of all the natural wonders we love.  "
   },
-
-
   "about-us_header_02" : {
 	"fr" : "TODO",
 	"en" : "We’ve always loved travelling, trekking on majestic mountains, diving in colorful coral reefs, biking through hot and empty countrysides, struggling through dense rainforests. But as we travelled, we quickly came to realise that no matter where you are, the human civilisation is never far. And with human civilisation comes the destruction of all the natural wonders we love.  "
   },
-
   "about-us_jules_01" : {
 	"fr" : "6Wheel est une opportunité de satisfaire mon amour du voyage et du partage de mes aventures, et d'agir pour l'environnement, répondant ainsi à ma préoccupation croissante pour l'avenir de notre planète.",
 	"en" : "6Wheel is a project meant to fulfill my love for travelling and sharing my adventures, and act for the environment, addressing a growing concern I have for the environmental future of our planet."
-  },
-  
+  },  
   "about-us_anatole_01" : {
 	"fr" : "TODO",
   "en" : "6Wheels is a form of freedom. It's a way to take time on the way while travelling, It's an adventure that will give me the opportunity to live unforgettable moments. I want to explore new places; take time to contemplate what nature still has to show us before it’s too late. I want to witness more cultures and their traditions; discover everything that makes this planet so wonderful..."
   },
-
   "about-us_david_01" : {
 	"fr" : "TODO",
   "en" : "PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS PENIS"
