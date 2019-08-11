@@ -42,10 +42,6 @@
 	color:black;
 }
 
-.about-us-section .title {
-	font-size:25pt;
-}
-
 .about-us-section .text {
 	width: 40%;
 	padding: 0 0 0 30px;
@@ -64,9 +60,18 @@
 	background-repeat: no-repeat;
 }
 
+.about-us-section.jules .title {
+	font-size:20pt;
+	position:absolute;
+	top:150px;
+	left:10px;
+}
+
 .about-us-section.jules .text {
-	float:left;
-	vertical-align:top;
+	position:absolute;
+	top:150px;
+	left:10px;
+	width:60%;
 }
 
 .about-us-section.anatole {
