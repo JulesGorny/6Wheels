@@ -13,6 +13,10 @@
 	src: url(font/AvenirLTStd-Light.otf);	
 }
 
+.index-content-margin {
+	margin-left: 3em;
+	margin-right: 3em;
+}
 
 body, html {
 	height: 100%;
@@ -39,8 +43,7 @@ body, html {
 	margin-top: 2em;
 }
 .bgimg-1 {
-	background-image: url("../img/banner.jpg");
-	
+	background-image: url("../img/Index/banner.jpg");	
 }
 
 .bgimg-2 {
@@ -56,7 +59,6 @@ body, html {
 	background-size: contain;
 	background-image: url("https://i.imgur.com/lTEfzPh.jpg");
 }
-
 
 .caption {
 	position: absolute;
@@ -81,8 +83,6 @@ body, html {
 	padding-top: 3rem;
 	padding-bottom: 1.75rem;
 }
-
-
 
 .footer {
 	position: fixed;
@@ -155,10 +155,12 @@ body, html {
 	top: 20px;
 	left: 30px;
 }
+
 #links {
 	margin-top: 20px;
 	text-align: center;
 }
+
 #links > span {
 	margin-right: 15px;
 }
@@ -170,6 +172,7 @@ a {
 #links > span > i {
 	margin-right:10px;
 }
+
 .seperator {
 	width:30%;
 	height: 3px;
@@ -202,8 +205,6 @@ a {
 		width: 100%;
 		margin-top:50px;
 	}
-
-
 
 	#index-presentation > div > .learn-more img {
 		position: relative;
@@ -256,7 +257,6 @@ a {
 	height:170px;
 }
 
-
 .title {
 	margin-bottom: 1.5em;
 	margin-top: 1.5em;
@@ -270,13 +270,11 @@ h4, h5 {
 	color:rgb(0, 200, 120);
 }
 
-
 .personal-gallery {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-
 
 .gallery-portrait {
 	min-width: 100%;

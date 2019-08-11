@@ -7,13 +7,19 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
-		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
-		<script src="script.js"></script>
-		<title>TreepOnWheels</title>
+		<script src="translations_script.js"></script>
+
+        <title>6Wheels</title>
+		
+        <style>            
+
+        </style>
 	</head>
 	
 	<body>	
@@ -21,95 +27,170 @@
 		<script src="nav.js"></script>
 		
 		<!-- PAGE CONTENT -->
-		<div id="main-header">
-			<img class="full-width" alt="Sunset Panorama" src="img/banner.jpg" />
-			<div>
-				<p>
-						Travel with no impact. 
-				</p>
-				<p>
-						Act for the environment.
-				</p>
-				<!-- <img style="height: 70px;opacity: 0.7;" src="img/6Wheels_logo.png"/> -->
+		<div class="full-height-section bgimg-1">
+			<div class="caption">
+                <div>
+                    <p>
+                            Travel with no impact
+                    </p>
+                    <img style="height: 150px;opacity: O.6;" src="img/6Wheels_logo.png"/>
+                    <p>
+                            Act for the environment
+                    </p>
+                </div>
 			</div>
-		</div>
-		<div id="links">
-			<p>
-				Follow our journey!
-			</p>
-			<span>
-				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
-					<i class="fab fa-facebook-square"style="padding-right: 0.35rem;"></i>Facebook
-				</a>
-			</span> 
-			<span>
-				<a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
-					<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>Instagram
-				</a>
-			</span>
-		</div>
-		<div class="seperator"></div>
-		<div id="index-presentation" class="two-50-percent">
-			<div class="left">
-				<div class="biglogo"><img src="img/6Wheels_logo.png"/></div>
-				<h5 class="title">6Wheels</h5>
-				<p>
-						6Wheels is a project mixing travel, adventure and respect for the environment. We want to discover new countries, by bike, participating in eco-volunteering on the way.
-				</p>
-				<div class="learn-more">
-					<a href="map.html"><img src="img/icon_map.png" /><span>Follow our journey through our blog map!</span></a>
-				</div>
-			</div>
-			<div class="right">
-				<div class="biglogo"><img src="img/mossyearth_logo.png"/></div>
-				<h5 class="title">Mossy Earth</h5>
-				<p>
-					Mossy Earth is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of rewilding and reforestation, we offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint.
-				</p>
-				<div class="learn-more">
-					<a href="mossyearth.html"><img src="img/ActWithOutPartnerTree.png" /> 
-						<span >Learn more about Mossy Earth's actions</span>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="seperator"></div>
-		<div id="about-this-website" class="two-50-percent">
-			<div class="left">
-				<img class="rounded d-block" style="width:100%;" src="https://i.imgur.com/ruX7Qcb.jpg" />
-			</div>
-			<div class="right">
-				<h4 class="title">About this website</h4>
-				<p>
-					Something along the lines "we traveled before, but this time it's even cooler
-					and we kinda we want to share our day to day adventure". 
-				</p>
-				<p>
-					Also we travel with bikes cos my friends keep saying I don't follow my convictions
-					by taking the plane so often, but fuck them, 
-					there is only so many days off I can take.
-				</p>
-				
-				<h5>A visual journey</h5>
-				<p>Although no photographs ourselves, we think this project might please both adventure and photograph enthusiasts</p>
-				<p>Think of it as a blog but cooler. It has a map and a real CSS for Christ's sake!</p>
-			</div>
-		</div>
+        </div>  
+        <div>
+            <h1 class="title">Who are we</h1>
+        </div>
+        <div id="index-presentation" class="full-height-section two-50-percent">
+            <div class="left index-content-margin">
+                <div class="biglogo"><img src="img/6Wheels_logo.png"/></div>
+                <h5 class="title">6Wheels</h5>
+                <p>
+                        6Wheels is a project mixing travel, adventure and respect for the environment. We want to discover new countries, by bike, participating in eco-volunteering on the way.
+                </p>
+                <div class="learn-more">
+                    <img src="img/Index/icon_map.png" style="height: 100px;"/>
+                    <a href="map.html">
+                        <span>Follow our journey through our blog map!</span>
+                    </a>
+                </div>
+            </div>
+            <div class="right index-content-margin">
+                <div class="biglogo"><img src="img/MossyEarth/mossyearth_logo.png"/></div>
+                <h5 class="title">Mossy Earth</h5>
+                <p id="mossy_generalDescription" style="text-align: justify;"></p>
+                <div class="learn-more">
+                    <img src="img/Index/ActWithOutPartnerTree.png" style="height: 100px;"/>
+                    <a href="mossyearth.html">
+                        <span >Learn more about Mossy Earth's actions</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="full-height-section bgimg-2">
+            <div class="caption" style="width: 80%;">
+                <p>Discover new landscapes with us</p>
+                <p>Just look how pretty it is!</p>
+            </div>
+        </div>
+        <div id="about-this-website" class="full-height-section two-50-percent">
+            <div class="left" style="display:contents;">
+                <img style="width:40%;" src="https://i.imgur.com/ruX7Qcb.jpg" />
+            </div>
+            <div class="right index-content-margin">
+                <h4 class="title">About this website</h4>
+                <p>
+                    Something along the lines "we traveled before, but this time it's even cooler
+                    and we kinda we want to share our day to day adventure". 
+                </p>
+                <p>
+                    Also we travel with bikes cos my friends keep saying I don't follow my convictions
+                    by taking the plane so often, but fuck them, 
+                    there is only so many days off I can take.
+                </p>
+                
+                <h4 class="title">A visual journey</h4>
+                <p>Although no photographs ourselves, we think this project might please both adventure and photograph enthusiasts</p>
+                <p>Think of it as a blog but cooler. It has a map and a real CSS for Christ's sake!</p>
+                
+                <h4 class="title">A personnal challenge</h4>
+                <p>Well we are peole also. Think like... the three musketeers. Los tres hermanos. Les trois branleurs.</p>
+                <a href="aboutus.html">Learn more about our faggot ways here!</a>
+            </div>
+        </div>
+		
+        <div id="about-this-website2" class="full-height-section two-50-percent">
+            <div class="left index-content-margin">
+                <h4 class="title">About this website</h4>
+                <p>
+                    Something along the lines "we traveled before, but this time it's even cooler
+                    and we kinda we want to share our day to day adventure". 
+                </p>
+                <p>
+                    Also we travel with bikes cos my friends keep saying I don't follow my convictions
+                    by taking the plane so often, but fuck them, 
+                    there is only so many days off I can take.
+                </p>
+                
+                <h4 class="title">A visual journey</h4>
+                <p>Although no photographs ourselves, we think this project might please both adventure and photograph enthusiasts</p>
+                <p>Think of it as a blog but cooler. It has a map and a real CSS for Christ's sake!</p>
+                
+                <h4 class="title">A personnal challenge</h4>
+                <p>Well we are peole also. Think like... the three musketeers. Los tres hermanos. Les trois branleurs.</p>
+                <a href="aboutus.html">Learn more about our faggot ways here!</a>
+            </div>
+            <div class="right">
+                <div class="personal-gallery" >
+                    <div class="gallery-portrait img-dave-01"></div>
+                    <div class="gallery-thumbnails">
+                        <div class="gallery-thumb img-dave-01"></div>
+                        <div class="gallery-thumb img-dave-02"></div>
+                        <div class="gallery-thumb img-dave-03"></div>
+                        <div class="gallery-thumb img-dave-04"></div>
+                        <div class="gallery-thumb img-dave-05"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="full-height-section bgimg-3">
+            <div class="caption" style="width: 80%;">
+                <div>
+                    <div id="links" >
+                            <span style="float:left;">
+                                <a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
+                                    <i style="color:white" class="fab fa-facebook-square"style="padding-right: 0.35rem;"></i>
+                                    <span style="color:white">Facebook</span>
+                                </a>
+                            </span> 
+                            <span style="float:right;">
+                                    <a href="https://www.instagram.com/6WheelsAdventure" target="_blank">
+                                        <i style="color:white" class="fab fa-instagram"style="padding-right: 0.35rem;"></i>
+                                        <span style="color:white">Instagram</span>
+                                    </a>
+                            </span>
+                            <p>
+                                <!-- <br /> -->
+                                Never miss an update
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-		<script src="footer.js"></script>
 		<script>
-				var prevScrollpos = window.pageYOffset;
-				window.onscroll = function() {
-					var currentScrollPos = window.pageYOffset;
-					if (prevScrollpos > currentScrollPos) {
-						document.getElementById("navbar").style.top = "0";
-					} else {
-						console.log("prout");
-						console.log(document.getElementById("navbar"));
-						document.getElementById("navbar").style.top = "-100px";
-					}
-					prevScrollpos = currentScrollPos;
-				}
-		</script>
+            var prevScrollpos = window.pageYOffset;
+            // on index only, hide menu when on top
+            document.getElementById("navbar").style.top = "-100px";
+            window.onscroll = function() {
+                if (document.body.scrollTop < 20 && document.documentElement.scrollTop < 20) {
+                    // rehide menu
+                    document.getElementById("navbar").style.top = "-100px";
+                    return;
+                }
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-100px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+
+            $(document).ready(function() {
+                $('.gallery-thumb').click(function() {
+                    var str_classes = $(this).attr("class").replace('gallery-thumb', 'gallery-portrait');
+
+                    var $holder = $(this).closest('.personal-gallery').find('.gallery-portrait');
+
+                    $holder.attr('class', str_classes);
+
+                    // console.log(holder);
+                });
+            });
+        </script>
 	</body>
 </html>
