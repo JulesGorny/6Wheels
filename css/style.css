@@ -13,6 +13,10 @@
 	src: url(font/AvenirLTStd-Light.otf);	
 }
 
+.index-content-margin {
+	margin-left: 3em;
+	margin-right: 3em;
+}
 
 body, html {
 	height: 100%;
@@ -201,8 +205,6 @@ a {
 		width: 100%;
 		margin-top:50px;
 	}
-
-
 
 	#index-presentation > div > .learn-more img {
 		position: relative;
