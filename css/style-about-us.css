@@ -6,12 +6,6 @@
 	padding: 0em 2em 0em 2em;
 }
 
-.about-us-section > .text {
-    text-align: justify;
-    padding: 0 2em 0 2em;
-    font-size: 8pt;
-}
-
 .about-us-section > .portrait{
 	width: 40%;
 }
@@ -21,7 +15,7 @@
 }
 
 .header-text {
-	text-align: right; 
+	text-align: justify; 
 	vertical-align:bottom;
 	padding-top: 2rem;
 }
@@ -41,7 +35,6 @@
 	font-size:20pt;
 	width:auto;
 	margin:0;
-	padding-bottom: 100px;
 	font-style:normal;
 }
 
