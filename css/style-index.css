@@ -1,0 +1,10 @@
+
+#index-presentation > div > .indexPresentation {
+	vertical-align:top;
+	height: 80%;
+}
+
+#index-presentation > div > .indexLearnMore {
+	vertical-align:bottom;
+	height: 20%;
+}

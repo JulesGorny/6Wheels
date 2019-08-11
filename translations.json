@@ -2,7 +2,11 @@
 	"index_MossyEarth_learnMore" : {
 		"fr" : "Apprenez en plus sur Mossy Earth",
 		"en" : "Learn more about Mossy Earth"
-	},	
+	},
+	"index_6wheels_learnMore" : {
+		"fr" : "Suivez notre voyage depuis la carte !"
+		"en" : "Follow our journey through the map!"
+	},
 
 
 
