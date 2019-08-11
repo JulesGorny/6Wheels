@@ -25,7 +25,7 @@ function loadContentText (lang) {
 
 	$.ajax({
 		type: 'GET',
-		url: 'translations.json',
+		url: 'content-text.json',
 		dataType: 'json',
 		success: function(json) {
 			// Set the text where it belongs
