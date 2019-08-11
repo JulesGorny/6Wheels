@@ -6,12 +6,6 @@
 	padding: 0em 2em 0em 2em;
 }
 
-.about-us-section > .text {
-    text-align: justify;
-    padding: 0 2em 0 2em;
-    font-size: 8pt;
-}
-
 .about-us-section > .portrait{
 	width: 40%;
 }
@@ -22,7 +16,7 @@
 
 .header-text {
 	text-align: justify; 
-	padding-top: 2rem;
+	vertical-align:bottom;
 }
 
 .about-us-section.header {
@@ -37,10 +31,9 @@
 }
 
 .about-us-section.header .text {
-	font-size:20pt;
+	font-size:16pt;
 	width:auto;
 	margin:0;
-	padding-bottom: 100px;
 	font-style:normal;
 }
 
@@ -49,14 +42,10 @@
 	color:black;
 }
 
-.about-us-section .title {
-	font-size:25pt;
-}
-
 .about-us-section .text {
 	width: 40%;
 	padding: 0 0 0 30px;
-	font-size:20pt;
+	font-size:16pt;
 	font-style: italic;
 }
 
@@ -71,8 +60,18 @@
 	background-repeat: no-repeat;
 }
 
+.about-us-section.jules .title {
+	font-size:20pt;
+	position:absolute;
+	top:150px;
+	left:10px;
+}
+
 .about-us-section.jules .text {
-	float:left;
+	position:absolute;
+	top:150px;
+	left:10px;
+	width:60%;
 }
 
 .about-us-section.anatole {
