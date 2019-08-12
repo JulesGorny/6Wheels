@@ -30,21 +30,37 @@
 	"fr" : "Un résumé de nos projets",
 	"en" : "A summary of our projects"
   },
+  "mossy_summaryTitle_1" : {
+	"fr" : "<span class='mossyfied'>Wildfire Restoration</span>",
+	"en" : "<span class='mossyfied'>Wildfire Restoration</span>"
+  },
   "mossy_text_3" : {
-	"fr" : "Le projet <span class='mossyfied'>Wildfire Restoration</span> dans la vallée du Douro, au Portugal, vise à reboiser les zones dévastées par les incendies de forêt de 2017 qui ont frappé cette belle région.",
-	"en" : "The <span class='mossyfied'>Wildfire Restoration project</span> in the Douro Valley, Portugal seeks to reforest areas devastated by the 2017 wildfires that struck this beautiful region."
+	"fr" : "Ce projet dans la vallée du Douro, au Portugal, vise à reboiser les zones dévastées par les incendies de forêt de 2017 qui ont frappé cette belle région.",
+	"en" : "This project in the Douro Valley, Portugal seeks to reforest areas devastated by the 2017 wildfires that struck this beautiful region."
+  },
+  "mossy_summaryTitle_2" : {
+	"fr" : "<span class='mossyfied'>Healing Clear Cuts</span>",
+	"en" : "<span class='mossyfied'>Healing Clear Cuts</span>"
   },
     "mossy_text_4" : {
-	"fr" : "Le projet <span class='mossyfied'>Healing Clear Cuts</span> en Roumanie vise à replanter des zones illégalement exploitées tout en protégeant les forêts anciennes existantes de l’abattage et du braconnage.",
-	"en" : "The <span class='mossyfied'>Healing Clear Cuts project</span> in Romania aims to replant areas that have been illegally logged while also protecting existing old growth forests from further logging and poaching."
+	"fr" : "Ce projet vise à replanter des zones illégalement exploitées tout en protégeant les forêts anciennes existantes de l’abattage et du braconnage en Roumanie.",
+	"en" : "This project in Romania aims to replant areas that have been illegally logged while also protecting existing old growth forests from further logging and poaching."
+  },
+  "mossy_summaryTitle_3" : {
+	"fr" : "<span class='mossyfied'>Native Oak Woodland Restoration</span>",
+	"en" : "<span class='mossyfied'>Native Oak Woodland Restoration</span>"
   },
   "mossy_text_5" : {
-	"fr" : "Le projet <span class='mossyfied'>Native Oak Woodland Restoration</span> cherche à mettre au point des pratiques de gestion durable des terres pour lutter contre la domination d'un arbuste dénommé Portuguese Broom et les incendies de forêt d’été au Portugal, en aidant la régénération des forêts de chênes indigènes.",
-	"en" : "The <span class='mossyfied'>Native Oak Woodland Restoration project</span> seeks to develop sustainable land management practices to deal with the dominant Portuguese Broom, the ravenous Portuguese summer wildfires and regenerate native oak woodlands."
+	"fr" : "Ce projet cherche à mettre au point des pratiques de gestion durable des terres pour lutter contre la domination d'un arbuste dénommé Portuguese Broom et les incendies de forêt d’été au Portugal, en aidant la régénération des forêts de chênes indigènes.",
+	"en" : "This project seeks to develop sustainable land management practices to deal with the dominant Portuguese Broom, the ravenous Portuguese summer wildfires and regenerate native oak woodlands."
+  },
+  "mossy_summaryTitle_3" : {
+	"fr" : "<span class='mossyfied'>Foraois - Reversing Ireland’s History</span>",
+	"en" : "<span class='mossyfied'>Foraois - Reversing Ireland’s History</span>"
   },
     "mossy_text_6" : {
-	"fr" : "<span class='mossyfied'>Foraois</span> - Inverser l’histoire de l’Irlande. Jadis la région la plus boisée d’Europe, où Gaël est synonyme de population forestière, nous sommes ici pour construire des forêts natives, saines et résilientes en Irlande.",
-	"en" : "<span class='mossyfied'>Foraois - Reversing Ireland’s History.</span> Once the most forested land in Europe, where Gael means forest people, we are here to build native, healthy and resilient forests in Ireland."
+	"fr" : "Jadis la région la plus boisée d’Europe, où Gaël est synonyme de population forestière, nous sommes ici pour construire des forêts natives, saines et résilientes en Irlande.",
+	"en" : "Once the most forested land in Europe, where Gael means forest people, we are here to build native, healthy and resilient forests in Ireland."
   },
   "mossy_title_4" : {
 	"fr" : "La promesse de Mossy Earth",
