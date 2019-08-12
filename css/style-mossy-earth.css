@@ -11,3 +11,9 @@
 	padding-top: 3rem;
 	padding-bottom: 1.75rem;
 }
+
+.mossy-normal-text {
+	font:25px;
+	padding:4rem;
+	text-align: justify;
+}
