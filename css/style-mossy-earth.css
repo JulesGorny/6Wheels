@@ -13,7 +13,8 @@
 }
 
 .mossy-normal-text {
-	font:25px;
-	padding:4rem;
+	font-size:25px;
+	padding-right:6rem;
+	padding-right:4rem;
 	text-align: justify;
 }
