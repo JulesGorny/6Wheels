@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
 @import url(style-about-us.css);
 @import url(style-index.css);
+@import url(style-mossy-earth.css);
 
 
 @viewport {
@@ -71,18 +72,6 @@ body, html {
 	color: white;
 	font-weight: bold;
 	font-size:20pt;
-}
-
-.mossyfied {
-	color: green;
-	font-weight: bold;
-}
-
-.mossytitle {
-	color: green;
-	text-align: center;
-	padding-top: 3rem;
-	padding-bottom: 1.75rem;
 }
 
 .footer {

@@ -14,6 +14,10 @@
 		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
 		<script src="translations_script.js"></script>
 		
+		<script src="plugin/fullPage/fullpage.min.js"></script>
+		
+		<link rel="stylesheet" href="plugin/fullPage/fullpage.min.css" />
+		
 		<title>6Wheels</title>
 	</head>
 	
@@ -23,82 +27,103 @@
 		<script src="nav.js"></script>
 	
 		<!-- PAGE CONTENT -->
-		<div class="container">
+		<div id="fullpage">
 		
-			<h4 id="mossy_title_1" class="mossytitle"></h4>
-			<p id="mossy_text_1" style="text-align: justify;"></p>
+			<div class="section header">
+				<h4 id="mossy_title_1" class="mossytitle"></h4>
+				<p id="mossy_text_1" style="text-align: justify;"></p>
+			</div>
 		
-			<h4 id="mossy_title_2" class="mossytitle"></h4>
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<img style="height:300px;" src="img/MossyEarth/mossy1.jpg" class="rounded mx-auto d-block"/>
-				</div>
-				<div class="col-lg-6">
-					<p id="mossy_generalDescription" style="text-align: justify;"></p>
-				</div>
-			</div>
-			
-			<h4 id="mossy_title_3" class="mossytitle"></h4>
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<img style="height:300px;" src="img/MossyEarth/mossy2.jpg" class="rounded mx-auto d-block"/>
-				</div>
-				<div class="col-lg-6">
-					<p id="mossy_text_3" style="text-align: justify;"></p>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<p id="mossy_text_4" style="text-align: justify;"></p>
-				</div>
-				<div class="col-lg-6">
-					<img style="height:300px;" src="img/MossyEarth/mossy3.jpg" class="rounded mx-auto d-block"/>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<img style="height:300px;" src="img/MossyEarth/mossy4.jpg" class="rounded mx-auto d-block"/>
-				</div>
-				<div class="col-lg-6">
-					<p id="mossy_text_5" style="text-align: justify;"></p>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<p id="mossy_text_6" style="text-align: justify;"></p>
-				</div>
-				<div class="col-lg-6">
-					<img style="height:300px;" src="img/MossyEarth/mossy5.jpg" class="rounded mx-auto d-block"/>
+			<div class="section about full-height-section">
+				<h4 id="mossy_title_2" class="mossytitle"></h4>
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<img style="height:80%; width:100%;" src="img/MossyEarth/mossy1.jpg" class="rounded mx-auto d-block"/>
+					</div>
+					<div class="col-lg-6">
+						<p id="mossy_generalDescription" style="text-align: justify;"></p>
+					</div>
 				</div>
 			</div>
 			
-			<h4 id="mossy_title_4" class="mossytitle"></h4>
-			<ul id="mossy_text_7"></ul>
+			<div class="section summary1 full-height-section">
+				<h4 id="mossy_title_3" class="mossytitle"></h4>
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<img style="height:80%; width:100%;" src="img/MossyEarth/mossy2.jpg" class="rounded mx-auto d-block"/>
+					</div>
+					<div class="col-lg-6">
+						<p id="mossy_text_3" style="text-align: justify;"></p>
+					</div>
+				</div>
+			</div>
+				
+			<div class="section summary2 full-height-section">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<p id="mossy_text_4" style="text-align: justify;"></p>
+					</div>
+					<div class="col-lg-6">
+						<img style="height:80%; width:100%;" src="img/MossyEarth/mossy3.jpg" class="rounded mx-auto d-block"/>
+					</div>
+				</div>
+			</div>
 			
-			<div class="row" style="margin-bottom: 3rem;">
-				<div class="offset-lg-2 col-lg-4">
-					<img style="height:300px" src="img/MossyEarth/mossy6.jpg" class=" rounded"/>
+			<div class="section summary3 full-height-section">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<img style="height:80%; width:100%;" src="img/MossyEarth/mossy4.jpg" class="rounded mx-auto d-block"/>
+					</div>
+					<div class="col-lg-6">
+						<p id="mossy_text_5" style="text-align: justify;"></p>
+					</div>
 				</div>
-				<div class="ol-lg-6">
-					<img style="height:300px;" src="img/MossyEarth/mossy7.jpg" class="rounded"/>
+			</div>
+			
+			<div class="section summary4 full-height-section">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<p id="mossy_text_6" style="text-align: justify;"></p>
+					</div>
+					<div class="col-lg-6">
+						<img style="height:80%; width:100%;" src="img/MossyEarth/mossy5.jpg" class="rounded mx-auto d-block"/>
+					</div>
 				</div>
-			</div>			
+			</div>
+			
+			<div class="section promise full-height-section">
+				<h4 id="mossy_title_4" class="mossytitle"></h4>
+				<ul id="mossy_text_7"></ul>
+				
+				<div class="row" style="margin-bottom: 3rem;">
+					<div class="offset-lg-2 col-lg-4">
+						<img style="height:80%;" src="img/MossyEarth/mossy6.jpg" class=" rounded"/>
+					</div>
+					<div class="ol-lg-6">
+						<img style="max-height:80%;" src="img/MossyEarth/mossy7.jpg" class="rounded"/>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<script src="footer.js"></script>
+		
 		<script>
-			var prevScrollpos = window.pageYOffset;
-			window.onscroll = function() {
-				var currentScrollPos = window.pageYOffset;
-				if (prevScrollpos > currentScrollPos) {
-					document.getElementById("navbar").style.top = "0";
-				} else {
-					console.log("prout");
-					console.log(document.getElementById("navbar"));
-					document.getElementById("navbar").style.top = "-100px";
-				}
-				prevScrollpos = currentScrollPos;
-			}
+			$(document).ready(function() {
+				new fullpage('#fullpage', {
+					navigation: true,
+					responsiveWidth: 700,
+					anchors: ['header', 'about', 'summary1', 'summary2', 'summary3', 'summary4', 'promise'],
+					parallax: true,
+
+					//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+					css3:false,
+					onLeave: function(origin, destination, direction){
+						console.log("Leaving section" + origin.index);
+					},
+				});
+			});
+
 		</script>
 	</body>	
 </html>
