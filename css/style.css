@@ -112,8 +112,9 @@ body, html {
 }
 
 .navbar .nav-item {
+	font-size:17px;
 	font-weight: 600;
-	margin-top:0.35em;
+	margin-top:0.2em;
 }
 
 .navbar .nav-item.flags {
