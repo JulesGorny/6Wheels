@@ -28,12 +28,8 @@
 		"en" : "6Wheels is a project mixing travel, adventure and respect for the environment. We want to discover new countries, by bike, eco-volunteering on the way."
 	},
 	"index_pedalForYou" : {
-		"fr" : "Nous pédalons pour vous !",
-		"en" : "We pedal for you!"
-	},
-	"index_visualJourney" : {
-		"fr" : "Embarquer pour un voyage visuel à nos côtés",
-		"en" : "Embark on a visual journey by our side"
+		"fr" : "Embarquer pour un voyage visuel à nos côtés, <br>Nous pédalons pour vous !",
+		"en" : "Embark on a visual journey by our side, <br>We pedal for you!"
 	},
 
 
