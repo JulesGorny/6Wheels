@@ -4,7 +4,6 @@ https://julesgorny.github.io/
 https://julesgorny.github.io/index2.html
 
 # TODO
-# - Réparer la traduction visiblement affectée par le "fullpage"
 # - Caler les textes mieux sur le about us
 # - Ajouter les réseaux de chacun sur le about us
 # - Faire la dernière partie de la page Mossy Earth
