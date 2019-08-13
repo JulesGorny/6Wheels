@@ -7,6 +7,14 @@
 		"fr" : "Suivez notre voyage depuis la carte !",
 		"en" : "Follow our journey through the map!"
 	},
+	"index_whoarewe" : {
+		"fr" : "Qui sommes nous ?",
+		"en" : "Who are we?"
+	},
+	"index_ourpartners" : {
+		"fr" : "Nos partenaires",
+		"en" : "Our partners"
+	}
 
 
 
