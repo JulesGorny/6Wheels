@@ -56,12 +56,6 @@ body, html {
 	background-image: url("../img/Index/panorama3.jpg");
 }
 
-.bgimg-4 {
-	background-position-x: right;
-	background-size: contain;
-	background-image: url("https://i.imgur.com/lTEfzPh.jpg");
-}
-
 .caption {
 	position: absolute;
 	left: 50%;
