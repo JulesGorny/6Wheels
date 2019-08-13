@@ -7,6 +7,8 @@ https://julesgorny.github.io/index2.html
 # - Caler les textes mieux sur le about us
 # - Ajouter les réseaux de chacun sur le about us
 # - Faire la dernière partie de la page Mossy Earth
+# - Index : rendre la petite map ainsi que l'arbre mossy clickable pour redirection
+# - Index : placer le texte de learn More de 6wheels et mossy en dessous des icones map et arbre
 
 # MAP 
 # - Display un post sous la forme d'une galerie suivie d'un texte dans le panel
