@@ -17,7 +17,8 @@ $( document ).ready(function() {
 });
 
 function translateTo (lang) {
-	location.href =  window.location.href.split('?')[0] + "?l=" + lang;
+	var basehref = window.location.href.split('#')[0].split('?')[0];
+	location.href = basehref + "?l=" + lang;
 }
 
 function loadContentText (lang) {
