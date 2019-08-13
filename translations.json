@@ -1,4 +1,19 @@
 {
+	"navbar_home" : {
+		"fr" : "Accueil",
+		"en" : "Home"
+	},
+	"navbar_map" : {
+		"fr" : "Carte",
+		"en" : "Map"
+	},
+	"navbar_APropos" : {
+		"fr" : "A propos",
+		"en" : "About us"
+	},
+	
+	
+	
 	"index_travelNoImpact" : {
 		"fr" : "Voyager sans impact",
 		"en" : "Travel with no impact"
@@ -28,7 +43,7 @@
 		"en" : "6Wheels is a project mixing travel, adventure and respect for the environment. We want to discover new countries, by bike, eco-volunteering on the way."
 	},
 	"index_pedalForYou" : {
-		"fr" : "Embarquer pour un voyage visuel à nos côtés, <br>nous pédalons pour vous !",
+		"fr" : "Embarquez pour un voyage visuel à nos côtés, <br>nous pédalons pour vous !",
 		"en" : "Embark on a visual journey by our side, <br>we pedal for you!"
 	},
 
