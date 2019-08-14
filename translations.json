@@ -51,7 +51,7 @@
 		"en" : "About this website"
 	},
 	"index_aboutthiswebsiteText" : {
-		"fr" : "",
+		"fr" : "Nous avons déjà beaucoup voyagé, mais cette fois, nous voulons partager notre aventure quotidienne différemment.<br>Ce site est une opportunité de montrer où nous voyageons et agissons pour l'environnement.",
 		"en" : "We've been traveling a lot before, but this time we want to share our day to day adventure in a different way.<br>This website is the opportunity to show you where we are traveling and acting for the environment."
 	},
 	"index_avisualjourney" : {
@@ -70,7 +70,7 @@
 		"fr" : "Etant donné que prendre l'avion n'était pas la meilleure manière d'aider l'environnement, nous avons décidé de partir à vélo.<br>Ceci ajoute un peu de défi et une toute nouvelle façon de parcourir les continents pour nous.<br>Cela nous semblent être les conditions parfaites pour que des découvertes et rencontres inattendues aient lieu!",
 		"en" : "Since taking the plane wasn't the best way to help the environment, we decided to leave by bike.<br>This adds a bit of challenge and a whole new way for us to move through continents.<br>Those seem to be the perfect condition for unexpected discoveries and encounters to happen!"
 	},
-	"index_apersonnalchallengeText" : {
+	"index_learnmoreaboutus" : {
 		"fr" : "Cliquez ici pour en apprendre davantage sur nous!",
 		"en" : "Click here to learn more about us!"
 	},
