@@ -34,3 +34,11 @@
 	padding-right:6rem;
 	padding-left:4rem;
 }
+
+.mossyEarthLinks {
+	/* make the links at the end at the bottom */
+	text-align: center;
+	display: table;
+	width: auto;
+	margin: auto auto 0 auto;
+}
