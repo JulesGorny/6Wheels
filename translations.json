@@ -91,6 +91,14 @@
   "mossy_text_1" : {
 	"fr" : "Il est de notoriété publique que planter des milliards d'arbres pour réduire la quantité de dioxyde de carbone contenue dans l'atmosphère est une des meilleures solutions actuelles pour endiguer le changement climatique. Cependant, planter d'immenses forêts stériles ferait plus de mal que de bien. Partout dans le monde, les habitats naturels sont détruits, entrainant dans leur chute les animaux qui les peuplent. Mossy Earth ne plante pas simplement des arbres, ils recréent des espaces naturels tels qu'ils étaient par le passé, <span class='mossyfied'>permettant ainsi à la nature de reprendre ses droits</span>. Rendre à la nature ce qui lui a été pris est selon nous la meilleure façon de réduire l'emprunte carbone humaine.",
 	"en" : "It is now commonly accepted that planting billions of trees to reduce the carbon dioxide contained in the atmosphere is one of the best solutions we have to tackle climate change. But planting huge barren forests would do more harm than good. Everywhere in the world, natural habitats are being destroyed, taking along all the animals that inhabits them. Mossy Earth is not only planting trees, they recreate natural areas as they were before, <span class='mossyfied'>allowing nature to regain its rights.</span> And to us, giving back to the natural world what we’ve taken away from it is the best way to reduce humanity’s carbon footprint."
+  },  
+  "mossy_link_1" : {
+	"fr" : "<span class='mossyfied'>Plantez des arbres avec nous !</span>",
+	"en" : "<span class='mossyfied'>Plant trees with us!</span>"
+  },
+  "mossy_link_2" : {
+	"fr" : "<span class='mossyfied'>Le site de Mossy Earth</span>",
+	"en" : "<span class='mossyfied'>Mossy Earth website</span>"
   },
    "mossy_title_2" : {
 	"fr" : "Quelques mots de Mossy Earth",
