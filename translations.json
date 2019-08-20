@@ -42,6 +42,10 @@
 		"fr" : "6Wheels est un projet mélangeant voyage, aventure et respect de l'environnement. Nous voulons découvrir de nouveaux pays, en vélo, et faire de l'écovolontariat sur le trajet.",
 		"en" : "6Wheels is a project mixing travel, adventure and environmental protection. Starting in September 2019, we are leaving with our bicycles and camping gear from France toward India. We will take part in the fight for nature conservation by volunteering on the way. We also encourage people to join our partners’ efforts. Check out their solutions!"
 	},
+	"index_MEdescr" : {
+		"fr" : "Mossy Earth is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of rewilding and reforestation, they offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint. Get advantage of our partnership and get 10 free trees planted for a membership subscription!",
+		"en" : "Mossy Earth is a social enterprise on a mission to bring true wilderness back to Europe. Through the framework of rewilding and reforestation, they offer individuals, schools and businesses the possibility to plant forests and restore key ecosystems while mitigating their carbon footprint. Get advantage of our partnership and get 10 free trees planted for a membership subscription!"
+	},
 	"index_pedalForYou" : {
 		"fr" : "Embarquez pour un voyage visuel à nos côtés, <br>nous pédalons pour vous !",
 		"en" : "Embark on a visual journey by our side, <br>we pedal for you!"
@@ -51,24 +55,24 @@
 		"en" : "About this website"
 	},
 	"index_aboutthiswebsiteText" : {
-		"fr" : "Nous avons déjà beaucoup voyagé, mais cette fois, nous voulons partager notre aventure quotidienne différemment.<br>Ce site est une opportunité de montrer où nous voyageons et agissons pour l'environnement.",
-		"en" : "We've been traveling a lot before, but this time we want to share our day to day adventure in a different way.<br>This website is the opportunity to show you where we are traveling and acting for the environment."
+		"fr" : "La facette environnementale de 6Wheels est étroitement liée au nombre de personnes que nous pouvons atteindre. Cette page web en est la vitrine. Pour nous aider, partagez la autour de vous. Vous pouvez nous trouver grâce à notre carte. Si vous êtes sur notre route, n'hésitez pas à nous contacter, nous ferons un crochet.",
+		"en" : "The success of 6Wheels as an environmental act is tied with the number of people we can reach. This website is meant to be our online flag. You can help us by sharing it around you. In the map section you will find our location. If you are on our way simply contact us; we can probably take a detour for an interesting meeting."
 	},
 	"index_avisualjourney" : {
 		"fr" : "Un voyage visuel",
 		"en" : "A visual journey"
 	},
 	"index_avisualjourneyText" : {
-		"fr" : "Bien que n'étant pas des photagraphes professionnels, nous pensons que ce projet pourrait plaire aux amateurs d'aventure et de photographie.",
-		"en" : "Although no professional photographers ourselves, we think this project might please adventure and photograph enthusiasts."
+		"fr" : "Au milieu des vallées, au long des cours d'eau, à travers montagnes et désert... Nous allons découvrir des paysages à couper le souffle, des cultures différentes et faire des rencontres inattendues. C'est une chance pour nous de vivre tout ça, et c'est encore mieux si nous arrivons à le transmettre. A travers nos photographies et vidéos, nous espérons partager une part de ce que nous ressentons. Alors embarquez avec nous et continuez à nous suivre.",
+		"en" : "Through valleys, along river beds, across mountains and deserts...We are going to discover stunning landscapes, witness a variety of distinct cultures and make unexpected encounters. It is a chance to experience all of this by ourselves and it only gets better if we can share it with you. We want to help you see through our eyes and maybe... with our photographs and videos... give you a glimpse of the feelings we are experiencing. So grab a seat and follow us."
 	},
 	"index_apersonnalchallenge" : {
 		"fr" : "Un défi personnel",
 		"en" : "A personnal challenge"
 	},
 	"index_apersonnalchallengeText" : {
-		"fr" : "Etant donné que prendre l'avion n'était pas la meilleure manière d'aider l'environnement, nous avons décidé de partir à vélo.<br>Ceci ajoute un peu de défi et une toute nouvelle façon de parcourir les continents pour nous.<br>Cela nous semblent être les conditions parfaites pour que des découvertes et rencontres inattendues aient lieu!",
-		"en" : "Since taking the plane wasn't the best way to help the environment, we decided to leave by bike.<br>This adds a bit of challenge and a whole new way for us to move through continents.<br>Those seem to be the perfect condition for unexpected discoveries and encounters to happen!"
+		"fr" : "Nous voulons respecter l'environnement et vivre une aventure. Un voyage à vélos semble être une bonne idée ! C'est un challenge et c'est pour nous une toute nouvelle façon de traverser des continents. Mais soyons honnêtes, il y aura des moments difficiles. Peut-être de très mauvais jours, peut-être des envies de laisser tomber. Pour surmonter ça nous devrons nous entraider. C'est aussi un aspect de cette aventure que nous aimerions partager. Alors n'hésitez pas à nous exprimer votre soutien. Il pourrait avoir plus d'importance que vous ne le croyez.",
+		"en" : "We want to respect the environment and we want to live an adventure. Riding our bicycles seems like a good idea! It adds a bit of challenge and a whole new way for us to move through continents. But let's be honest, there will be difficult times. We might have really bad days, we might even want to give up at some point. In those times we will have to support each other to get through. This is also part of this adventure and we want to share those stories as well. Don't hesitate to show us you support. This might help more than you think."
 	},
 	"index_learnmoreaboutus" : {
 		"fr" : "Cliquez ici pour en apprendre davantage sur nous!",
