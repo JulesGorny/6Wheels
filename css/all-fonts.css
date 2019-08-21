@@ -1,5 +1,20 @@
 
-@media (max-width: 1920px) {
+
+@media (max-width: 2561px) {
+	.respFontTitle {
+		font-size:52px;
+    }
+    
+	.respFontTitle2 {
+		font-size:39px;
+	}
+    
+	.respFontText {
+		font-size:34px;
+	}
+}
+
+@media (max-width: 1922px) {
 	.respFontTitle {
 		font-size:40px;
     }
@@ -13,7 +28,21 @@
 	}
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1605px) {
+	.respFontTitle {
+		font-size:33pxpx;
+    }
+    
+	.respFontTitle2 {
+		font-size:25px;
+	}
+    
+	.respFontText {
+		font-size:21px;
+	}
+}
+
+@media (max-width: 1281px) {
 	.respFontTitle {
 		font-size:27px;
     }
@@ -27,16 +56,17 @@
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 961px) {
 	.respFontTitle {
-		font-size:18px;
+		font-size:20px;
     }
     
 	.respFontTitle2 {
-		font-size:13px;
+		font-size:15px;
 	}
     
 	.respFontText {
-		font-size:11px;
+		font-size:13px;
 	}
+
 }

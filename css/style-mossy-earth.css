@@ -5,91 +5,31 @@
 	font-weight: bold;
 }
 
-@media (max-width: 1920px) {
-	.mossytitle {
-		color: green;
-		text-align: center;
-		padding-top: 3rem;
-		padding-bottom: 1.75rem;
-	}
-
-	.mossytitle2 {
-		color: green;
-		text-align: center;
-		padding-top: 3rem;
-		padding-bottom: 1.75rem;
-	}
-
-	/* CSS that should be displayed if width is equal to or less than 800px goes here */
-	.mossy-normal-text {
-		text-align: justify;
-		padding-right:6rem;
-		padding-left:4rem;
-	}
-
-	.mossy-centeredtext {
-		text-align: center;
-		padding-right:6rem;
-		padding-left:4rem;
-	}
+.mossytitle {
+	color: green;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 1.75rem;
 }
 
-@media (max-width: 1280px) {
-	.mossytitle {
-		color: green;
-		text-align: center;
-		padding-top: 3rem;
-		padding-bottom: 1.75rem;
-	}
-
-	.mossytitle2 {
-		color: green;
-		text-align: center;
-		padding-top: 3rem;
-		padding-bottom: 1.75rem;
-	}
-
-	/* CSS that should be displayed if width is equal to or less than 800px goes here */
-	.mossy-normal-text {
-		text-align: justify;
-		padding-right:6rem;
-		padding-left:4rem;
-	}
-
-	.mossy-centeredtext {
-		text-align: center;
-		padding-right:6rem;
-		padding-left:4rem;
-	}
+.mossytitle2 {
+	color: green;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 1.75rem;
 }
 
-@media (max-width: 850px) {
-	.mossytitle {
-		color: green;
-		text-align: center;
-		padding-top: 3rem;
-		padding-bottom: 1.75rem;
-	}
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+.mossy-normal-text {
+	text-align: justify;
+	padding-right:6rem;
+	padding-left:4rem;
+}
 
-	.mossytitle2 {
-		color: green;
-		text-align: center;
-		padding-top: 3rem;
-		padding-bottom: 1.75rem;
-	}
-
-	/* CSS that should be displayed if width is equal to or less than 800px goes here */
-	.mossy-normal-text {
-		text-align: justify;
-		padding-right:6rem;
-		padding-left:4rem;
-	}
-
-	.mossy-centeredtext {
-		text-align: center;
-		padding-right:6rem;
-		padding-left:4rem;
-	}
+.mossy-centeredtext {
+	text-align: center;
+	padding-right:6rem;
+	padding-left:4rem;
 }
 
 .mossyEarthLinks {
