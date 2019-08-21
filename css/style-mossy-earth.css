@@ -71,6 +71,39 @@
 	}
 }
 
+@media (max-width: 850px) {
+	.mossytitle {
+		font-size:18px;
+		color: green;
+		text-align: center;
+		padding-top: 3rem;
+		padding-bottom: 1.75rem;
+	}
+
+	.mossytitle2 {
+		font-size:13px;
+		color: green;
+		text-align: center;
+		padding-top: 3rem;
+		padding-bottom: 1.75rem;
+	}
+
+	/* CSS that should be displayed if width is equal to or less than 800px goes here */
+	.mossy-normal-text {
+		font: size 11px;
+		text-align: justify;
+		padding-right:6rem;
+		padding-left:4rem;
+	}
+
+	.mossy-centeredtext {
+		font-size:11px;
+		text-align: center;
+		padding-right:6rem;
+		padding-left:4rem;
+	}
+}
+
 .mossyEarthLinks {
 	/* make the links at the end at the bottom */
 	text-align: center;
