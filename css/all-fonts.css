@@ -1,17 +1,15 @@
 
+/* default size : big screen */
+.respFontTitle {
+	font-size:52px;
+}
 
-@media (max-width: 2561px) {
-	.respFontTitle {
-		font-size:52px;
-    }
-    
-	.respFontTitle2 {
-		font-size:39px;
-	}
-    
-	.respFontText {
-		font-size:30px;
-	}
+.respFontTitle2 {
+	font-size:39px;
+}
+
+.respFontText {
+	font-size:30px;
 }
 
 @media (max-width: 1922px) {
