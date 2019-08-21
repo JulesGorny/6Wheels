@@ -1,0 +1,42 @@
+
+@media (max-width: 1920px) {
+	.respFontTitle {
+		font-size:40px;
+    }
+    
+	.respFontTitle2 {
+		font-size:30px;
+	}
+    
+	.respFontText {
+		font-size:25px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.respFontTitle {
+		font-size:27px;
+    }
+    
+	.respFontTitle2 {
+		font-size:20px;
+	}
+    
+	.respFontText {
+		font-size:17px;
+	}
+}
+
+@media (max-width: 850px) {
+	.respFontTitle {
+		font-size:18px;
+    }
+    
+	.respFontTitle2 {
+		font-size:13px;
+	}
+    
+	.respFontText {
+		font-size:11px;
+	}
+}
