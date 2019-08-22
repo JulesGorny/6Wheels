@@ -167,34 +167,32 @@ a {
 	margin: 30px auto 30px auto;
 }
 
-@media only screen and (min-width: 601px) {
-
-
-	.two-50-percent {
-		display: flex;
-		width: 100%;
-		margin: 0;
-	}
-	.two-50-percent > div {
-		flex:1;
-		position: relative;
-	}
-
-	
+/* Wrapping mechanism */
+/* We don't use media anymore, just set a min size to our elements and */
+/* let them wrap on their own */
+.two-50-percent {
+	display: flex;
+	width: 100%;
+	margin: 0;
 }
-
-
-@media only screen and (max-width: 600px) {
-	.two-50-percent {
-		display: block;
-		margin: 0;
-	}
-	.two-50-percent > div {
-		padding-left : 20px;
-		padding-right : 20px;
-		margin-top : 60px;
-	}
-
+.two-50-percent.wrapper {
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.two-50-percent.wrapper.reverse {
+	-webkit-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
+}
+.two-50-percent > div {
+	flex:1;
+	position: relative;
+}
+.two-50-percent.wrapper > div {
+	/* to make sure we wrap */
+	/* NB : we have 700px min width before fullpage stops doing his magnet style */
+	/* so we ask our items to be at least half of that, or we go "mobile" mode */
+	min-width: 350px;
 }
 
 
