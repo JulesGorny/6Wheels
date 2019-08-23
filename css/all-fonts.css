@@ -1,6 +1,18 @@
 
-/* default size : big screen */
 .respFontTitle {
+	font-size:5vm;
+}
+
+.respFontTitle2 {
+	font-size:4vm;
+}
+
+.respFontText {
+	font-size:2vm;
+}
+
+/* default size : big screen */
+/*.respFontTitle {
 	font-size:52px;
 }
 
@@ -12,7 +24,7 @@
 	font-size:29px;
 }
 
-@media (max-width: 1922px) {
+/*@media (max-width: 1922px) {
 	.respFontTitle {
 		font-size:40px;
     }
@@ -67,4 +79,4 @@
 		font-size:12px;
 	}
 
-}
+}*/
