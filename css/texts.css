@@ -21,6 +21,13 @@
 	font-weight: bold;
 }
 
+/* Bold normal text */
+
+.boldGreen {
+	color: green;
+	font-weight: bold;
+}
+
 /* default size : big screen */
 .respFontTitle {
 	font-size:51px;
