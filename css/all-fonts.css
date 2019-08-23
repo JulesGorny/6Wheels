@@ -9,7 +9,7 @@
 }
 
 .respFontText {
-	font-size:30px;
+	font-size:29px;
 }
 
 @media (max-width: 1922px) {
@@ -22,7 +22,7 @@
 	}
     
 	.respFontText {
-		font-size:23px;
+		font-size:24px;
 	}
 }
 
