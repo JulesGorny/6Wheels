@@ -52,6 +52,16 @@ body, html {
 	background-image: url("../img/Index/panorama3.jpg");
 }
 
+.textJustify
+{
+	text-align: justify;
+}
+
+.textCenter
+{
+	text-align: center;
+}
+
 .caption {
 	position: absolute;
 	left: 50%;
