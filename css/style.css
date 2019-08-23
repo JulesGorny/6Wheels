@@ -231,14 +231,12 @@ a {
 
 
 .title {
-	margin-bottom: 1em;
-	margin-top: 1em;
+	color: green;
 	text-align: center;
-	color:rgb(0, 200, 120);
 }
 
-h4, h5 {
-	font-weight: bold;
+.title2 {
+	color: green;
 	text-align: center;
-	color:rgb(0, 200, 120);
+	font-weight: bold;
 }
