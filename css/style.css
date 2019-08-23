@@ -33,11 +33,6 @@ body, html {
 	text-align: center;
 }
 
-.divVerticalCenter
-{
-	vertical-align: center;
-}
-
 .textMargin
 {
     padding-left: 4%;
@@ -58,6 +53,12 @@ body, html {
 
 .textMarginBottom
 {
+    padding-bottom: 4%;
+}
+
+.divTextMargin
+{
+    padding-top: 4%;
     padding-bottom: 4%;
 }
 
