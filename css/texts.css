@@ -1,3 +1,25 @@
+.textJustify
+{
+	text-align: justify;
+}
+
+.textCenter
+{
+	text-align: center;
+}
+
+/* Titles */
+
+.title {
+	color: green;
+	text-align: center;
+}
+
+.title2 {
+	color: green;
+	text-align: center;
+	font-weight: bold;
+}
 
 /* default size : big screen */
 .respFontTitle {
