@@ -28,13 +28,13 @@ function closeSlidePanel(i) {
 function createSlidePanel(index, title, photos_count, text) {
     var html = "";
 
-    html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999\">";
+    html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999; margin-top:59px;\">";
     html += "<header class=\"cd-panel__header\">";
     html += "<h1>" + title + "</h1>";
     html += "<a onClick=\"closeSlidePanel(" + index + ");\" class=\"cd-panel__close js-cd-close\">Close</a>";
     html += "</header>";
     html += "<div class=\"cd-panel__container\">";
-    html += "<div class=\"cd-panel__content\">";
+    html += "<div class=\"cd-panel__content\" style=\"margin-top:59px;\">";
     html += text;
 
     // Images
