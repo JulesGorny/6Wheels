@@ -1,18 +1,6 @@
 
-.respFontTitle {
-	font-size:2.5vw;
-}
-
-.respFontTitle2 {
-	font-size:2vw;
-}
-
-.respFontText {
-	font-size:1vw;
-}
-
 /* default size : big screen */
-/*.respFontTitle {
+.respFontTitle {
 	font-size:52px;
 }
 
@@ -24,7 +12,7 @@
 	font-size:29px;
 }
 
-/*@media (max-width: 1922px) {
+@media (max-width: 1922px) {
 	.respFontTitle {
 		font-size:40px;
     }
@@ -79,4 +67,4 @@
 		font-size:12px;
 	}
 
-}*/
+}
