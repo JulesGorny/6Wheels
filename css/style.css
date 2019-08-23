@@ -23,6 +23,22 @@ body, html {
 	color: #777;
 }
 
+.textJustify
+{
+	text-align: justify;
+}
+
+.textCenter
+{
+	text-align: center;
+}
+
+.textMargin
+{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
 .full-height-section {
 	min-height: 100%;
 }
@@ -50,16 +66,6 @@ body, html {
 
 .bgimg-3 {
 	background-image: url("../img/Index/panorama3.jpg");
-}
-
-.textJustify
-{
-	text-align: justify;
-}
-
-.textCenter
-{
-	text-align: center;
 }
 
 .caption {
