@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-    var map = L.map('mapid').setView([45.815010, 15.981919], 5);
+    $("#navbar").css("background-color", "");
+
+    var map = L.map('mapid', { zoomControl:false }).setView([45.815010, 15.981919], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
         attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
         maxZoom: 20,
