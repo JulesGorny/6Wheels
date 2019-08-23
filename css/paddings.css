@@ -1,0 +1,39 @@
+
+.textPadding
+{
+    padding-left: 4%;
+    padding-right: 7%;
+}
+
+.textPaddingRight
+{
+    padding-left: 8%;
+    padding-right: 14%;
+}
+
+.textPaddingLeft
+{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.paddingBottom1
+{
+    padding-bottom: 1%;
+}
+
+.paddingBottom2
+{
+    padding-bottom: 2%;
+}
+
+.paddingBottom4
+{
+    padding-bottom: 4%;
+}
+
+.divTextPadding
+{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}

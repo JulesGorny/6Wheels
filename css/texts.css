@@ -1,28 +1,57 @@
+.textJustify
+{
+	text-align: justify;
+}
+
+.textCenter
+{
+	text-align: center;
+}
+
+/* Titles */
+
+.title {
+	color: green;
+	text-align: center;
+}
+
+.title2 {
+	color: green;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Bold normal text */
+
+.boldGreen {
+	color: green;
+	font-weight: bold;
+}
 
 /* default size : big screen */
 .respFontTitle {
-	font-size:52px;
+	font-size:51px;
 }
 
 .respFontTitle2 {
-	font-size:39px;
+	font-size:38px;
 }
 
 .respFontText {
-	font-size:29px;
+	font-size:28px;
 }
 
 @media (max-width: 1922px) {
 	.respFontTitle {
-		font-size:40px;
+		font-size:39px;
     }
     
 	.respFontTitle2 {
-		font-size:30px;
+		font-size:29px;
 	}
     
 	.respFontText {
-		font-size:24px;
+		font-size:23px;
 	}
 }
 

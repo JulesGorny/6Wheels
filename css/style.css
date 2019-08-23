@@ -3,7 +3,8 @@
 @import url(style-about-us.css);
 @import url(style-index.css);
 @import url(style-mossy-earth.css);
-@import url(all-fonts.css);
+@import url(texts.css);
+@import url(paddings.css);
 
 
 @viewport {
@@ -19,47 +20,7 @@
 body, html {
 	height: 100%;
 	margin: 0;
-	font: 400 15px/1.8 "AvenirLTStd", sans-serif !important;
 	color: #777;
-}
-
-.textJustify
-{
-	text-align: justify;
-}
-
-.textCenter
-{
-	text-align: center;
-}
-
-.textMargin
-{
-    padding-left: 4%;
-    padding-right: 7%;
-}
-
-.textMarginRight
-{
-    padding-left: 8%;
-    padding-right: 14%;
-}
-
-.textMarginLeft
-{
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-.textMarginBottom
-{
-    padding-bottom: 4%;
-}
-
-.divTextMargin
-{
-    padding-top: 6%;
-    padding-bottom: 6%;
 }
 
 .full-height-section {
@@ -158,24 +119,6 @@ body, html {
 /*******************
 		Index
 ********************/
-#main-header {
-	width: 100%;
-	margin:0;
-	position: relative;
-	text-align: justify;
-	color: white;
-}
-#main-header > img {
-	width: 100%;
-}
-#main-header > div {
-	
-	font-weight: bold;
-	font-size: 17pt;
-	position: absolute;
-	top: 20px;
-	left: 30px;
-}
 
 #links {
 	margin-top: 20px;
@@ -192,13 +135,6 @@ a {
 
 #links > span > i {
 	margin-right:10px;
-}
-
-.seperator {
-	width:30%;
-	height: 3px;
-	background-color: rgb(0, 200, 120);
-	margin: 30px auto 30px auto;
 }
 
 /* Wrapping mechanism */
@@ -229,16 +165,3 @@ a {
 	min-width: 350px;
 }
 
-
-.title {
-	margin-bottom: 1em;
-	margin-top: 1em;
-	text-align: center;
-	color:rgb(0, 200, 120);
-}
-
-h4, h5 {
-	font-weight: bold;
-	text-align: center;
-	color:rgb(0, 200, 120);
-}
