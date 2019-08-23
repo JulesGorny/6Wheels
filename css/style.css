@@ -219,7 +219,7 @@ a {
 	flex-wrap: wrap-reverse;
 }
 .two-50-percent > div {
-	flex:1 auto;
+	flex:1;
 	position: relative;
 }
 .two-50-percent.wrapper > div {
