@@ -221,7 +221,6 @@ a {
 .two-50-percent > div {
 	flex:1;
 	position: relative;
-	align-items: center;
 }
 .two-50-percent.wrapper > div {
 	/* to make sure we wrap */
