@@ -35,8 +35,20 @@ body, html {
 
 .textMargin
 {
-    margin-left: 4%;
-    margin-right: 7%;
+    padding-left: 4%;
+    padding-right: 7%;
+}
+
+.textMarginRight
+{
+    padding-left: 6%;
+    padding-right: 14%;
+}
+
+.textMarginLeft
+{
+    padding-left: 8%;
+    padding-right: 6%;
 }
 
 .full-height-section {
