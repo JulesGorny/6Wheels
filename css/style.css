@@ -6,7 +6,6 @@
 @import url(texts.css);
 @import url(paddings.css);
 
-
 @viewport {
 	width: device-width ;
 	zoom: 1.0 ;
@@ -20,6 +19,7 @@
 body, html {
 	height: 100%;
 	margin: 0;
+	font-family: "AvenirLTStd", sans-serif !important;
 	color: #777;
 }
 
@@ -35,6 +35,7 @@ body, html {
 	background-size: cover;
 
 }
+
 .bgimg-1 p {
 	font-size:25pt;
 	margin-bottom: 2em;
