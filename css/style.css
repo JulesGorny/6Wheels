@@ -24,7 +24,6 @@ body, html {
 	color: #777;
 }
 
-
 .full-height-section {
 	min-height: 100%;
 }
@@ -155,13 +154,6 @@ a {
 
 #links > span > i {
 	margin-right:10px;
-}
-
-.seperator {
-	width:30%;
-	height: 3px;
-	background-color: rgb(0, 200, 120);
-	margin: 30px auto 30px auto;
 }
 
 /* Wrapping mechanism */
