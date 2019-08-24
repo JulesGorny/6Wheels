@@ -108,7 +108,9 @@
 	margin-bottom: 3%;
 }
 
-.davidLinksAlign { text-align: right; }
+.davidLinksAlign { 
+	float:right;
+}
   
 @media only screen and (max-device-width: 480px) 
 {
