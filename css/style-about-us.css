@@ -26,11 +26,13 @@
 @media only screen and (max-device-width: 480px) 
 {
 	.about-us-section.header {
-		display: none;
 		background-image: none;
 	}
 
-	.headerAboutUs { margin: 4%; }	
+	.headerAboutUs { 
+		margin: 4%; 
+		position: relative;
+	}	
 	
 	.headerTitleAlign { text-align: center; }
 }
@@ -64,7 +66,6 @@
 @media only screen and (max-device-width: 480px) 
 {
 	.about-us-section.jules {
-		display: none;
 		background-image: none;
 	}
 
@@ -72,7 +73,10 @@
 	.julesTextColor { color:black; }
 	.julesTextColor:hover { color:black; }
 
-	.julesAboutUs { margin: 4%; }
+	.julesAboutUs {
+		position: relative; 
+		margin: 4%; 
+	}
 }
 
 /* David */
@@ -101,11 +105,13 @@
 @media only screen and (max-device-width: 480px) 
 {
 	.about-us-section.david {
-		display: none;
 		background-image: none;
 	}
 
-	.davidAboutUs { margin: 4%; }
+	.davidAboutUs { 
+		margin: 4%; 
+		position: relative;
+	}
 
 	.davidLinksAlign { float: none; }
 }
@@ -134,9 +140,11 @@
 @media only screen and (max-device-width: 480px) 
 {
 	.about-us-section.anatole {
-		display: none;
 		background-image: none;
 	}
 
-	.anatoleAboutUs { margin: 4%;}
+	.anatoleAboutUs { 
+		margin: 4%;
+		position: relative;
+	}
 }

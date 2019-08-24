@@ -84,6 +84,9 @@
 		
 		<script>
 			$(document).ready(function() {
+
+				if($(window).width() < 400)
+					return;
 				new fullpage('#fullpage', {
 					navigation: true,
 					responsiveWidth: 700,
