@@ -54,6 +54,20 @@
 	background-repeat: no-repeat;
 }
 
+.img-responsive.mobile {
+	display: none;
+  }
+  
+@media only screen and (max-device-width: 480px) {
+	.about-us-section.jules {
+		display: none;
+	}
+	
+	.img-responsive.mobile {
+		display: block;
+	}
+}
+
 .about-us-section.jules .title {
 	font-size:20pt;
 	position:absolute;
