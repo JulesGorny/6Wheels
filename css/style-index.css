@@ -8,14 +8,14 @@
 /*******************
 	PRESENTATION
 ********************/
-#index-presentation > div {
 	/* make it flex column */
+/*#index-presentation > div {
 	display: flex;
 	flex-direction: column;
-}
+}*/
 
-#index-presentation > div > .indexLearnMore {
 	/* make the links at the end at the bottom */
+/*#index-presentation > div > .indexLearnMore {
 	text-align: center;
 	display: table;
 	width: auto;
@@ -29,7 +29,7 @@
 
 #index-presentation > div > .indexLearnMore > img {
 	height: 70px;
-}
+}*/
 
 /*#index-presentation > div .biglogo {
 	width:100%;
@@ -42,11 +42,11 @@
 }*/
 
 /* CSS DESKTOP */
-@media only screen and (min-width: 601px) {
+/*@media only screen and (min-width: 601px) {
 
-	/*#index-presentation {
+	#index-presentation {
 		margin-bottom: 30px;
-	}*/
+	}
 
 	#index-presentation > div > .learn-more {
         position: absolute;
@@ -68,11 +68,11 @@
 		position: relative;
 		display: block;
 		text-align: center;
-	}*/
-}
+	}
+}*/
 
 /* MOBILE CSS [WIP] */
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 		
 	#index-presentation > div > .learn-more a {
 		display: flex;
@@ -85,4 +85,4 @@
 	#index-presentation > div > .learn-more a > span {
 		padding-left:10px;
 	}
-}
+}*/
