@@ -34,10 +34,8 @@ body, html {
 	margin-right: auto;
 }
 
-.white
-{
-	color: white;
-}
+.white { color: white; }
+.green { color: green; }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;
@@ -119,23 +117,6 @@ body, html {
 	width: 35px;
 	margin: 0 5px 0 5px;
 }
-
-/*******************
-		Index
-********************/
-
-/*#links {
-	margin-top: 20px;
-	text-align: center;
-}
-
-#links > span {
-	margin-right: 15px;
-}
-
-#links > span > i {
-	margin-right:10px;
-}*/
 
 /* Wrapping mechanism */
 /* We don't use media anymore, just set a min size to our elements and */
