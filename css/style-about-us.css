@@ -42,7 +42,11 @@
 		background-image: none;
 	}
 
-	.headerAboutUs { margin: 4%; }	
+	.headerAboutUs 
+	{
+		margin: 4%;
+		padding-top: 0%;
+	}	
 	
 	.headerTitleAlign { text-align: center; }
 }
