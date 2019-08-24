@@ -4,3 +4,11 @@
 .bgimg-1 { background-image: url("../img/Index/banner.jpg"); }
 .bgimg-2 { background-image: url("../img/Index/panorama2.jpg"); }
 .bgimg-3 { background-image: url("../img/Index/panorama3.jpg"); }
+
+@media only screen and (max-device-width: 480px) 
+{
+	.bgimg-1 .bgimg-2 .bgimg-3 {
+		display: none;
+		background-image: none;
+	}
+}
