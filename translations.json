@@ -11,7 +11,12 @@
 		"fr" : "A propos",
 		"en" : "About us"
 	},	
-	
+
+	"julesName" : {
+		"fr" : "Jules",
+		"en" : "Jules"
+	},
+	 
 	
 	"index_travelNoImpact" : {
 		"fr" : "Voyager sans impact",
