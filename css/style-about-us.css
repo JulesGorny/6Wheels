@@ -21,6 +21,18 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
+	
+.headerAboutUs
+{
+	margin-left: 30%;
+	margin-right: 7%;
+	position: absolute; 
+	bottom: 0;
+	margin-bottom: 3%;
+}
+
+.headerText { color:black; }
+.headerText:hover { color:black; }
   
 @media only screen and (max-device-width: 480px) 
 {
@@ -28,6 +40,8 @@
 		display: none;
 		background-image: none;
 	}
+
+	.headerAboutUs { margin: 4%; }
 }
 
 
@@ -42,14 +56,6 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-  
-@media only screen and (max-device-width: 480px) 
-{
-	.about-us-section.jules {
-		display: none;
-		background-image: none;
-	}
-}
 
 .julesText { color:white; }
 .julesText:hover { color:white; }
@@ -62,8 +68,14 @@
 	bottom: 0;
 	margin-bottom: 5%;
 }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.jules {
+		display: none;
+		background-image: none;
+	}
 
-@media only screen and (max-device-width: 480px) {
 	.julesText { color:black; }
 	.julesText:hover { color:black; }
 
