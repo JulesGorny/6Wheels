@@ -10,8 +10,7 @@
 	"navbar_APropos" : {
 		"fr" : "A propos",
 		"en" : "About us"
-	},
-	
+	},	
 	
 	
 	"index_travelNoImpact" : {
@@ -83,10 +82,6 @@
 		"en" : "Never miss an update!"
 	},
 
-	
-
-
-
 
   "mossy_title_1" : {
 	"fr" : "Pourquoi aimons-nous Mossy Earth ?",
@@ -155,9 +150,7 @@
   "mossy_text_7" : {
 	"fr" : "<li>Nous ne plantons que des espèces d'arbres natifs. Pas de plantes envahissantes ni de monocultures. Nos arbres sont plantés dans un contexte de réensauvagement plus large, dans des zones protégées, pour que vos arbres restent sauvages pour toujours!</li><li>Nous nous engageons à remplacer les arbres perdus au cours des 3 premières années.</li><li>Nous plantons 30% d'arbres supplémentaires dans l'ensemble de nos projets pour nous assurer de notre impact en tant que groupe et pour s'assurer d'éventuels écarts dans le calcul d'impact carbone.</li>",
 	"en" : "<li>We only plant native species of trees. No invasives nor monocultures. Our trees are planted in a wider rewilding context, in protected areas, to ensure your trees stay wild forever!</li><li>We commit to replacing any trees lost within the first 3 years.</li><li>We plant an additional 30% across all our projects to ensure we meet our impact as a group and as an insurance against any carbon calculation discrepancies.</li>"
-  },
-  
-  
+  },  
   
 
   "about-us-title" : {
