@@ -71,16 +71,28 @@
 
 /* Jules */
 
+.julesText
+{
+	color:white;
+}
+
 .julesAboutUs
 {
 	color: white;
+	margin-left: 4%;
 	margin-right: 30%;
 }
 
 @media only screen and (max-device-width: 480px) {
+	.julesText
+	{
+		color:black;
+	}
+
 	.julesAboutUs
 	{
-		color: black;
+		margin-left: 4%;
+		margin-right: 4%;
 	}	
 }
 
