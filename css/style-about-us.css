@@ -9,7 +9,7 @@
 		display: block;
 	}
 
-	.generalMobileMargin { margin-top: 5%; margin-bottom: 5%; }
+	.generalMobileMargin { margin-top: 0% !important; margin-bottom: 5% !important; }
 }
 
 /* Header */
