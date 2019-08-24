@@ -124,7 +124,7 @@ body, html {
 		Index
 ********************/
 
-#links {
+/*#links {
 	margin-top: 20px;
 	text-align: center;
 }
@@ -135,7 +135,7 @@ body, html {
 
 #links > span > i {
 	margin-right:10px;
-}
+}*/
 
 /* Wrapping mechanism */
 /* We don't use media anymore, just set a min size to our elements and */
