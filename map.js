@@ -44,30 +44,25 @@ function createSlidePanel(index, title, photos_count, text) {
     html += "<div class=\"cd-panel__container\">";
     html += "<div class=\"cd-panel__content\" style=\"margin-top:55px; text-align: justify;\">";
 
-    // Images
     html += "<div style=\"margin-top: 1em; margin-bottom: 2.5em;\">";
+    // Foreach images
+    for (var i = 0; i < photos_count; i++) {
+        if (i % 3 == 0) {
+            html += "<div class=\"row\">";
+        }
 
-    html += "<div class=\"row\" style=\"margin-bottom:1em;\">";
-    html += "<div class=\"col-md-4 col-centered\">";
-    var img0Path = "posts/" + originalTitle + "/0.jpg";
-    var img0SmallPath = "posts/" + originalTitle + "/0_small.jpg"; 
-    html += "<a data-fancybox=\"gallery\" href=\"" + img0Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img0SmallPath + "\"></a>"
-    html += "</div>";
+        html += "<div class=\"col-md-4 col-centered\">";
+        var imgPath = "posts/" + originalTitle + "/" + i + ".png";
+        var imgSmallPath = "posts/" + originalTitle + "/" + i + "_small.png";
+        html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\" style=\"padding-right:1em; padding-top:1em;\">";
+        html += "<img src=\"" + imgSmallPath + "\">";
+        html += "</a>";
+        html += "</div>";
 
-    html += "<div class=\"col-md-4 col-centered\">";
-    var img1Path = "posts/" + originalTitle + "/1.jpg";
-    var img1SmallPath = "posts/" + originalTitle + "/1_small.jpg"; 
-    html += "<a data-fancybox=\"gallery\" href=\"" + img1Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img1SmallPath + "\"></a>"
-    html += "</div>";
-
-    html += "<div class=\"col-md-4 col-centered\">";
-    var img2Path = "posts/" + originalTitle + "/2.jpg";
-    var img2SmallPath = "posts/" + originalTitle + "/2_small.jpg"; 
-    html += "<a data-fancybox=\"gallery\" href=\"" + img2Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img2SmallPath + "\"></a>"
-    html += "</div>";
-
-    html += "</div>";
-
+        if (i % 3 == 2) {
+            html += "</div>";
+        }
+    }
     html += "</div>";
 
     html += "<p class=\"fontText\" style=\"padding-bottom: 3em;\">" + text + "</p>";
@@ -87,17 +82,12 @@ function readPosts(map) {
 		success: function(json) {
 			json.posts.forEach(function (post, index)  {
                 // For each post we have from Imgur
-                console.log(index + ' - ' + post);
                 $.ajax({
                     type: 'GET',
                     url: './posts/' + post + '/content.json',
                     dataType: 'json',
                     success: function(json) {
-                        console.log(json.photos_count);
-                        console.log(json.text_fr);
-                        console.log(json.text_en);
-                        console.log(json.lat);
-                        console.log(json.long);
+
                         // With the post content, we create a new slide panel
                         var postElement = createSlidePanel(index, post, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
@@ -107,7 +97,7 @@ function readPosts(map) {
                         $(marker).bind('click', {id: index}, onMarkerClick);
                     },
                     error: function(err) {
-                        console.log('error', err);
+                        console.log(err);
                     }
                 });
             });
