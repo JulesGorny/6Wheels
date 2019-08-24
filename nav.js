@@ -1,5 +1,5 @@
 document.write('\
-    <nav id="navbar" class="navbar fixed-top navbar-expand-md">\
+    <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-light">\
         <a class="navbar-brand" href="index.html">\
             <img src="img/6WheelsFullLogo.png"/>\
         </a>\
