@@ -8,8 +8,6 @@
 	.img-responsive.mobile {
 		display: block;
 	}
-	
-	.titleMobileCenter { text-align: center !important; }
 }
 
 /* Header */
@@ -32,7 +30,8 @@
 	bottom: 0;
 	margin-bottom: 3%;
 }
-
+	
+.headerTitleAlign { text-align: right; }
 .headerText { color:black; }
 .headerText:hover { color:black; }
   
@@ -43,7 +42,9 @@
 		background-image: none;
 	}
 
-	.headerAboutUs { margin: 4%; }
+	.headerAboutUs { margin: 4%; }	
+	
+	.headerTitleAlign { text-align: center; }
 }
 
 
@@ -59,6 +60,7 @@
 	background-repeat: no-repeat;
 }
 
+.julesTitleAlign { text-align: left; }
 .julesText { color:white; }
 .julesText:hover { color:white; }
 
@@ -78,6 +80,7 @@
 		background-image: none;
 	}
 
+	.julesTitleAlign { text-align: center; }
 	.julesText { color:black; }
 	.julesText:hover { color:black; }
 
