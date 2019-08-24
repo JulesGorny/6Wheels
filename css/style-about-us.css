@@ -8,6 +8,8 @@
 	.img-responsive.mobile {
 		display: block;
 	}
+	
+	.titleMobileCenter { text-align: center !important; }
 }
 
 /* Header */
