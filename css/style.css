@@ -27,6 +27,13 @@ body, html {
 	min-height: 100%;
 }
 
+.imgCenter
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;
 	background-attachment: fixed;
