@@ -30,6 +30,17 @@ body, html {
 	margin-right: auto;
 }
 
+.img-responsive.mobile {
+	display: none;
+}
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.img-responsive.mobile {
+		display: block;
+	}
+}
+
 .white { color: white; }
 .white:hover { color: white; }
 
@@ -56,10 +67,6 @@ body, html {
 	transform: translate(-50%, -50%);
 	top: 50%;
 	width: auto;
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	font-size:20pt;
 }
 
 /************
