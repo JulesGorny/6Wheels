@@ -154,9 +154,7 @@
 
 	.anatoleAboutUs 
 	{ 
-		margin-top: 4%; 
-		margin-left: 4%; 
-		margin-right: 4%; 
-		margin-bottom: 10%; 
+		margin: 4%; 
+		padding-bottom: 4%;
 	}
 }
