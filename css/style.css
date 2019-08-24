@@ -34,8 +34,17 @@ body, html {
 	margin-right: auto;
 }
 
-.white { color: white; }
-.green { color: green; }
+.white 
+{ 
+	color: white; 
+	text-decoration-color: white; 
+}
+
+.green
+{ 
+	color: green;
+	text-decoration-color: green; 
+}
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;
