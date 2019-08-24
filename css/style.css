@@ -21,6 +21,7 @@ body, html {
 	margin: 0;
 	font-family: "AvenirLTStd", sans-serif !important;
 	color: #777;
+    padding-top: 100px;
 }
 
 .full-height-section {
