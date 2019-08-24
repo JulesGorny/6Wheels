@@ -8,6 +8,13 @@
 /*******************
 	PRESENTATION
 ********************/
+
+.imgCenter
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 	/* make it flex column */
 /*#index-presentation > div {
 	display: flex;
