@@ -48,31 +48,24 @@ function createSlidePanel(index, title, photos_count, text) {
     html += "<div style=\"margin-top: 1em; margin-bottom: 2.5em;\">";
 
     html += "<div class=\"row\" style=\"margin-bottom:1em;\">";
-    html += "<div class=\"col-md-6 col-centered\">";
+    html += "<div class=\"col-md-4 col-centered\">";
     var img0Path = "posts/" + originalTitle + "/0.jpg";
     var img0SmallPath = "posts/" + originalTitle + "/0_small.jpg"; 
     html += "<a data-fancybox=\"gallery\" href=\"" + img0Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img0SmallPath + "\"></a>"
     html += "</div>";
 
-    html += "<div class=\"col-md-6 col-centered\">";
+    html += "<div class=\"col-md-4 col-centered\">";
     var img1Path = "posts/" + originalTitle + "/1.jpg";
     var img1SmallPath = "posts/" + originalTitle + "/1_small.jpg"; 
     html += "<a data-fancybox=\"gallery\" href=\"" + img1Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img1SmallPath + "\"></a>"
     html += "</div>";
-    html += "</div>";
 
-    html += "<div class=\"row\">";
-    html += "<div class=\"col-md-6 col-centered\">";
+    html += "<div class=\"col-md-4 col-centered\">";
     var img2Path = "posts/" + originalTitle + "/2.jpg";
     var img2SmallPath = "posts/" + originalTitle + "/2_small.jpg"; 
     html += "<a data-fancybox=\"gallery\" href=\"" + img2Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img2SmallPath + "\"></a>"
     html += "</div>";
 
-    html += "<div class=\"col-md-6 col-centered\">";
-    var img3Path = "posts/" + originalTitle + "/3.jpg";
-    var img3SmallPath = "posts/" + originalTitle + "/3_small.jpg"; 
-    html += "<a data-fancybox=\"gallery\" href=\"" + img3Path + "\" style=\"padding-right:1em; padding-top:1em;\"><img src=\"" + img3SmallPath + "\"></a>"
-    html += "</div>";
     html += "</div>";
 
     html += "</div>";
