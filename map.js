@@ -29,6 +29,12 @@ function closeSlidePanel(i) {
 
 function createSlidePanel(index, title, photos_count, text) {
     var html = "";
+    var originalTitle = title;
+
+    // Check the title lenght and cut if too long
+    if (title.length > 60) {
+        title = title.substring(0, 60) + "...";
+    }
 
     html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999; margin-top:55px;\">";
     html += "<header class=\"cd-panel__header\">";
@@ -36,13 +42,29 @@ function createSlidePanel(index, title, photos_count, text) {
     html += "<a onClick=\"closeSlidePanel(" + index + ");\" class=\"cd-panel__close js-cd-close\">Close</a>";
     html += "</header>";
     html += "<div class=\"cd-panel__container\">";
-    html += "<div class=\"cd-panel__content\" style=\"margin-top:55px;\">";
+    html += "<div class=\"cd-panel__content\" style=\"margin-top:55px; text-align: justify;\">";
     html += text;
 
     // Images
-    var imgPath = "posts/" + title + "/0.png"; 
-    html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\"><img src=\"" + imgPath + "\"></a>"
+    html += "<div style=\"margin-top:1em;\">";
 
+    var img0Path = "posts/" + originalTitle + "/0.jpg";
+    var img0SmallPath = "posts/" + originalTitle + "/0_small.jpg"; 
+    html += "<a data-fancybox=\"gallery\" href=\"" + img0Path + "\"><img src=\"" + img0SmallPath + "\"></a>"
+
+    var img1Path = "posts/" + originalTitle + "/1.jpg";
+    var img1SmallPath = "posts/" + originalTitle + "/1_small.jpg"; 
+    html += "<a data-fancybox=\"gallery\" href=\"" + img1Path + "\"><img src=\"" + img1SmallPath + "\"></a>"
+
+    var img2Path = "posts/" + originalTitle + "/2.jpg";
+    var img2SmallPath = "posts/" + originalTitle + "/2_small.jpg"; 
+    html += "<a data-fancybox=\"gallery\" href=\"" + img2Path + "\"><img src=\"" + img2SmallPath + "\"></a>"
+
+    var img3Path = "posts/" + originalTitle + "/3.jpg";
+    var img3SmallPath = "posts/" + originalTitle + "/3_small.jpg"; 
+    html += "<a data-fancybox=\"gallery\" href=\"" + img3Path + "\"><img src=\"" + img3SmallPath + "\"></a>"
+
+    html += "</div>";
     html += "</div>";
     html += "</div>";
     html += "</div>";
@@ -70,10 +92,6 @@ function readPosts(map) {
                         console.log(json.lat);
                         console.log(json.long);
                         // With the post content, we create a new slide panel
-                        // Check the title lenght
-                        if (post.length > 45) {
-                            post = post .substring(0, 45) + "..."
-                        }
                         var postElement = createSlidePanel(index, post, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
 
