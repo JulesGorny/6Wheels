@@ -48,14 +48,14 @@ function createSlidePanel(index, title, photos_count, text) {
     // Foreach images
     for (var i = 0; i < photos_count; i++) {
         if (i % 3 == 0) {
-            html += "<div class=\"row\">";
+            html += "<div class=\"row\" style=\"padding-bottom: 2em;\">";
         }
 
-        html += "<div class=\"col-md-4 col-centered\">";
+        html += "<div class=\"col-md-4 col-centered\" style=\"padding-right:1em; padding-top:1em;\" >";
         var imgPath = "posts/" + originalTitle + "/" + i + ".png";
         var imgSmallPath = "posts/" + originalTitle + "/" + i + "_small.png";
-        html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\" style=\"padding-right:1em; padding-top:1em;\">";
-        html += "<img src=\"" + imgSmallPath + "\">";
+        html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\">";
+        html += "<img src=\"" + imgSmallPath + "\" class = \"img-fluid\">";
         html += "</a>";
         html += "</div>";
 
