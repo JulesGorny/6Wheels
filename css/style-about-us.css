@@ -87,22 +87,7 @@
 	.julesAboutUs { margin: 4%; }
 }
 
-/* */ 
-
-.about-us-section.anatole {
-	background-image:url(../img/AboutUs/Anatole.jpg);
-	background-size:cover;
-	background-position: right;
-
-	position: relative;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-
-.about-us-section.anatole .text {
-	float:left;
-}
-
+/* David */
 
 .about-us-section.david {
 	background-image:url(../img/AboutUs/David.jpg);
@@ -114,6 +99,56 @@
 	background-repeat: no-repeat;
 }
 
-.about-us-section.david .text {
-	float:right;
+.davidAboutUs
+{
+	margin-left: 30%;
+	margin-right: 7%;
+	position: absolute; 
+	bottom: 0;
+	margin-bottom: 3%;
+}
+
+.davidLinksAlign { text-align: right; }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.david {
+		display: none;
+		background-image: none;
+	}
+
+	.davidAboutUs { margin: 4%; }
+
+	.davidLinksAlign { text-align: left; }
+}
+
+/* Anatole */ 
+
+.about-us-section.anatole {
+	background-image:url(../img/AboutUs/Anatole.jpg);
+	background-size:cover;
+	background-position: right;
+
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.anatoleAboutUs
+{
+	margin-left: 4%;
+	margin-right: 30%;
+	position: absolute; 
+	top: 0;
+	margin-top: 5%;
+}
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.anatole {
+		display: none;
+		background-image: none;
+	}
+
+	.anatoleAboutUs { margin: 4%; }
 }
