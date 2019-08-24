@@ -1,12 +1,6 @@
-.textJustify
-{
-	text-align: justify;
-}
 
-.textCenter
-{
-	text-align: center;
-}
+.textJustify { text-align: justify; }
+.textCenter { text-align: center; }
 
 /* Titles */
 
@@ -29,71 +23,31 @@
 }
 
 /* default size : big screen */
-.respFontTitle {
-	font-size:51px;
-}
-
-.respFontTitle2 {
-	font-size:38px;
-}
-
-.respFontText {
-	font-size:28px;
-}
+.fontTitle { font-size:49px; }
+.fontTitle2 { font-size:38px; }
+.fontText { font-size:28px; }
 
 @media (max-width: 1922px) {
-	.respFontTitle {
-		font-size:39px;
-    }
-    
-	.respFontTitle2 {
-		font-size:29px;
-	}
-    
-	.respFontText {
-		font-size:23px;
-	}
+	.fontTitle { font-size:37px; }    
+	.fontTitle2 { font-size:29px; }    
+	.fontText { font-size:23px; }
 }
 
 @media (max-width: 1605px) {
-	.respFontTitle {
-		font-size:33pxpx;
-    }
-    
-	.respFontTitle2 {
-		font-size:25px;
-	}
-    
-	.respFontText {
-		font-size:20px;
-	}
+	.fontTitle { font-size:32pxpx; }    
+	.fontTitle2 { font-size:25px; }    
+	.fontText { font-size:20px; }
 }
 
 @media (max-width: 1281px) {
-	.respFontTitle {
-		font-size:27px;
-    }
-    
-	.respFontTitle2 {
-		font-size:20px;
-	}
-    
-	.respFontText {
-		font-size:16px;
-	}
+	.fontTitle { font-size:27px; }    
+	.fontTitle2 { font-size:20px; }    
+	.fontText { font-size:16px; }
 }
 
 @media (max-width: 961px) {
-	.respFontTitle {
-		font-size:20px;
-    }
-    
-	.respFontTitle2 {
-		font-size:15px;
-	}
-    
-	.respFontText {
-		font-size:12px;
-	}
+	.fontTitle { font-size:20px; }    
+	.fontTitle2 { font-size:15px; }    
+	.fontText { font-size:12px; }
 
 }
