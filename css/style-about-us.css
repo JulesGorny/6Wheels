@@ -57,28 +57,35 @@
 .img-responsive.mobile {
 	display: none;
   }
-
-  .julesAboutUs
-  {
-	  color: white;
-  }
   
 @media only screen and (max-device-width: 480px) {
 	.about-us-section.jules {
 		display: none;
 		background-image: none;
 	}
-	
-	.julesAboutUs
-	{
-		color: black;
-	}
-	
 
 	.img-responsive.mobile {
 		display: block;
 	}
 }
+
+/* Jules */
+	
+
+.julesAboutUs
+{
+	color: white;
+	margin-right: 30%;
+}
+
+@media only screen and (max-device-width: 480px) {
+	.julesAboutUs
+	{
+		color: black;
+	}	
+}
+
+/* */ 
 
 .about-us-section.jules .title {
 	font-size:20pt;
