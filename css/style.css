@@ -90,8 +90,7 @@ body, html {
 .navbar {
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
-	transition: top 0.5s;
-	
+	transition: top 0.5s;	
 }
 
 .navbar-brand img {
