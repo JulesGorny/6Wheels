@@ -1,19 +1,16 @@
-#about-us {
-	padding-top: 4em;
+
+.img-responsive.mobile {
+	display: none;
+  }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.img-responsive.mobile {
+		display: block;
+	}
 }
 
-.about-us-section > .portrait{
-	width: 40%;
-}
-
-.about-us-section > .portrait > img {
-	max-width: 100%;
-}
-
-.header-text {
-	text-align: justify; 
-	vertical-align:bottom;
-}
+/* Header */
 
 .about-us-section.header {
 	background-image:url(../img/AboutUs/Common.jpg);
@@ -24,25 +21,17 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-
-.about-us-section.header .text {
-	font-size:16pt;
-	width:auto;
-	margin:0;
-	font-style:normal;
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.header {
+		display: none;
+		background-image: none;
+	}
 }
 
-.about-us-section.header .title {
-	margin-bottom: 0.5em;
-	color:black;
-}
 
-.about-us-section .text {
-	width: 40%;
-	padding: 0 0 0 30px;
-	font-size:16pt;
-	font-style: italic;
-}
+/* Jules */
 
 .about-us-section.jules {
 	background-image:url(../img/AboutUs/Jules.jpg);
@@ -53,23 +42,14 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-
-.img-responsive.mobile {
-	display: none;
-  }
   
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) 
+{
 	.about-us-section.jules {
 		display: none;
 		background-image: none;
 	}
-
-	.img-responsive.mobile {
-		display: block;
-	}
 }
-
-/* Jules */
 
 .julesText { color:white; }
 .julesText:hover { color:white; }
@@ -91,20 +71,6 @@
 }
 
 /* */ 
-
-.about-us-section.jules .title {
-	font-size:20pt;
-	position:absolute;
-	top:150px;
-	left:10px;
-}
-
-.about-us-section.jules .text {
-	position:absolute;
-	top:150px;
-	left:10px;
-	width:60%;
-}
 
 .about-us-section.anatole {
 	background-image:url(../img/AboutUs/Anatole.jpg);
