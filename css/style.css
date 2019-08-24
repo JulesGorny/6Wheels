@@ -60,22 +60,27 @@ body, html {
 	font-size:20pt;
 }
 
+
+/************
+	Footer
+*************/
+
 .footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	/* Set the fixed height of the footer here */
-	/*height: 30px;
-	line-height: 20px; */
-	background-color: #f5f5f5;
+	background-color: transparent !important;
+	background-color:#0000004D !important;
+	color:white !important;
 }
 
-/*******************
-		Menu
-********************/
+/**********
+	Menu
+***********/
 
 #navbar {
 	background-color: transparent !important;
+	background-color:#0000004D !important
 }
 
 #navbar a.nav-link {
