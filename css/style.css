@@ -33,24 +33,12 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
 .bgimg-1 p {
 	font-size:25pt;
 	margin-bottom: 2em;
 	margin-top: 2em;
-}
-.bgimg-1 {
-	background-image: url("../img/Index/banner.jpg");	
-}
-
-.bgimg-2 {
-	background-image: url("../img/Index/panorama2.jpg");
-}
-
-.bgimg-3 {
-	background-image: url("../img/Index/panorama3.jpg");
 }
 
 .caption {

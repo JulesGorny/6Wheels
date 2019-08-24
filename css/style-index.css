@@ -1,4 +1,10 @@
 
+/* Backgrounds */
+
+.bgimg-1 { background-image: url("../img/Index/banner.jpg"); }
+.bgimg-2 { background-image: url("../img/Index/panorama2.jpg"); }
+.bgimg-3 { background-image: url("../img/Index/panorama3.jpg"); }
+
 /*******************
 	PRESENTATION
 ********************/
@@ -25,8 +31,7 @@
 	height: 70px;
 }
 
-
-#index-presentation > div .biglogo {
+/*#index-presentation > div .biglogo {
 	width:100%;
 	text-align: center;
 	margin-bottom: 1em;
@@ -34,14 +39,14 @@
 
 #index-presentation > div .biglogo img {
 	height:150px;
-}
+}*/
 
 /* CSS DESKTOP */
 @media only screen and (min-width: 601px) {
 
-	#index-presentation {
+	/*#index-presentation {
 		margin-bottom: 30px;
-	}
+	}*/
 
 	#index-presentation > div > .learn-more {
         position: absolute;
@@ -59,16 +64,12 @@
 		margin-bottom: 30px;
 	}
 
-	#index-presentation > div > .learn-more a {
+	/*#index-presentation > div > .learn-more a {
 		position: relative;
 		display: block;
 		text-align: center;
-	}
+	}*/
 }
-
-
-
-
 
 /* MOBILE CSS [WIP] */
 @media only screen and (max-width: 600px) {
