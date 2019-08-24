@@ -80,6 +80,7 @@ function readPosts(map) {
         url: './posts/posts_lists.json',
 		dataType: 'json',
 		success: function(json) {
+            console.log(json);
 			json.posts.forEach(function (post, index)  {
                 // For each post we have from Imgur
                 $.ajax({
@@ -87,7 +88,7 @@ function readPosts(map) {
                     url: './posts/' + post + '/content.json',
                     dataType: 'json',
                     success: function(json) {
-
+                        console.log(json);
                         // With the post content, we create a new slide panel
                         var postElement = createSlidePanel(index, post, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
