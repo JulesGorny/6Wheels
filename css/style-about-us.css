@@ -32,8 +32,8 @@
 }
 	
 .headerTitleAlign { text-align: right; }
-.headerText { color:black; }
-.headerText:hover { color:black; }
+.headerTextColor { color:black; }
+.headerTextColor:hover { color:black; }
   
 @media only screen and (max-device-width: 480px) 
 {
@@ -61,8 +61,8 @@
 }
 
 .julesTitleAlign { text-align: left; }
-.julesText { color:white; }
-.julesText:hover { color:white; }
+.julesTextColor { color:white; }
+.julesTextColor:hover { color:white; }
 
 .julesAboutUs
 {
@@ -81,8 +81,8 @@
 	}
 
 	.julesTitleAlign { text-align: center; }
-	.julesText { color:black; }
-	.julesText:hover { color:black; }
+	.julesTextColor { color:black; }
+	.julesTextColor:hover { color:black; }
 
 	.julesAboutUs { margin: 4%; }
 }
