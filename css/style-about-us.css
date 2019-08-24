@@ -8,6 +8,8 @@
 	.img-responsive.mobile {
 		display: block;
 	}
+
+	.generalMobileMargin { margin-top: 5%; margin-bottom: 5%; }
 }
 
 /* Header */
@@ -42,14 +44,7 @@
 		background-image: none;
 	}
 
-	.headerAboutUs 
-	{
-		margin-left: 4%;
-		margin-right: 4%;
-		margin-bottom: 4%;
-		margin-top: 1%;
-		padding-top: 0%;
-	}	
+	.headerAboutUs { margin: 4%; }	
 	
 	.headerTitleAlign { text-align: center; }
 }
@@ -115,9 +110,7 @@
 	margin-bottom: 3%;
 }
 
-.davidLinksAlign { 
-	float:right;
-}
+.davidLinksAlign { float:right; }
   
 @media only screen and (max-device-width: 480px) 
 {
@@ -159,9 +152,5 @@
 		background-image: none;
 	}
 
-	.anatoleAboutUs 
-	{ 
-		margin: 4%; 
-		padding-bottom: 4%;
-	}
+	.anatoleAboutUs { margin: 4%;}
 }
