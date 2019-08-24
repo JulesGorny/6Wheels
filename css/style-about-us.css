@@ -152,5 +152,11 @@
 		background-image: none;
 	}
 
-	.anatoleAboutUs { margin: 4%; }
+	.anatoleAboutUs 
+	{ 
+		margin-top: 4%; 
+		margin-left: 4%; 
+		margin-right: 4%; 
+		margin-bottom: 10%; 
+	}
 }
