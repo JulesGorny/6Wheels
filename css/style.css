@@ -34,17 +34,11 @@ body, html {
 	margin-right: auto;
 }
 
-.white 
-{ 
-	color: white; 
-	text-decoration-color: white; 
-}
+.white { color: white; }
+.white:hover { color: white; }
 
-.green
-{ 
-	color: green;
-	text-decoration-color: green; 
-}
+.green { color: green; }
+.green:hover { color:green; }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;

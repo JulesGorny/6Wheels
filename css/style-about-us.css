@@ -71,10 +71,8 @@
 
 /* Jules */
 
-.julesText
-{
-	color:white;
-}
+.julesText { color:white; }
+.julesText:hover { color:white; }
 
 .julesAboutUs
 {
@@ -86,10 +84,8 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-	.julesText
-	{
-		color:black;
-	}
+	.julesText { color:black; }
+	.julesText:hover { color:black; }
 
 	.julesAboutUs
 	{
