@@ -3,10 +3,10 @@ document.write('\
 	<span style="font-size: 0.75rem;">\
 		© 2019 Copyright : 6Wheels\
 		<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" style="padding-left: 0.75rem;">\
-			<i class="fab fa-facebook" style="color: white;"></i>\
+			<i class="fab fa-facebook white"></i>\
 		</a>\
 		<a href="https://www.instagram.com/6wheelsadventure" target="_blank" style="padding-left: 0.5rem;">\
-			<i class="fab fa-instagram" style="color: white;"></i>\
+			<i class="fab fa-instagram white"></i>\
 		</a>\
 	</span>\
 </div>\

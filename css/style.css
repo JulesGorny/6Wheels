@@ -34,6 +34,11 @@ body, html {
 	margin-right: auto;
 }
 
+.white
+{
+	color: white;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	position: relative;
 	background-attachment: fixed;
