@@ -121,7 +121,7 @@
 
 	.davidAboutUs { margin: 4%; }
 
-	.davidLinksAlign { text-align: left; }
+	.davidLinksAlign { float: left; }
 }
 
 /* Anatole */ 
