@@ -4,10 +4,8 @@ $(document).ready(function() {
 
     var map = L.map('mapid', { zoomControl:false }).setView([45.815010, 15.981919], 5);
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-        attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-        maxZoom: 20,
-        id: 'mapbox.streets',
-        accessToken: 'token.to.enter'
+        attribution: '&copy; Openstreetmap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 20
     }).addTo(map);
 
     readPosts(map);
@@ -23,7 +21,6 @@ function closeSlidePanel(i) {
 
 function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     var html = "";
-    var originalTitle = title;
 
     // Check the title lenght and cut if too long
     if (title.length > 100) {
@@ -75,7 +72,6 @@ function readPosts(map) {
         url: './posts/posts_lists.json',
 		dataType: 'json',
 		success: function(json) {
-            console.log(json);
 			json.posts.forEach(function (post, index)  {
                 // For each post we have from Imgur
                 $.ajax({
@@ -83,7 +79,6 @@ function readPosts(map) {
                     url: './posts/' + post + '/content.json',
                     dataType: 'json',
                     success: function(json) {
-                        console.log(json);
                         // With the post content, we create a new slide panel
                         var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
