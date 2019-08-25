@@ -27,13 +27,13 @@ function closeSlidePanel(i) {
     $(".js-cd-panel-" + i).removeClass("cd-panel--is-visible")
 }
 
-function createSlidePanel(index, title, photos_count, text) {
+function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     var html = "";
     var originalTitle = title;
 
     // Check the title lenght and cut if too long
-    if (title.length > 100) {
-        title = title.substring(0, 100) + "...";
+    if (title.length > 70) {
+        title = title.substring(0, 70) + " ...";
     }
 
     html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999; margin-top:55px;\">";
@@ -48,14 +48,15 @@ function createSlidePanel(index, title, photos_count, text) {
     // Foreach images
     for (var i = 0; i < photos_count; i++) {
         if (i % 3 == 0) {
-            html += "<div class=\"row\" style=\"padding-bottom: 2em;\">";
+            html += "<div class=\"row\">";
         }
 
         html += "<div class=\"col-md-4 col-centered\" style=\"padding-right:1em; padding-top:1em;\" >";
         var imgPath = "posts/" + originalTitle + "/" + i + ".png";
-        var imgSmallPath = "posts/" + originalTitle + "/" + i + "_small.png";
+        var imgSmallPath = "posts/" + slugifiedTitle + "/" + i + "_small.png";
         html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\">";
         html += "<img src=\"" + imgSmallPath + "\" class = \"img-fluid\">";
+        html += "<div class=\"d-none d-md-block\" style=\"padding-bottom: 2em;\"></div>";
         html += "</a>";
         html += "</div>";
 
@@ -65,7 +66,7 @@ function createSlidePanel(index, title, photos_count, text) {
     }
     html += "</div>";
 
-    html += "<p class=\"fontText\" style=\"padding-bottom: 3em;\">" + text + "</p>";
+    html += "<p class=\"fontText\" style=\"padding-top: 2em; padding-bottom: 3em;\">" + text + "</p>";
 
     html += "</div>";
     html += "</div>";
@@ -90,7 +91,7 @@ function readPosts(map) {
                     success: function(json) {
                         console.log(json);
                         // With the post content, we create a new slide panel
-                        var postElement = createSlidePanel(index, post, json.photos_count, json.text_fr);
+                        var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
 
                         // and we associate it with a marker on the map
