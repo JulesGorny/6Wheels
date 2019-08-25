@@ -23,6 +23,13 @@ body, html {
 	color: #777;
 }
 
+.bottomSpace { padding-bottom: 0%; }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.bottomSpace { padding-bottom: 10%; }
+}
+
 .imgCenter
 {
 	display: block;

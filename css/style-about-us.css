@@ -136,8 +136,6 @@
 	top: 0;
 	margin-top: 5%;
 }
-
-.bottomSpace { height: 0%; }
   
 @media only screen and (max-device-width: 480px) 
 {
@@ -149,6 +147,4 @@
 		margin: 4%;
 		position: relative;
 	}
-
-	.bottomSpace { height: 4%; }
 }
