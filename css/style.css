@@ -47,28 +47,6 @@ body, html {
 .green { color: green; }
 .green:hover { color:green; }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-	position: relative;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bgimg-1 p {
-	font-size:25pt;
-	margin-bottom: 2em;
-	margin-top: 2em;
-}
-
-.caption {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	width: auto;
-}
-
 /************
 	Footer
 *************/

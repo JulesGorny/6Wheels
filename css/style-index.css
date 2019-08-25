@@ -1,4 +1,12 @@
 
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /* Backgrounds */
 
 .bgimg-1 { background-image: url("../img/Index/banner.jpg"); }
