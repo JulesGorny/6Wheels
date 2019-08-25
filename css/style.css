@@ -29,7 +29,7 @@ body, html {
 @media only screen and (max-device-width: 480px) 
 {
 	.topSpace { margin-top:20%; }
-	.bottomSpace { bottom: 100px; }
+	.bottomSpace { position:absolute; bottom: 100px; }
 }
 
 .imgCenter
