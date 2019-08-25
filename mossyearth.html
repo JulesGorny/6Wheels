@@ -129,6 +129,10 @@
 		
 		<script>
 			$(document).ready(function() {
+
+				if($(window).width() < 600)
+					return; // mobile mode : desactivate fullpage
+
 				new fullpage('#fullpage', {
 					navigation: true,
 					responsiveWidth: 700,

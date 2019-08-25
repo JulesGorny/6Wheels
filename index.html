@@ -126,7 +126,11 @@
 		
 		<script>
 			$(document).ready(function() {
-				new fullpage('#fullpage', {
+
+					if($(window).width() < 600)
+						return; // mobile mode : desactivate fullpage
+
+					new fullpage('#fullpage', {
 					navigation: true,
 					responsiveWidth: 700,
 					anchors: ['6Wheels', 'whoAreWe', 'visualJourney', 'ourPlan', 'followUs'],
