@@ -32,13 +32,13 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     var originalTitle = title;
 
     // Check the title lenght and cut if too long
-    if (title.length > 70) {
-        title = title.substring(0, 70) + " ...";
+    if (title.length > 100) {
+        title = title.substring(0, 100) + " ...";
     }
 
     html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999; margin-top:55px;\">";
     html += "<header class=\"cd-panel__header\">";
-    html += "<h1 class=\"fontTitle\" style=\"padding-top: .2em;\">" + title + "</h1>";
+    html += "<h1 class=\"fontTitle2\" style=\"padding-top: .2em;\">" + title + "</h1>";
     html += "<a onClick=\"closeSlidePanel(" + index + ");\" class=\"cd-panel__close js-cd-close\">Close</a>";
     html += "</header>";
     html += "<div class=\"cd-panel__container\">";
