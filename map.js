@@ -11,12 +11,6 @@ $(document).ready(function() {
     }).addTo(map);
 
     readPosts(map);
-    
-    var marker1 = L.marker([46.566250, 3.335290]).addTo(map);
-    $(marker1).bind('click', {id: 11}, onMarkerClick);
-
-    var marker2 = L.marker([48.862725, 2.287592]).addTo(map);
-    $(marker2).bind('click', {id: 12}, onMarkerClick);
 });
 
 function onMarkerClick(event) {
@@ -52,7 +46,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
         }
 
         html += "<div class=\"col-md-4 col-centered\" style=\"padding-right:1em; padding-top:1em;\" >";
-        var imgPath = "posts/" + originalTitle + "/" + i + ".png";
+        var imgPath = "posts/" + slugifiedTitle + "/" + i + ".png";
         var imgSmallPath = "posts/" + slugifiedTitle + "/" + i + "_small.png";
         html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\">";
         html += "<img src=\"" + imgSmallPath + "\" class = \"img-fluid\">";
@@ -66,7 +60,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     }
     html += "</div>";
 
-    html += "<p class=\"fontText\" style=\"padding-top: 2em; padding-bottom: 3em;\">" + text + "</p>";
+    html += "<p class=\"fontText\" style=\"padding-top: 1em; padding-bottom: 3em;\">" + text + "</p>";
 
     html += "</div>";
     html += "</div>";
