@@ -24,12 +24,12 @@ body, html {
 }
 
 .topSpace { margin-top:0%; }
-.bottomSpace { margin-bottom: 0px; }
+.bottomSpace { bottom: 0px; }
   
 @media only screen and (max-device-width: 480px) 
 {
 	.topSpace { margin-top:20%; }
-	.bottomSpace { margin-bottom: 100px; }
+	.bottomSpace { bottom: 100px; }
 }
 
 .imgCenter
