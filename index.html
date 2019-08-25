@@ -32,12 +32,10 @@
 		<div id="fullpage">
 			<!-- PAGE CONTENT -->
 			<div class="section 6Wheels bgimg-1">
-				<div class="caption">
-					<div class="textCenter imgTextColor fontTitle">
-						<p id="index_travelNoImpact"></p>
-						<img style="height: 150px;opacity: O.6;" src="img/6Wheels_logo.png"/>
-						<p id="index_actEnvironment"></p>
-					</div>
+				<div class="textCenter imgTextColor fontTitle topSpace">
+					<p id="index_travelNoImpact"></p>
+					<img style="height: 150px;opacity: O.6;" src="img/6Wheels_logo.png"/>
+					<p id="index_actEnvironment"></p>
 				</div>
 			</div>
 			
@@ -82,7 +80,7 @@
 			
 			<img style="width:100%; margin-bottom:5%;" src="img/Index/bonusIndex.jpg" class="img-responsive mobile"/>
 			<div class="section bgimg-2">
-				<p id="index_pedalForYou" class="caption fontTitle imgTextColor textCenter"></p>
+				<p id="index_pedalForYou" class="fontTitle imgTextColor textCenter"></p>
 			</div>
 			<img style="width:100%; margin-bottom:5%;" src="img/Index/panorama2Mobile.jpg" class="img-responsive mobile"/>
 		
@@ -102,31 +100,34 @@
 			
 			<img style="width:100%; margin-bottom:5%;" src="img/Index/panorama3Mobile.jpg" class="img-responsive mobile"/>
 			<div class="section followUs bgimg-3">
-				<div class="caption">
-					<div class="textCenter">
-						<span>
-							<a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
-								<i class="fab fa-facebook-square imgTextColor"></i>
-								<span  class="fontTitle imgTextColor">Facebook</span>
-							</a>
-						</span><br><br>
-						<p id="index_nevermiss" class="fontTitle imgTextColor"></p><br>
-						<span>
-							<a href="https://www.instagram.com/6WheelsAdventure" target="_blank">
-								<i class="fab fa-instagram imgTextColor"></i>
-								<span class="fontTitle imgTextColor">Instagram</span>
-							</a>
-						</span>
-					</div>
+				<div class="textCenter">
+					<span>
+						<a href="https://www.facebook.com/6WheelsAdventure" target="_blank">
+							<i class="fab fa-facebook-square imgTextColor"></i>
+							<span  class="fontTitle imgTextColor">Facebook</span>
+						</a>
+					</span><br><br>
+					<p id="index_nevermiss" class="fontTitle imgTextColor"></p><br>
+					<span>					
+						<a href="https://www.instagram.com/6WheelsAdventure" target="_blank">
+							<i class="fab fa-instagram imgTextColor"></i>
+							<span class="fontTitle imgTextColor">Instagram</span>
+						</a>
+					</span> 
 				</div>
 			</div>
+			<p style="margin-top:20px;" class="img-responsive mobile white">Easter egg</p>
 		</div>
 		
 		<script src="footer.js"></script>
 		
 		<script>
 			$(document).ready(function() {
-				new fullpage('#fullpage', {
+
+					if($(window).width() < 600)
+						return; // mobile mode : desactivate fullpage
+
+					new fullpage('#fullpage', {
 					navigation: true,
 					responsiveWidth: 700,
 					anchors: ['6Wheels', 'whoAreWe', 'visualJourney', 'ourPlan', 'followUs'],

@@ -33,12 +33,16 @@ body, html {
 .img-responsive.mobile {
 	display: none;
 }
+
+.topSpace { margin-top:0%; }
   
 @media only screen and (max-device-width: 480px) 
 {
 	.img-responsive.mobile {
 		display: block;
 	}
+
+	.topSpace { margin-top:20%; }
 }
 
 .white { color: white; }
@@ -46,28 +50,6 @@ body, html {
 
 .green { color: green; }
 .green:hover { color:green; }
-
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-	position: relative;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bgimg-1 p {
-	font-size:25pt;
-	margin-bottom: 2em;
-	margin-top: 2em;
-}
-
-.caption {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	width: auto;
-}
 
 /************
 	Footer
