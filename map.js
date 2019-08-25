@@ -29,11 +29,11 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
 
     html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999; margin-top:55px;\">";
     html += "<header class=\"cd-panel__header\">";
-    html += "<h1 class=\"fontTitle2\" style=\"padding-top: .2em;\">" + title + "</h1>";
+    html += "<h1 class=\"fontTitle2\" style=\"padding-top: .5em;\">" + title + "</h1>";
     html += "<a onClick=\"closeSlidePanel(" + index + ");\" class=\"cd-panel__close js-cd-close\">Close</a>";
     html += "</header>";
     html += "<div class=\"cd-panel__container\">";
-    html += "<div class=\"cd-panel__content\" style=\"margin-top:55px; text-align: justify;\">";
+    html += "<div class=\"cd-panel__content\" style=\"margin-top:20px; text-align: justify;\">";
 
     html += "<div style=\"margin-top: 1em; margin-bottom: 2.5em;\">";
     // Foreach images
@@ -47,7 +47,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
         var imgSmallPath = "posts/" + slugifiedTitle + "/" + i + "_small.png";
         html += "<a data-fancybox=\"gallery\" href=\"" + imgPath + "\">";
         html += "<img src=\"" + imgSmallPath + "\" class = \"img-fluid\">";
-        html += "<div class=\"d-none d-md-block\" style=\"padding-bottom: 2em;\"></div>";
+        html += "<div class=\"d-none d-md-block\" style=\"padding-bottom: 1em;\"></div>";
         html += "</a>";
         html += "</div>";
 
@@ -57,7 +57,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     }
     html += "</div>";
 
-    html += "<p class=\"fontText\" style=\"padding-top: 1em; padding-bottom: 3em;\">" + text + "</p>";
+    html += "<p class=\"fontText\" style=\"padding-top: 1em; padding-bottom: 3em; font-size: 1em;\">" + text + "</p>";
 
     html += "</div>";
     html += "</div>";
