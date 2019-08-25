@@ -1,4 +1,12 @@
 
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /* Backgrounds */
 
 .bgimg-1 { background-image: url("../img/Index/banner.jpg"); }
@@ -10,9 +18,9 @@
 
 @media only screen and (max-device-width: 480px) 
 {
-	.bgimg-1 { display: none; background-image: none; }
-	.bgimg-2 { display: none; background-image: none; }
-    .bgimg-3 { display: none; background-image: none; }
+	.bgimg-1 { background-image: none; }
+	.bgimg-2 { background-image: none; }
+    .bgimg-3 { background-image: none; }
     
     .imgTextColor { color:black; }
     .imgTextColor:hover { color:black; }

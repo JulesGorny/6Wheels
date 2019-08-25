@@ -21,7 +21,7 @@
 		<title>6Wheels</title>
 	</head>
 	
-	<body>
+	<body class="bottomMargin">
 		<!-- TOP MENU -->
 		<script src="nav.js"></script>
 		
@@ -68,8 +68,8 @@
 
 			<!-- ANATOLE -->
 			<img style="width:100%;" src="img/AboutUs/AnatoleMobile.jpg" class="img-responsive mobile"/>
-			<div class="section about-us-section anatole"  >
-					<div class="anatoleAboutUs">
+			<div class="section about-us-section anatole">
+				<div class="anatoleAboutUs">
 					<p class="fontTitle julesTextColor julesTitleAlign">Anatole</p>
 					<p id="about-us_anatole_01" class="fontText textJustify julesTextColor"></p>
 					<a href="https://www.instagram.com/anatolemathe" target="_blank" class="julesTextColor">
@@ -78,6 +78,7 @@
 					</a>
 				</div>
 			</div>
+			<p class="img-responsive mobile white">Easter egg</p>
 		</div>
 		
 		<script src="footer.js"></script>
@@ -85,8 +86,9 @@
 		<script>
 			$(document).ready(function() {
 
-				if($(window).width() < 480)
-					return;
+				if($(window).width() < 600)
+					return; // mobile mode : desactivate fullpage
+
 				new fullpage('#fullpage', {
 					licencekey: '9D1990A4-B7C34F00-BFE12858-442E3933',
 					navigation: true,
