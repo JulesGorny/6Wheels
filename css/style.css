@@ -23,15 +23,6 @@ body, html {
 	color: #777;
 }
 
-.topSpace { margin-top:0%; }
-.bottomSpace { bottom: 0px; }
-  
-@media only screen and (max-device-width: 480px) 
-{
-	.topSpace { margin-top:20%; }
-	.bottomSpace { position:relative; bottom: 100px; }
-}
-
 .imgCenter
 {
 	display: block;
@@ -42,12 +33,16 @@ body, html {
 .img-responsive.mobile {
 	display: none;
 }
+
+.topSpace { margin-top:0%; }
   
 @media only screen and (max-device-width: 480px) 
 {
 	.img-responsive.mobile {
 		display: block;
 	}
+
+	.topSpace { margin-top:20%; }
 }
 
 .white { color: white; }
