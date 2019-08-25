@@ -133,10 +133,15 @@ body, html {
 	margin: 0;
 }
 .two-50-percent.wrapper {
-	align-items: center;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
+.two-50-percent.vcenter {
+	align-items: center;
+}
+
+
+
 .two-50-percent.wrapper.reverse {
 	-webkit-flex-wrap: wrap-reverse;
 	flex-wrap: wrap-reverse;
