@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    openNav();
+
     $("#navbar").css("background-color", "");
 
     var map = L.map('mapid', { zoomControl:false }).setView([45.815010, 15.981919], 5);
@@ -18,6 +20,16 @@ function onMarkerClick(event) {
 function closeSlidePanel(i) {
     $(".js-cd-panel-" + i).removeClass("cd-panel--is-visible")
 }
+
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+  
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+} 
 
 function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     var html = "";
