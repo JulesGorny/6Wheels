@@ -9,16 +9,16 @@ document.write('\
         <div class="collapse navbar-collapse" id="navbarSupportedContent">\
             <ul class="navbar-nav ml-auto">\
                 <li class="nav-item">\
-                    <a id="navbar_home" class="nav-link active" href="index.html"></a>\
+                    <a id="navbar_home" class="nav-link indexNavBar" href="index.html"></a>\
                 </li>\
                 <li class="nav-item">\
-                    <a id="navbar_map" class="nav-link" href="map.html"></a>\
+                    <a id="navbar_map" class="nav-link mapNavBar" href="map.html"></a>\
                 </li>\
                 <li class="nav-item">\
-                    <a class="nav-link" href="mossyearth.html">Mossy Earth</a>\
+                    <a class="nav-link mossyEarthNavBar" href="mossyearth.html">Mossy Earth</a>\
                 </li>\
                 <li class="nav-item last-link">\
-                    <a id="navbar_APropos" class="nav-link" href="aboutus.html"></a>\
+                    <a id="navbar_APropos" class="nav-link aboutUsNavBar" href="aboutus.html"></a>\
                 </li>\
                 <li class="nav-item flags">\
                     <input type="image" src="img/flag_fr.svg" onclick="translateTo(\'fr\');" />\
