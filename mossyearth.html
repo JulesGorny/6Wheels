@@ -138,21 +138,16 @@
 		<script>
 			$(document).ready(function() {
 
-				if($(window).width() < 600)
+				if($(window).width() < 480)
 					return; // mobile mode : desactivate fullpage
 
 				new fullpage('#fullpage', {
-					licencekey: '9D1990A4-B7C34F00-BFE12858-442E3933',
+					licenseKey: '9D1990A4-B7C34F00-BFE12858-442E3933',
 					navigation: true,
 					responsiveWidth: 700,
 					anchors: ['header', 'about', 'summary1', 'summary2', 'summary3', 'summary4', 'promise'],
-					parallax: true,
-
 					//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
 					css3:false,
-					onLeave: function(origin, destination, direction){
-						console.log("Leaving section" + origin.index);
-					},
 				});
 			});
 		</script>

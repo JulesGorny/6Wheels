@@ -108,14 +108,14 @@
 				<div class="textCenter">
 					<span>
 						<a href="https://www.facebook.com/6WheelsAdventure" target="_blank" class="imgTextColor">
-							<i class="fab fa-facebook-square"></i>
+							<i class="fontTitle-icons fab fa-facebook-square"></i>
 							<span  class="fontTitle">Facebook</span>
 						</a>
 					</span><br><br>
 					<p id="index_nevermiss" class="fontTitle imgTextColor"></p><br>
 					<span>					
 						<a href="https://www.instagram.com/6WheelsAdventure" target="_blank" class="imgTextColor">
-							<i class="fab fa-instagram"></i>
+							<i class="fontTitle-icons fab fa-instagram"></i>
 							<span class="fontTitle">Instagram</span>
 						</a>
 					</span> 
@@ -128,21 +128,16 @@
 		
 		<script>
 			$(document).ready(function() {
-				if($(window).width() < 600)
+				if($(window).width() < 480)
 					return; // mobile mode : desactivate fullpage
 
 				new fullpage('#fullpage', {
-					licencekey: '9D1990A4-B7C34F00-BFE12858-442E3933',
+					licenseKey: '9D1990A4-B7C34F00-BFE12858-442E3933',
 					navigation: true,
 					responsiveWidth: 700,
 					anchors: ['6Wheels', 'whoAreWe', 'visualJourney', 'ourPlan', 'followUs'],
-					parallax: true,
-
 					//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
 					css3:false,
-					onLeave: function(origin, destination, direction){
-						console.log("Leaving section" + origin.index);
-					},
 				});
 			});
 		</script>
