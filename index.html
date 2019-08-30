@@ -23,9 +23,14 @@
 		<title>6Wheels</title>
 		
 		<style>
-			.indexNavBar
-			{
-				border-bottom: 2px solid white;
+			.indexNavBar { border-bottom: 2px solid white; }
+
+			#fp-nav ul li a span, .fp-slidesNav ul li a span { background: white; }
+			#fp-nav
+			{ 
+				background-color: transparent !important;
+				background-color:#0000004D !important;
+				border-radius: 50%;
 			}
 		</style>
 	</head>
@@ -138,6 +143,7 @@
 					anchors: ['6Wheels', 'whoAreWe', 'visualJourney', 'ourPlan', 'followUs'],
 					//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
 					css3:false,
+					loopBottom:true
 				});
 			});
 		</script>
