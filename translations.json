@@ -151,6 +151,22 @@
 	"fr" : "<li>Nous ne plantons que des espèces d'arbres natifs. Pas de plantes envahissantes ni de monocultures. Nos arbres sont plantés dans un contexte de réensauvagement plus large, dans des zones protégées, pour que vos arbres restent sauvages pour toujours!</li><li>Nous nous engageons à remplacer les arbres perdus au cours des 3 premières années.</li><li>Nous plantons 30% d'arbres supplémentaires dans l'ensemble de nos projets pour nous assurer de notre impact en tant que groupe et pour s'assurer d'éventuels écarts dans le calcul d'impact carbone.</li>",
 	"en" : "<li>We only plant native species of trees. No invasives nor monocultures. Our trees are planted in a wider rewilding context, in protected areas, to ensure your trees stay wild forever!</li><li>We commit to replacing any trees lost within the first 3 years.</li><li>We plant an additional 30% across all our projects to ensure we meet our impact as a group and as an insurance against any carbon calculation discrepancies.</li>"
   },  
+  "mossy_title_referal" : {
+	  "fr" : "Plantez des arbres avec nous",
+	  "en" : "Plant trees with us"
+  },
+  "mossy_referal_text1" : {
+	"fr" : "Pour vous joindre à nos efforts de protection de l'environnement, vous pouvez souscrire un abonnement chez Mossy Earth. Pour environ 10€ mensuels",
+	"en" : "To join our efforts to protect the environnment, you can subscibe a Mossy Earth membership. For around 10€ a month"
+  },
+  "mossy_referal_text2" : {
+	"fr" : "<li><span class='boldGreen'>10 arbres</span> seront plantés <span class='boldGreen'>gratuitement</span> lors de votre inscription (5 pour vous, 5 pour nous). Nous comptabilisons ainsi notre impact.</li><li>Vous plantez ensuite <span class='boldGreen'>2 arbres chaque mois</span>, réduisant ainsi votre impact carbone et permettant à la nature de se régénérer</li>",
+	"en" : "<li><span class='boldGreen'>10 trees</span> will be planted <span class='boldGreen'>for free</span> when taking the membership (5 for you, 5 for us). This way, we keep track of our impact.</li><li>You then plant <span class='boldGreen'>2 trees every month</span>, thus reducing your carbon impact and helping nature to recover</li> "
+  },
+	"mossy_referal_text3" : {
+	"fr" : "Vous trouverez ci-dessous notre lien de parrainage. Il est possible d'annuler votre abonnement à tout instant très simplement en ligne.",
+	"en" : "Find our referral link down below. It is easily possible to cancel your membership online at any time."
+  },
   
 
   "about-us-title" : {
