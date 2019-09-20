@@ -28,12 +28,14 @@
 .fontTitle-icons { font-size:51px; }
 .fontTitle2 { font-size:38px; }
 .fontText { font-size:28px; }
+.fontTitleMap { font-size:33px; }
 
 @media (max-width: 1922px) {
 	.fontTitle { font-size:37px; }   
 	.fontTitle-icons { font-size:39px; } 
 	.fontTitle2 { font-size:29px; }    
 	.fontText { font-size:23px; }
+	.fontTitleMap { font-size:25px; }
 }
 
 @media (max-width: 1605px) {
@@ -41,6 +43,7 @@
 	.fontTitle-icons { font-size:34px; }
 	.fontTitle2 { font-size:25px; }    
 	.fontText { font-size:20px; }
+	.fontTitleMap { font-size:22px; }
 }
 
 @media (max-width: 1281px) {
@@ -48,6 +51,7 @@
 	.fontTitle-icons { font-size:29px; } 
 	.fontTitle2 { font-size:20px; }    
 	.fontText { font-size:16px; }
+	.fontTitleMap { font-size:18px; }
 }
 
 @media (max-width: 961px) {
@@ -55,4 +59,5 @@
 	.fontTitle-icons { font-size:22px; } 
 	.fontTitle2 { font-size:15px; }    
 	.fontText { font-size:12px; }
+	.fontTitleMap { font-size:14px; }
 }

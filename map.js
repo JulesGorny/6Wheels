@@ -41,7 +41,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
 
     html += "<div class=\"cd-panel cd-panel--from-right js-cd-panel-" + index + "\" style=\"z-index: 999; margin-top:55px;\">";
     html += "<header class=\"cd-panel__header\">";
-    html += "<h1 class=\"fontTitle2\" style=\"padding-top: .5em;\">" + title + "</h1>";
+    html += "<h1 class=\"fontTitleMap\" style=\"position:absolute; bottom:0.15rem;\">" + title + "</h1>";
     html += "<a onClick=\"closeSlidePanel(" + index + ");\" class=\"cd-panel__close js-cd-close\">Close</a>";
     html += "</header>";
     html += "<div class=\"cd-panel__container\">";
