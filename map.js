@@ -14,7 +14,8 @@ $(document).ready(function() {
 });
 
 function onMarkerClick(event) {
-    $(".js-cd-panel-" + event.data.id).addClass("cd-panel--is-visible")
+    $( ".plzClick" ).hide();
+    $(".js-cd-panel-" + event.data.id).addClass("cd-panel--is-visible");
 }
 
 function closeSlidePanel(i) {
@@ -29,7 +30,42 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-} 
+}
+
+function removeDuplicates(num) {
+    var x,
+        len=num.length,
+        out=[],
+        obj={};
+   
+    for (x=0; x<len; x++) {
+      obj[num[x]]=0;
+    }
+    for (x in obj) {
+      out.push(x);
+    }
+    return out;
+  }
+
+function tranformRawTextToHtml (text) {
+    // URL to clickable links
+    var regexUrl = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/gm;
+    var urls = text.match(regexUrl);
+
+    if (urls) {
+        let uniqueURL = [...new Set(urls)];
+
+        uniqueURL.forEach(function (url) {
+            if(url.startsWith("http"))
+                var newUrl = "<a href=\"" + url + "\" target=\"blank\">" + url + "</a>";
+            else
+                var newUrl = "<a href=\"http://" + url + "\" target=\"blank\">" + url + "</a>";
+            text = text.replace(new RegExp(url, 'g'), newUrl);
+        });
+    }
+
+    return text;
+}
 
 function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     var html = "";
@@ -48,6 +84,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     html += "<div class=\"cd-panel__content\" style=\"margin-top:20px; text-align: justify;\">";
 
     html += "<div style=\"margin-top: 1em; margin-bottom: 2.5em;\">";
+
     // Foreach images
     for (var i = 0; i < photos_count; i++) {
         if (i % 3 == 0) {
@@ -69,7 +106,7 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     }
     html += "</div>";
 
-    html += "<p class=\"fontText\" style=\"padding-top: 1em; padding-bottom: 3em; font-size: 1em;\">" + text + "</p>";
+    html += "<p class=\"fontText\" style=\"padding-top: 1em; padding-bottom: 3em; font-size: 1em;\">" + tranformRawTextToHtml(text) + "</p>";
 
     html += "</div>";
     html += "</div>";
@@ -144,7 +181,6 @@ function readPosts(map) {
 
                             map.on('zoomend', function() {
                                 var currentZoom = map.getZoom();
-                                console.log(currentZoom);
                                 if(currentZoom < 6)
                                 {
                                     var dotIcon = L.icon({
