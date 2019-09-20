@@ -78,6 +78,16 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
     return $.parseHTML(html)[0];
 }
 
+function connectTheDots(data){
+    var c = [];
+    for(i in data) {
+        var x = data.lat;
+        var y = data.long;
+        c.push([x, y]);
+    }
+    return c;
+}
+
 function readPosts(map) {
     $.ajax({
         type: 'GET',
@@ -95,7 +105,9 @@ function readPosts(map) {
                 iconSize: [30, 30], // size of the icon
                 iconAnchor: [15, 30], // point of the icon which will correspond to marker's location
             });
-
+            
+            var allLatLong = [];
+            var ourWayPathLength = json.posts.length-2;
             json.posts.forEach(function (post, index)  {
 
                 // For each post we have from Imgur
@@ -108,12 +120,23 @@ function readPosts(map) {
                         var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_fr);
                         $( "#posts_panels" ).append(postElement);
 
+                        // draw line
+                        if(index < ourWayPathLength)
+                        {
+                            allLatLong.push([parseFloat(json.lat), parseFloat(json.long)]);
+                
+                            if(allLatLong.length > 1)
+                                L.polyline(allLatLong).addTo(map);
+                            if(allLatLong.length > 2)
+                                allLatLong.splice(0, 1);
+                        }
+
                         // and we associate it with a marker on the map
-                        
                         if (index == 0) {    
                             var bike = L.marker([parseFloat(json.lat), parseFloat(json.long)], {icon: bikeIcon}).addTo(map);
                             $(bike).bind('click', {id: index}, onMarkerClick);
-                        } else { 
+                        } 
+                        else { 
                             var marker = L.marker([parseFloat(json.lat), parseFloat(json.long)], {icon: markerIcon}).addTo(map);
                             $(marker).bind('click', {id: index}, onMarkerClick);
 
@@ -125,16 +148,14 @@ function readPosts(map) {
                                     var dotIcon = L.icon({
                                         iconUrl: 'img/Icons/Dot.png',            
                                         iconSize: [currentZoom*2, currentZoom*2], // size of the icon
-                                        iconAnchor: [currentZoom, currentZoom*2], // point of the icon which will correspond to marker's location
+                                        iconAnchor: [currentZoom, currentZoom], // point of the icon which will correspond to marker's location
                                     });
 
                                     marker.setIcon(dotIcon);
                                 }
                                 else
-                                {
                                     marker.setIcon(markerIcon);
-                                }
-                              });
+                            });
                         }
                     },
                     error: function(err) {
