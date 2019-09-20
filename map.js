@@ -86,8 +86,8 @@ function readPosts(map) {
         success: function(json) {            
             var bikeIcon = L.icon({
                 iconUrl: 'img/Icons/cycling.png',                    
-                iconSize: [30, 30], // size of the icon
-                iconAnchor: [15, 30], // point of the icon which will correspond to marker's location
+                iconSize: [40, 40], // size of the icon
+                iconAnchor: [20, 40], // point of the icon which will correspond to marker's location
             });    
             
             var markerIcon = L.icon({
@@ -116,6 +116,25 @@ function readPosts(map) {
                         } else { 
                             var marker = L.marker([parseFloat(json.lat), parseFloat(json.long)], {icon: markerIcon}).addTo(map);
                             $(marker).bind('click', {id: index}, onMarkerClick);
+
+                            map.on('zoomend', function() {
+                                var currentZoom = map.getZoom();
+                                console.log(currentZoom);
+                                if(currentZoom < 6)
+                                {
+                                    var dotIcon = L.icon({
+                                        iconUrl: 'img/Icons/Dot.png',            
+                                        iconSize: [currentZoom*2, currentZoom*2], // size of the icon
+                                        iconAnchor: [currentZoom, currentZoom*2], // point of the icon which will correspond to marker's location
+                                    });
+
+                                    marker.setIcon(dotIcon);
+                                }
+                                else
+                                {
+                                    marker.setIcon(markerIcon);
+                                }
+                              });
                         }
                     },
                     error: function(err) {
