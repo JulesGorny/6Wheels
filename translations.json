@@ -193,8 +193,8 @@
 	"fr" : "L'idée de partir de nouveau pour un long voyage ne m'a jamais vraiment quitté. Etant un grand amateur de nature et de sport, partir à vélo me semble être la façon idéale d'associer ces passions et, qui plus est, de rester en accord avec ma sensibilité pour la cause écologique.",
   	"en" : "The idea of leaving anew for a long trip has never really left me. As a nature and sport enthusiast, going by bike seems to be the way of associating these passions, and also to be faithfull to my ecological awareness."
   },
-  "map_modal_overlay_content" : {
-	  "fr" : "La carte sera mise à jour au fur et à mesure de notre progression, stay tuned !",
-	  "en" : "The map will be updated as we go, stay tuned !"
+  "map_clickIcons" : {
+	  "fr" : "Cliquez sur les icônes de la carte pour afficher l'article correspondant !",
+	  "en" : "Click icons on the map to display the corresponding post!"
   }
 }

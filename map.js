@@ -92,6 +92,7 @@ function readPosts(map) {
     $.ajax({
         type: 'GET',
         url: './posts/posts_lists.json',
+        async: false,
         dataType: 'json',
         success: function(json) {            
             var bikeIcon = L.icon({
@@ -114,6 +115,7 @@ function readPosts(map) {
                 $.ajax({
                     type: 'GET',
                     url: './posts/' + post + '/content.json',
+                    async: false,
                     dataType: 'json',
                     success: function(json) {
                         // With the post content, we create a new slide panel
@@ -125,10 +127,10 @@ function readPosts(map) {
                         {
                             allLatLong.push([parseFloat(json.lat), parseFloat(json.long)]);
                 
+                            if(allLatLong.length > 2) // Remove first element so we just keep the two lasts
+                                allLatLong.splice(0, 1);
                             if(allLatLong.length > 1)
                                 L.polyline(allLatLong).addTo(map);
-                            if(allLatLong.length > 2)
-                                allLatLong.splice(0, 1);
                         }
 
                         // and we associate it with a marker on the map
