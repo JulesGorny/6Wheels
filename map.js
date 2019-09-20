@@ -80,11 +80,24 @@ function createSlidePanel(index, slugifiedTitle, title, photos_count, text) {
 
 function readPosts(map) {
     $.ajax({
-		type: 'GET',
+        type: 'GET',
         url: './posts/posts_lists.json',
-		dataType: 'json',
-		success: function(json) {
-			json.posts.forEach(function (post, index)  {
+        dataType: 'json',
+        success: function(json) {            
+            var bikeIcon = L.icon({
+                iconUrl: 'img/Icons/cycling.png',                    
+                iconSize: [30, 30], // size of the icon
+                iconAnchor: [15, 30], // point of the icon which will correspond to marker's location
+            });    
+            
+            var markerIcon = L.icon({
+                iconUrl: 'img/Icons/marker.png',            
+                iconSize: [30, 30], // size of the icon
+                iconAnchor: [15, 30], // point of the icon which will correspond to marker's location
+            });
+
+            json.posts.forEach(function (post, index)  {
+
                 // For each post we have from Imgur
                 $.ajax({
                     type: 'GET',
@@ -96,17 +109,24 @@ function readPosts(map) {
                         $( "#posts_panels" ).append(postElement);
 
                         // and we associate it with a marker on the map
-                        var marker = L.marker([parseFloat(json.lat), parseFloat(json.long)]).addTo(map);
-                        $(marker).bind('click', {id: index}, onMarkerClick);
+                        
+                        if (index == 0) {    
+                            var bike = L.marker([parseFloat(json.lat), parseFloat(json.long)], {icon: bikeIcon}).addTo(map);
+                            $(bike).bind('click', {id: index}, onMarkerClick);
+                        } else { 
+                            var marker = L.marker([parseFloat(json.lat), parseFloat(json.long)], {icon: markerIcon}).addTo(map);
+                            $(marker).bind('click', {id: index}, onMarkerClick);
+                        }
                     },
                     error: function(err) {
                         console.log(err);
                     }
                 });
             });
-		},
-		error: function(err) {
-			console.log('error', err);
-		}
+        },
+        error: function(err) {
+            console.log('error', err);
+        }
     });
 }
+
