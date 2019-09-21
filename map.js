@@ -49,6 +49,8 @@ function tranformRawTextToHtml (text) {
         });
     }
 
+    text = text.replace(new RegExp("\n", 'g'), "<br/>");
+
     return text;
 }
 
@@ -141,8 +143,20 @@ function readPosts(map) {
                     dataType: 'json',
                     success: function(json) {
                         // With the post content, we create a new slide panel
-                        var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_fr);
-                        $( "#posts_panels" ).append(postElement);
+                        var url = new URL(window.location.href);
+                        var l = url.searchParams.get("l");
+                        if(l == null || l == "en")
+                        {
+                            var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_en);
+                            $( "#posts_panels" ).append(postElement);
+                            console.log("en");
+                        }
+                        else
+                        {
+                            var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_fr);
+                            $( "#posts_panels" ).append(postElement);
+                            console.log("fr");
+                        }
 
                         // draw line
                         if(index < ourWayPathLength)
