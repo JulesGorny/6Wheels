@@ -34,7 +34,7 @@ function closeNav() {
 
 function tranformRawTextToHtml (text) {
     // URL to clickable links
-    var regexUrl = /(http:\/\/www.|https:\/\/www.|www.)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gm;
+    var regexUrl = /(http:\/\/www.|https:\/\/www.|www.|https:\/\/|http:\/\/)[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gm;
     var urls = text.match(regexUrl);
 
     if (urls) {
@@ -145,18 +145,9 @@ function readPosts(map) {
                         // With the post content, we create a new slide panel
                         var url = new URL(window.location.href);
                         var l = url.searchParams.get("l");
-                        if(l == null || l == "en")
-                        {
-                            var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_en);
-                            $( "#posts_panels" ).append(postElement);
-                            console.log("en");
-                        }
-                        else
-                        {
-                            var postElement = createSlidePanel(index, post, json.title, json.photos_count, json.text_fr);
-                            $( "#posts_panels" ).append(postElement);
-                            console.log("fr");
-                        }
+                        var text = l == null || l == "en" ? json.text_en : json.text_fr;
+                        var postElement = createSlidePanel(index, post, json.title, json.photos_count, text);
+                        $( "#posts_panels" ).append(postElement);
 
                         // draw line
                         if(index < ourWayPathLength)
