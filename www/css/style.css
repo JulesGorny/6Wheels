@@ -1,0 +1,141 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+@import url(style-about-us.css);
+@import url(style-index.css);
+@import url(style-mossy-earth.css);
+@import url(texts.css);
+@import url(paddings.css);
+
+@viewport {
+	width: device-width ;
+	zoom: 1.0 ;
+}
+
+@font-face {
+	font-family: AvenirLTStd;
+	src: url(font/AvenirLTStd-Light.otf);	
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: "AvenirLTStd", sans-serif !important;
+	color: #777;
+}
+
+.imgCenter
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-responsive.mobile {
+	display: none;
+}
+
+.topSpace { margin-top:0%; }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.img-responsive.mobile {
+		display: block;
+	}
+
+	.topSpace { margin-top:20%; }
+}
+
+.white { color: white; }
+.white:hover { color: white; }
+
+.green { color: green; }
+.green:hover { color:green; }
+
+/************
+	Footer
+*************/
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent !important;
+	background-color:#0000004D !important;
+	color:white !important;
+}
+
+/**********
+	Menu
+***********/
+
+#navbar {
+	background-color: transparent !important;
+	background-color:#0000004D !important;
+}
+
+#navbar a.nav-link {
+	color:white !important;
+}
+
+.navbar {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	transition: top 0.5s;	
+}
+
+.navbar-brand img {
+	height: 50px;
+}
+
+.navbar .last-link {
+	margin-right:2em;
+}
+
+.navbar .nav-item {
+	font-size:17px;
+	font-weight: 600;
+	margin-top:0.2em;
+}
+
+.navbar .nav-item.flags {
+	margin-top:0.45em;
+}
+
+.navbar .nav-item.flags > input {
+	width: 35px;
+	margin: 0 5px 0 5px;
+}
+
+/* Wrapping mechanism */
+/* We don't use media anymore, just set a min size to our elements and */
+/* let them wrap on their own */
+.two-50-percent {
+	display: flex;
+	width: 100%;
+	margin: 0;
+}
+.two-50-percent.wrapper {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.two-50-percent.vcenter {
+	align-items: center;
+}
+
+
+
+.two-50-percent.wrapper.reverse {
+	-webkit-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
+}
+.two-50-percent > div {
+	flex:1;
+	position: relative;
+}
+.two-50-percent.wrapper > div {
+	/* to make sure we wrap */
+	/* NB : we have 700px min width before fullpage stops doing his magnet style */
+	/* so we ask our items to be at least half of that, or we go "mobile" mode */
+	min-width: 350px;
+}
+

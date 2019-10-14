@@ -1,0 +1,150 @@
+/* Header */
+
+.about-us-section.header {
+	background-image:url(../img/AboutUs/Common.jpg);
+	background-size: cover;
+	background-position: right;
+
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+	
+.headerAboutUs
+{
+	margin-left: 30%;
+	margin-right: 7%;
+	position: absolute; 
+	bottom: 0;
+	margin-bottom: 3%;
+}
+	
+.headerTitleAlign { text-align: right; }
+.headerTextColor { color:black; }
+.headerTextColor:hover { color:black; }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.header {
+		background-image: none;
+	}
+
+	.headerAboutUs { 
+		margin: 4%; 
+		position: relative;
+	}	
+	
+	.headerTitleAlign { text-align: center; }
+}
+
+
+/* Jules */
+
+.about-us-section.jules {
+	background-image:url(../img/AboutUs/Jules.jpg);
+	background-size: cover;
+	background-position: right;
+
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.julesTitleAlign { text-align: left; }
+.julesTextColor { color:white; }
+.julesTextColor:hover { color:white; }
+
+.julesAboutUs
+{
+	margin-left: 4%;
+	margin-right: 30%;
+	position: absolute; 
+	bottom: 0;
+	margin-bottom: 5%;
+}
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.jules {
+		background-image: none;
+	}
+
+	.julesTitleAlign { text-align: center; }
+	.julesTextColor { color:black; }
+	.julesTextColor:hover { color:black; }
+
+	.julesAboutUs {
+		position: relative; 
+		margin: 4%; 
+	}
+}
+
+/* David */
+
+.about-us-section.david {
+	background-image:url(../img/AboutUs/David.jpg);
+	background-size:cover;
+	background-position: bottom;
+	
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.davidAboutUs
+{
+	margin-left: 30%;
+	margin-right: 7%;
+	position: absolute; 
+	bottom: 0;
+	margin-bottom: 3%;
+}
+
+.davidLinksAlign { float:right; }
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.david {
+		background-image: none;
+	}
+
+	.davidAboutUs { 
+		margin: 4%; 
+		position: relative;
+	}
+
+	.davidLinksAlign { float: none; }
+}
+
+/* Anatole */ 
+
+.about-us-section.anatole {
+	background-image:url(../img/AboutUs/Anatole.jpg);
+	background-size:cover;
+	background-position: right;
+
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.anatoleAboutUs
+{
+	margin-left: 4%;
+	margin-right: 30%;
+	position: absolute; 
+	top: 0;
+	margin-top: 5%;
+}
+  
+@media only screen and (max-device-width: 480px) 
+{
+	.about-us-section.anatole {
+		background-image: none;
+	}
+
+	.anatoleAboutUs { 
+		margin: 4%;
+		position: relative;
+	}
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="img/6Wheels_logo_Small.png">
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta name="description" content="Traveling with no impact. Volunteering on the way." />
+		<meta name="keywords" content="6wheels, 6wheelsadventure, volunteer, volunteering, environment" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/735aad3b2e.js"></script>
+		<script src="translations_script.js"></script>
+		
+		<script src="plugin/fullPage/fullpage.min.js"></script>
+		
+		<link rel="stylesheet" href="plugin/fullPage/fullpage.min.css" />
+		
+		<title>6Wheels</title>
+
+		<style>
+			.aboutUsNavBar { border-bottom: 2px solid white; }
+
+			#fp-nav ul li a span, .fp-slidesNav ul li a span { background: white; }
+			#fp-nav
+			{ 
+				background-color: transparent !important;
+				background-color:#0000004D !important;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	
+	<body class="bottomMargin">
+		<!-- TOP MENU -->
+		<script src="nav.js"></script>
+		
+		<!-- PAGE CONTENT -->
+		<div id="fullpage">
+			<img style="width:100%; margin-top:20%;" src="img/AboutUs/CommonMobile.jpg" class="img-responsive mobile"/>
+			<div class="section about-us-section header">
+				<div class="headerAboutUs">
+					<p id="about-us-title" class="fontTitle headerTextColor headerTitleAlign" ></p>
+					<p id="about-us_header_01" class="fontText textJustify headerTextColor"></p>
+				</div>
+			</div>
+			
+			<!-- JULES -->
+			<img style="width:100%;" src="img/AboutUs/JulesMobile.jpg" class="img-responsive mobile"/>
+			<div class="section about-us-section jules">
+				<div class="julesAboutUs">
+					<p class="fontTitle julesTextColor julesTitleAlign">Jules</p>
+					<p id="about-us_jules_01" class="fontText textJustify julesTextColor"></p>
+					<a href="https://www.instagram.com/jules_gorny" target="_blank" class="julesTextColor">
+						<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>
+						<span class="fontText">Instagram</span>
+					</a>		
+				</div>
+			</div>
+
+			<!-- DAVID -->
+			<img style="width:100%;" src="img/AboutUs/DavidMobile.jpg" class="img-responsive mobile"/>
+			<div class="section about-us-section david"  >
+				<div class="davidAboutUs">
+					<p class="fontTitle julesTextColor headerTitleAlign">David</p>
+					<p id="about-us_david_01" class="fontText textJustify julesTextColor"></p>
+					<a href="https://www.instagram.com/davidchrt_" target="_blank" class="davidLinksAlign julesTextColor">
+						<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>
+						<span class="fontText">Instagram</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- ANATOLE -->
+			<img style="width:100%;" src="img/AboutUs/AnatoleMobile.jpg" class="img-responsive mobile"/>
+			<div class="section about-us-section anatole">
+				<div class="anatoleAboutUs">
+					<p class="fontTitle julesTextColor julesTitleAlign">Anatole</p>
+					<p id="about-us_anatole_01" class="fontText textJustify julesTextColor"></p>
+					<a href="https://www.instagram.com/anatolemathe" target="_blank" class="julesTextColor">
+						<i class="fab fa-instagram" style="padding-right: 0.35rem;"></i>
+						<span class="fontText">Instagram</span>
+					</a>
+				</div>
+			</div>
+			<p class="img-responsive mobile white">Easter egg</p>
+		</div>
+		
+		<script src="footer.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				if($(window).width() < 480)
+					return; // mobile mode : desactivate fullpage
+
+				new fullpage('#fullpage', {
+					licenseKey: '9D1990A4-B7C34F00-BFE12858-442E3933',
+					navigation: true,
+					responsiveWidth: 700,
+					anchors: ['about-us', 'jules', 'david', 'anatole'],
+					//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+					css3:false,
+					loopBottom:true
+				});
+			});
+		</script>
+	</body>	
+</html>
